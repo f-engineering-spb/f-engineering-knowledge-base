@@ -21,4 +21,3 @@
 | TP-004 | `templates/HTML_Analytical_Report/` | Шаблоны | Эталон аналитического HTML-отчета | Review |
 
 После объединения Pull Request материалы получают статус `Approved`.
-
