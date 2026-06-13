@@ -1,6 +1,6 @@
 # Предложение: встроенные проверочные превью в HTML-отчётах
 
-Статус: `Candidate`
+Статус: `Approved`
 
 ## Назначение
 
@@ -85,7 +85,7 @@ HTML-отчёт с объёмами нельзя считать готовым, 
 
 ## Предлагаемое применение
 
-После проверки включить правило в:
+Правило утверждено и включено в:
 
 - `methodologies/Engineering_Drawing_Audit/STANDARD.md`;
 - `methodologies/Engineering_Drawing_Audit/CONTROL_CHECKLIST.md`;
