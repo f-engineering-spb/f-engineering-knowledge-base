@@ -1,0 +1,17 @@
+.env
+.env.*
+*.key
+*.token
+*.log
+__pycache__/
+*.py[cod]
+node_modules/
+.venv/
+venv/
+temp/
+tmp/
+output/
+renders/
+.DS_Store
+Thumbs.db
+
