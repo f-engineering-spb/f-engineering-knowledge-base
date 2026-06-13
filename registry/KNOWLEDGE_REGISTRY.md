@@ -16,6 +16,7 @@
 | MT-001 | `methodologies/Roadmap_Information_Architecture.md` | Методики | Смысловая декомпозиция и построение дорожных карт | Approved |
 | MT-002 | `methodologies/Engineering_Drawing_Audit/` | Методики | Аудит чертежей и подсчет объемов | Approved |
 | MT-003 | `proposals/Facade_Full_Scope_Multi_Contour_Audit.md` | Методики | Полный многоконтурный аудит фасадных конструкций | Approved |
+| MT-004 | `methodologies/Complete_Facade_Commercial_Specification/` | Методики | Полная проверяемая фасадная спецификация для коммерческого предложения | Approved |
 | DS-006 | `proposals/Embedded_Verification_Previews_for_HTML_Reports.md` | Стандарты документов | Встроенные проверочные превью в HTML-отчётах | Approved |
 | TP-001 | `templates/Document_Request_Template.md` | Шаблоны | Постановка задачи на документ | Approved |
 | TP-002 | `templates/Client_Roadmap/` | Шаблоны | Эталон клиентской дорожной карты | Approved |
