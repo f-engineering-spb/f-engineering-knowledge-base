@@ -8,6 +8,7 @@
 | AG-001 | `agent-instructions/Project_Workspace_AGENTS.md` | Инструкции агентам | Организация работы в проектной папке | Approved |
 | AG-002 | `agent-instructions/How_I_Work.md` | Инструкции агентам | Порядок постановки и выполнения документных задач | Approved |
 | AG-003 | `agent-instructions/User_Working_Preferences.md` | Инструкции агентам | Подтвержденные предпочтения пользователя | Approved |
+| AG-004 | `agent-instructions/Codex_Desktop_State_Sync_and_Recovery.md` | Инструкции агентам | Синхронизация проектов и чатов между компьютерами, резервирование и аварийное восстановление Codex Desktop | Candidate |
 | DS-001 | `document-standards/Document_Style_Guide.md` | Стандарты документов | Общий визуальный и структурный стиль | Approved |
 | DS-002 | `document-standards/Naming_and_Versioning.md` | Стандарты документов | Именование файлов и версии | Approved |
 | DS-003 | `document-standards/HTML_Mobile_Standard.md` | Стандарты документов | Адаптивность HTML для мобильных экранов | Approved |
