@@ -19,6 +19,7 @@
 | DS-004 | `document-standards/HTML_Analytical_Report_Style.md` | Style | Стандарты документов | Оформление аналитических HTML-отчетов | Для аналитических HTML, отчетов, спецификаций | Approved |
 | DS-005 | `document-standards/Client_Roadmap_Style.md` | Style | Стандарты документов | Оформление клиентских дорожных карт | Для дорожных карт и планов запуска | Approved |
 | DS-006 | `proposals/Embedded_Verification_Previews_for_HTML_Reports.md` | Style | Стандарты документов | Встроенные проверочные превью в HTML-отчётах | Для HTML с расчетами, объемами и проверкой | Approved |
+| DS-007 | `document-standards/HTML_Facade_Report_Light_Style.md` | Style | Стандарты документов | Лёгкий почти белый стиль клиентских фасадных HTML-отчётов | Для фасадных аудитов, опросных листов и спецификаций для заказчика | Approved |
 | MT-001 | `methodologies/Roadmap_Information_Architecture.md` | Workflow | Методики | Смысловая декомпозиция и построение дорожных карт | Для дорожных карт, презентаций, планов запуска | Approved |
 | MT-002 | `methodologies/Engineering_Drawing_Audit/` | Workflow | Методики | Аудит чертежей и подсчет объемов | Для DWG/DXF/PDF, чертежей, подсчета объемов | Approved |
 | MT-003 | `proposals/Facade_Full_Scope_Multi_Contour_Audit.md` | Workflow | Методики | Полный многоконтурный аудит фасадных конструкций | Для фасадных конструкций и коммерческих предложений | Approved |
