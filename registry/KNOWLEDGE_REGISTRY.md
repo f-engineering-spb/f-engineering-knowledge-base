@@ -23,6 +23,7 @@
 | MT-002 | `methodologies/Engineering_Drawing_Audit/` | Workflow | Методики | Аудит чертежей и подсчет объемов | Для DWG/DXF/PDF, чертежей, подсчета объемов | Approved |
 | MT-003 | `proposals/Facade_Full_Scope_Multi_Contour_Audit.md` | Workflow | Методики | Полный многоконтурный аудит фасадных конструкций | Для фасадных конструкций и коммерческих предложений | Approved |
 | MT-004 | `methodologies/Complete_Facade_Commercial_Specification/` | Workflow | Методики | Полная проверяемая фасадная спецификация для коммерческого предложения | Когда нужен итоговый фасадный состав работ и объемов | Approved |
+| MT-005 | `proposals/Google_Financial_Tools_Double_Entry_Workflow.md` | Workflow | Методики | Google Sheets + Apps Script системы финансового учета, двойной записи, веб-форм и исправлений | Для финансовых Google-таблиц, кошельков, платежей и мобильных форм ввода | Candidate |
 | TP-001 | `templates/Document_Request_Template.md` | Template | Шаблоны | Постановка задачи на документ | Когда нужно оформить задачу на документ | Approved |
 | TP-002 | `templates/Client_Roadmap/` | Template | Шаблоны | Эталон клиентской дорожной карты | Для дорожных карт | Approved |
 | TP-003 | `templates/Engineering_Drawing_Audit/` | Template | Шаблоны | Постановка задачи на аудит чертежей | Для аудита чертежей | Approved |
