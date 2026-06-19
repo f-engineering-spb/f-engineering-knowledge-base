@@ -37,7 +37,7 @@
 | Управление базой знаний и картой применения | `codex/knowledge-governance-registry` | реестр, карта применения, конфликты, инструкция пользователям | Active |
 | Standalone HTML для отправки коллегам | `codex/style-sendable-html` | отдельный стандарт отправляемых HTML-файлов | Planned |
 | Фото/видео оборудования в спецификацию | `codex/rules-equipment-video-audit` | методика распознавания оборудования по фото/видео и подготовки Excel/HTML | Planned |
-| Финансовые Google Sheets / FINDEX | `codex/rules-google-finance` | методика финансовых таблиц, реестров счетов, кассовых разрывов и кошельков | Planned |
+| Финансовые Google Sheets / FINDEX | `codex/rules-google-finance` | методика финансовых Google Sheets, Apps Script, двойной записи, веб-форм, исправлений и диагностики | Active |
 | Презентации возможностей F-Engineering | `codex/rules-capabilities-presentations` | методика модульных HTML/PPTX-презентаций на базе реальных кейсов | Planned |
 
 ## Когда ветку закрывать
