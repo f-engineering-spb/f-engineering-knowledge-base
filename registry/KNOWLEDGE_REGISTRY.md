@@ -34,4 +34,6 @@
 
 Статус `Approved` присвоен после объединения Pull Request №2 с веткой `main`.
 
+Стандарты `DS-007` и `DS-008` добавлены в ветке `style/black-white-minimalist-documents` и получают статус `Approved` после объединения соответствующего Pull Request с `main`.
+
 Стандарт `AG-006` добавлен в ветке `style/interaction-tone-f-engineering` и получает статус `Approved` после объединения соответствующего Pull Request с `main`.
