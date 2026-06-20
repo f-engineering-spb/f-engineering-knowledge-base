@@ -13,13 +13,16 @@
 | AG-002 | `agent-instructions/How_I_Work.md` | Core | Инструкции агентам | Порядок постановки и выполнения документных задач | Для большинства документных задач | Approved |
 | AG-003 | `agent-instructions/User_Working_Preferences.md` | Core | Инструкции агентам | Подтвержденные предпочтения пользователя | При выборе формата результата и подхода к работе | Approved |
 | AG-004 | `agent-instructions/Codex_Desktop_State_Sync_and_Recovery.md` | Core | Инструкции агентам | Синхронизация проектов и чатов между компьютерами, резервирование и аварийное восстановление Codex Desktop | Только при задачах синхронизации Codex Desktop | Candidate |
-| AG-005 | `agent-instructions/F_Engineering_Interaction_Style.md` | Core | Инструкции агентам | Стиль общения и рабочая манера Codex в проектах F-Engineering | При старте нового чата, нового проекта или восстановлении настроения работы | Review |
+| AG-005 | `agent-instructions/Cyrillic_UTF8_Handling.md` | Core | Инструкции агентам | Правила чтения, записи и проверки кириллицы и UTF-8 без mojibake | Всегда при работе с русским текстом, кириллическими путями, Windows/PowerShell, GitHub Markdown, HTML, CSV, JSON и документными артефактами | Approved |
+| AG-006 | `agent-instructions/F_Engineering_Interaction_Style.md` | Core | Инструкции агентам | Стиль общения и рабочая манера Codex в проектах F-Engineering | При старте нового чата, нового проекта или восстановлении настроения работы | Review |
 | DS-001 | `document-standards/Document_Style_Guide.md` | Style | Стандарты документов | Общий визуальный и структурный стиль | Для оформляемых документов | Approved |
 | DS-002 | `document-standards/Naming_and_Versioning.md` | Core | Стандарты документов | Именование файлов и версии | Для всех создаваемых файлов | Approved |
 | DS-003 | `document-standards/HTML_Mobile_Standard.md` | Style | Стандарты документов | Адаптивность HTML для мобильных экранов | Для всех HTML-файлов | Approved |
 | DS-004 | `document-standards/HTML_Analytical_Report_Style.md` | Style | Стандарты документов | Оформление аналитических HTML-отчетов | Для аналитических HTML, отчетов, спецификаций | Approved |
 | DS-005 | `document-standards/Client_Roadmap_Style.md` | Style | Стандарты документов | Оформление клиентских дорожных карт | Для дорожных карт и планов запуска | Approved |
 | DS-006 | `proposals/Embedded_Verification_Previews_for_HTML_Reports.md` | Style | Стандарты документов | Встроенные проверочные превью в HTML-отчётах | Для HTML с расчетами, объемами и проверкой | Approved |
+| DS-007 | `document-standards/F_Engineering_Logo_Standard.md` | Style | Стандарты документов | Единый логотипный блок F-Engineering / Facade engineering group | Для всех HTML, КП, презентаций и клиентских документов | Review |
+| DS-008 | `document-standards/Black_White_Minimalist_Document_Style.md` | Style | Стандарты документов | Черно-белая минималистичная стилистика документов | По умолчанию для большинства коммерческих и управленческих документов | Review |
 | MT-001 | `methodologies/Roadmap_Information_Architecture.md` | Workflow | Методики | Смысловая декомпозиция и построение дорожных карт | Для дорожных карт, презентаций, планов запуска | Approved |
 | MT-002 | `methodologies/Engineering_Drawing_Audit/` | Workflow | Методики | Аудит чертежей и подсчет объемов | Для DWG/DXF/PDF, чертежей, подсчета объемов | Approved |
 | MT-003 | `proposals/Facade_Full_Scope_Multi_Contour_Audit.md` | Workflow | Методики | Полный многоконтурный аудит фасадных конструкций | Для фасадных конструкций и коммерческих предложений | Approved |
@@ -31,4 +34,4 @@
 
 Статус `Approved` присвоен после объединения Pull Request №2 с веткой `main`.
 
-Стандарт `AG-005` добавлен в ветке `style/interaction-tone-f-engineering` и получает статус `Approved` после объединения соответствующего Pull Request с `main`.
+Стандарт `AG-006` добавлен в ветке `style/interaction-tone-f-engineering` и получает статус `Approved` после объединения соответствующего Pull Request с `main`.
