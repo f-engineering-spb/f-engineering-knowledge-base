@@ -14,6 +14,7 @@
 | AG-003 | `agent-instructions/User_Working_Preferences.md` | Core | Инструкции агентам | Подтвержденные предпочтения пользователя | При выборе формата результата и подхода к работе | Approved |
 | AG-004 | `agent-instructions/Codex_Desktop_State_Sync_and_Recovery.md` | Core | Инструкции агентам | Синхронизация проектов и чатов между компьютерами, резервирование и аварийное восстановление Codex Desktop | Только при задачах синхронизации Codex Desktop | Candidate |
 | AG-005 | `agent-instructions/Cyrillic_UTF8_Handling.md` | Core | Инструкции агентам | Правила чтения, записи и проверки кириллицы и UTF-8 без mojibake | Всегда при работе с русским текстом, кириллическими путями, Windows/PowerShell, GitHub Markdown, HTML, CSV, JSON и документными артефактами | Approved |
+| AG-006 | `agent-instructions/F_Engineering_Interaction_Style.md` | Core | Инструкции агентам | Стиль общения и рабочая манера Codex в проектах F-Engineering | При старте нового чата, нового проекта или восстановлении настроения работы | Review |
 | DS-001 | `document-standards/Document_Style_Guide.md` | Style | Стандарты документов | Общий визуальный и структурный стиль | Для оформляемых документов | Approved |
 | DS-002 | `document-standards/Naming_and_Versioning.md` | Core | Стандарты документов | Именование файлов и версии | Для всех создаваемых файлов | Approved |
 | DS-003 | `document-standards/HTML_Mobile_Standard.md` | Style | Стандарты документов | Адаптивность HTML для мобильных экранов | Для всех HTML-файлов | Approved |
@@ -34,3 +35,5 @@
 Статус `Approved` присвоен после объединения Pull Request №2 с веткой `main`.
 
 Стандарты `DS-007` и `DS-008` добавлены в ветке `style/black-white-minimalist-documents` и получают статус `Approved` после объединения соответствующего Pull Request с `main`.
+
+Стандарт `AG-006` добавлен в ветке `style/interaction-tone-f-engineering` и получает статус `Approved` после объединения соответствующего Pull Request с `main`.
