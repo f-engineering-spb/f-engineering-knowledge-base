@@ -14,7 +14,7 @@
 | AG-003 | `agent-instructions/User_Working_Preferences.md` | Core | Инструкции агентам | Подтвержденные предпочтения пользователя | При выборе формата результата и подхода к работе | Approved |
 | AG-004 | `agent-instructions/Codex_Desktop_State_Sync_and_Recovery.md` | Core | Инструкции агентам | Синхронизация проектов и чатов между компьютерами, резервирование и аварийное восстановление Codex Desktop | Только при задачах синхронизации Codex Desktop | Candidate |
 | AG-005 | `agent-instructions/Cyrillic_UTF8_Handling.md` | Core | Инструкции агентам | Правила чтения, записи и проверки кириллицы и UTF-8 без mojibake | Всегда при работе с русским текстом, кириллическими путями, Windows/PowerShell, GitHub Markdown, HTML, CSV, JSON и документными артефактами | Approved |
-| AG-006 | `agent-instructions/F_Engineering_Interaction_Style.md` | Core | Инструкции агентам | Стиль общения и рабочая манера Codex в проектах F-Engineering | При старте нового чата, нового проекта или восстановлении настроения работы | Review |
+| AG-006 | `agent-instructions/F_Engineering_Interaction_Style.md` | Core | Инструкции агентам | Стиль общения и рабочая манера Codex в проектах F-Engineering | При старте нового чата, нового проекта или требует сохранить рабочую манеру F-Engineering | Review |
 | DS-001 | `document-standards/Document_Style_Guide.md` | Style | Стандарты документов | Общий визуальный и структурный стиль | Для оформляемых документов | Approved |
 | DS-002 | `document-standards/Naming_and_Versioning.md` | Core | Стандарты документов | Именование файлов и версии | Для всех создаваемых файлов | Approved |
 | DS-003 | `document-standards/HTML_Mobile_Standard.md` | Style | Стандарты документов | Адаптивность HTML для мобильных экранов | Для всех HTML-файлов | Approved |
@@ -27,6 +27,7 @@
 | MT-002 | `methodologies/Engineering_Drawing_Audit/` | Workflow | Методики | Аудит чертежей и подсчет объемов | Для DWG/DXF/PDF, чертежей, подсчета объемов | Approved |
 | MT-003 | `proposals/Facade_Full_Scope_Multi_Contour_Audit.md` | Workflow | Методики | Полный многоконтурный аудит фасадных конструкций | Для фасадных конструкций и коммерческих предложений | Approved |
 | MT-004 | `methodologies/Complete_Facade_Commercial_Specification/` | Workflow | Методики | Полная проверяемая фасадная спецификация для коммерческого предложения | Когда нужен итоговый фасадный состав работ и объемов | Approved |
+| MT-005 | `methodologies/Mark_Based_Drawing_Audit/` | Workflow | Методики | Марочный аудит чертежей: полный словарь обозначений, листы по маркам, объемы, источники и комментарии | Когда нужно расшифровать все марки/обозначения и подготовить проверяемую базу объемов для КП, спецификации или Google Sheets | Candidate |
 | TP-001 | `templates/Document_Request_Template.md` | Template | Шаблоны | Постановка задачи на документ | Когда нужно оформить задачу на документ | Approved |
 | TP-002 | `templates/Client_Roadmap/` | Template | Шаблоны | Эталон клиентской дорожной карты | Для дорожных карт | Approved |
 | TP-003 | `templates/Engineering_Drawing_Audit/` | Template | Шаблоны | Постановка задачи на аудит чертежей | Для аудита чертежей | Approved |
@@ -37,3 +38,5 @@
 Стандарты `DS-007` и `DS-008` добавлены в ветке `style/black-white-minimalist-documents` и получают статус `Approved` после объединения соответствующего Pull Request с `main`.
 
 Стандарт `AG-006` добавлен в ветке `style/interaction-tone-f-engineering` и получает статус `Approved` после объединения соответствующего Pull Request с `main`.
+
+Методика `MT-005` добавлена в ветке `methodology/mark-based-drawing-audit` и получает статус `Approved` после объединения соответствующего Pull Request с `main`.
