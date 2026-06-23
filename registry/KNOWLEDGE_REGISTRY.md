@@ -31,6 +31,7 @@
 | TP-002 | `templates/Client_Roadmap/` | Template | Шаблоны | Эталон клиентской дорожной карты | Для дорожных карт | Approved |
 | TP-003 | `templates/Engineering_Drawing_Audit/` | Template | Шаблоны | Постановка задачи на аудит чертежей | Для аудита чертежей | Approved |
 | TP-004 | `templates/HTML_Analytical_Report/` | Template | Шаблоны | Эталон аналитического HTML-отчета | Для аналитических HTML-документов | Approved |
+| TL-001 | `tools/estimate_scope/` | Tool | Инструменты | Извлечение компактного реестра работ и объемов из Excel-смет, ВОР и Grand-Smeta XLSX-экспортов | Когда нужно понять состав работ, объемы, фасадные группы, основу для ДДС или последующей проверки по чертежам | Candidate |
 
 Статус `Approved` присвоен после объединения Pull Request №2 с веткой `main`.
 
