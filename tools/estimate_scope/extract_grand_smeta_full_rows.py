@@ -192,16 +192,10 @@ def extract_workbook(path: Path) -> tuple[list[dict[str, object]], list[SourceSu
         parent_position = ""
         summary = SourceSummary(source_file=str(path), sheet=sheet.title)
 
-        for excel_row in sheet.iter_rows(values_only=True):
-            row_number = getattr(excel_row, "row", None)
+        for row_number, excel_row in enumerate(sheet.iter_rows(values_only=True), start=1):
             values = list(excel_row)
             if not any(normalize(value) for value in values):
                 continue
-
-            # read_only rows do not expose .row when values_only=True, so use
-            # worksheet iteration order from the appended output length.
-            if row_number is None:
-                row_number = summary.non_empty_rows + 1
 
             summary.non_empty_rows += 1
             position = detect_position(values)
@@ -220,7 +214,7 @@ def extract_workbook(path: Path) -> tuple[list[dict[str, object]], list[SourceSu
                 {
                     "source_file": str(path),
                     "sheet": sheet.title,
-                    "row_number": summary.non_empty_rows,
+                    "row_number": row_number,
                     "parent_position": parent_position,
                     "position": position,
                     "basis": detect_basis(values),
