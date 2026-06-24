@@ -33,9 +33,12 @@
 | TP-003 | `templates/Engineering_Drawing_Audit/` | Template | Шаблоны | Постановка задачи на аудит чертежей | Для аудита чертежей | Approved |
 | TP-004 | `templates/HTML_Analytical_Report/` | Template | Шаблоны | Эталон аналитического HTML-отчета | Для аналитических HTML-документов | Approved |
 | TL-001 | `tools/estimate_scope/` | Tool | Инструменты | Извлечение компактного реестра работ и объемов из Excel-смет, ВОР и Grand-Smeta XLSX-экспортов | Когда нужно понять состав работ, объемы, фасадные группы, основу для ДДС или последующей проверки по чертежам | Candidate |
+| TL-002 | `tools/estimate_scope/extract_grand_smeta_full_rows.py` | Tool | Инструменты | Полная построчная выгрузка Grand-Smeta/XLSX-смет с сохранением родительских позиций, ресурсов, НР/СП и итогов | Когда нужно доказательно показать состав сметы и не спутать ресурсные строки с самостоятельными работами | Candidate |
 
 Статус `Approved` присвоен после объединения Pull Request №2 с веткой `main`.
 
 Стандарты `DS-007` и `DS-008` добавлены в ветке `style/black-white-minimalist-documents` и получают статус `Approved` после объединения соответствующего Pull Request с `main`.
 
 Стандарт `AG-006` добавлен в ветке `style/interaction-tone-f-engineering` и получает статус `Approved` после объединения соответствующего Pull Request с `main`.
+
+Инструмент `TL-002` добавлен в ветке `codex/grand-smeta-full-rows-utf8` и получает статус `Approved` после проверки и объединения соответствующего Pull Request с `main`.
