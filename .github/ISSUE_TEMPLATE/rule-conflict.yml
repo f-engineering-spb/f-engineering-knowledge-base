@@ -1,0 +1,34 @@
+name: Rule conflict
+description: Record a contradiction or overlap between knowledge-base rules.
+title: "[Conflict] "
+labels: ["knowledge", "conflict"]
+body:
+  - type: textarea
+    id: conflict
+    attributes:
+      label: Conflict
+      description: Which rules, templates, methods, or instructions contradict each other?
+      placeholder: "File A says ..., file B says ..."
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Practical impact
+      description: What goes wrong in real project work if this conflict is not resolved?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_resolution
+    attributes:
+      label: Proposed resolution
+      description: Which rule should have priority, and why?
+    validations:
+      required: false
+  - type: checkboxes
+    id: followup
+    attributes:
+      label: Follow-up
+      options:
+        - label: This conflict should be added to `registry/RULE_CONFLICTS.md`.
+          required: true

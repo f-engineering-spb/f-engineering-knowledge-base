@@ -1,0 +1,52 @@
+name: New reusable knowledge
+description: Propose a new reusable rule, method, template, or tool from project work.
+title: "[Knowledge] "
+labels: ["knowledge", "proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when project work produced a repeatable lesson that may belong in the knowledge base.
+        Do not include client files, confidential data, estimates, drawings, photos, or personal data.
+  - type: input
+    id: source_case
+    attributes:
+      label: Source case
+      description: Which project or situation produced the lesson?
+      placeholder: "Example: facade audit, financial Google Sheet, estimate extraction"
+    validations:
+      required: true
+  - type: textarea
+    id: lesson
+    attributes:
+      label: Reusable lesson
+      description: What should become reusable?
+      placeholder: "Describe the rule, method, checklist, script, or template."
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and limits
+      description: When should this be applied, and when should it not be applied?
+    validations:
+      required: true
+  - type: textarea
+    id: existing_rules
+    attributes:
+      label: Related existing rules
+      description: Which files in the knowledge base may overlap or conflict?
+      placeholder: "registry/KNOWLEDGE_REGISTRY.md, registry/APPLICATION_MAP.md, ..."
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety checklist
+      options:
+        - label: Client-specific and confidential data is removed.
+          required: true
+        - label: The proposed knowledge can be understood without the original project files.
+          required: true
+        - label: Possible conflicts with Approved rules are listed or marked as unknown.
+          required: true
