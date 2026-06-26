@@ -1,0 +1,17 @@
+# Default owner for knowledge-base governance.
+* @9379998-creator
+
+# Critical governance surfaces.
+/AGENTS.md @9379998-creator
+/START_HERE.md @9379998-creator
+/governance/ @9379998-creator
+/registry/ @9379998-creator
+/.github/ @9379998-creator
+
+# Reusable methods, tools, templates, and agent instructions.
+/agent-instructions/ @9379998-creator
+/methodologies/ @9379998-creator
+/document-standards/ @9379998-creator
+/templates/ @9379998-creator
+/tools/ @9379998-creator
+/docs/ @9379998-creator

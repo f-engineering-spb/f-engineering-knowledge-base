@@ -18,6 +18,10 @@ F-Engineering.
 Для работы в конкретной проектной папке применять
 [`agent-instructions/Project_Workspace_AGENTS.md`](agent-instructions/Project_Workspace_AGENTS.md).
 
+Для пополнения базы знаний, проверки конфликтов, работы с Pull Request и
+понимания структуры GitHub-процесса применять
+[`docs/GitHub_Knowledge_Base_Workflow.md`](docs/GitHub_Knowledge_Base_Workflow.md).
+
 ## Управление правилами
 
 При выборе правил, создании новых методик или разрешении противоречий использовать:
