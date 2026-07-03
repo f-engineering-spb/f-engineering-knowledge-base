@@ -38,7 +38,7 @@
 | Standalone HTML для отправки коллегам | `codex/style-sendable-html` | отдельный стандарт отправляемых HTML-файлов | Planned |
 | Фото/видео оборудования в спецификацию | `codex/rules-equipment-video-audit` | методика распознавания оборудования по фото/видео и подготовки Excel/HTML | Planned |
 | Финансовые Google Sheets / FINDEX | `codex/rules-google-finance` | методика финансовых таблиц, реестров счетов, кассовых разрывов и кошельков | Planned |
-| Презентации возможностей F-Engineering | `codex/rules-capabilities-presentations` | методика модульных HTML/PPTX-презентаций на базе реальных кейсов | Planned |
+| Презентации возможностей F-Engineering | `codex/rules-capabilities-presentations` | логико-первая методика создания смысловых HTML/PPTX-презентаций: тезис, блоки, функция слайда, текстовая схема, визуализация, затем сборка | Active |
 
 ## Когда ветку закрывать
 
