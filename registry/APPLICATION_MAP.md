@@ -15,6 +15,7 @@
 5. `agent-instructions/Cyrillic_UTF8_Handling.md`, если задача содержит русский текст, кириллические пути, Windows/PowerShell, GitHub Markdown, HTML, CSV, JSON или документные артефакты
 6. `agent-instructions/F_Engineering_Interaction_Style.md`, если задача запускает новый чат, новый проект или требует сохранить рабочую манеру F-Engineering
 7. `docs/GitHub_Knowledge_Base_Workflow.md`, если задача добавляет, меняет, утверждает или проверяет знание в GitHub-базе
+8. `docs/F_ENGINEERING_VISUAL_STYLE.md`, если задача создаёт или изменяет визуальные артефакты (HTML, Markdown, таблицы, презентации, отчёты)
 
 Затем подключать только нужные методики и стандарты.
 

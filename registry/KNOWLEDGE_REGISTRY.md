@@ -25,6 +25,8 @@
 | DS-006 | `proposals/Embedded_Verification_Previews_for_HTML_Reports.md` | Style | Стандарты документов | Встроенные проверочные превью в HTML-отчётах | Для HTML с расчетами, объемами и проверкой | Approved |
 | DS-007 | `document-standards/F_Engineering_Logo_Standard.md` | Style | Стандарты документов | Единый логотипный блок F-Engineering / Facade engineering group | Для всех HTML, КП, презентаций и клиентских документов | Review |
 | DS-008 | `document-standards/Black_White_Minimalist_Document_Style.md` | Style | Стандарты документов | Черно-белая минималистичная стилистика документов | По умолчанию для большинства коммерческих и управленческих документов | Review |
+| DS-009 | `document-standards/PNG_Infographic_Roadmap_Style.md` | Style | Стандарты документов | PNG-инфографика дорожных карт на основе HTML/таблиц | Когда нужно сделать один наглядный PNG-файл маршрута, плана или дорожной карты | Review |
+| DS-010 | `docs/F_ENGINEERING_VISUAL_STYLE.md` | Style | Стандарты документов | Единый обязательный визуальный стиль (источник истины по палитрам) | Для всех HTML, Markdown, таблиц, презентаций и отчетов | Approved |
 | MT-001 | `methodologies/Roadmap_Information_Architecture.md` | Workflow | Методики | Смысловая декомпозиция и построение дорожных карт | Для дорожных карт, презентаций, планов запуска | Approved |
 | MT-002 | `methodologies/Engineering_Drawing_Audit/` | Workflow | Методики | Аудит чертежей и подсчет объемов | Для DWG/DXF/PDF, чертежей, подсчета объемов | Approved |
 | MT-003 | `proposals/Facade_Full_Scope_Multi_Contour_Audit.md` | Workflow | Методики | Полный многоконтурный аудит фасадных конструкций | Для фасадных конструкций и коммерческих предложений | Approved |
@@ -41,6 +43,8 @@
 Статус `Approved` присвоен после объединения Pull Request №2 с веткой `main`.
 
 Стандарты `DS-007` и `DS-008` добавлены в ветке `style/black-white-minimalist-documents` и получают статус `Approved` после объединения соответствующего Pull Request с `main`.
+
+Стандарт `DS-009` добавлен по образцу PNG-дорожной карты `Китай 2026` и получает статус `Approved` после проверки и объединения соответствующего Pull Request с `main`.
 
 Стандарт `AG-006` утвержден после объединения Pull Request №14 с веткой `main`.
 

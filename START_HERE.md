@@ -27,6 +27,7 @@ F-Engineering.
 При выборе правил, создании новых методик или разрешении противоречий использовать:
 
 - [`governance/Knowledge_Governance.md`](governance/Knowledge_Governance.md);
+- [`docs/F_ENGINEERING_VISUAL_STYLE.md`](docs/F_ENGINEERING_VISUAL_STYLE.md);
 - [`registry/APPLICATION_MAP.md`](registry/APPLICATION_MAP.md);
 - [`registry/BRANCH_REGISTRY.md`](registry/BRANCH_REGISTRY.md);
 - [`registry/RULE_CONFLICTS.md`](registry/RULE_CONFLICTS.md).
