@@ -15,7 +15,7 @@
 | AG-003 | `agent-instructions/User_Working_Preferences.md` | Core | Инструкции агентам | Подтвержденные предпочтения пользователя | При выборе формата результата и подхода к работе | Approved |
 | AG-004 | `agent-instructions/Codex_Desktop_State_Sync_and_Recovery.md` | Core | Инструкции агентам | Синхронизация проектов и чатов между компьютерами, резервирование и аварийное восстановление Codex Desktop | Только при задачах синхронизации Codex Desktop | Candidate |
 | AG-005 | `agent-instructions/Cyrillic_UTF8_Handling.md` | Core | Инструкции агентам | Правила чтения, записи и проверки кириллицы и UTF-8 без mojibake | Всегда при работе с русским текстом, кириллическими путями, Windows/PowerShell, GitHub Markdown, HTML, CSV, JSON и документными артефактами | Approved |
-| AG-006 | `agent-instructions/F_Engineering_Interaction_Style.md` | Core | Инструкции агентам | Стиль общения и рабочая манера Codex в проектах F-Engineering | При старте нового чата, нового проекта или восстановлении настроения работы | Approved |
+| AG-006 | `agent-instructions/F_Engineering_Interaction_Style.md` | Core | Инструкции агентам | Стиль общения и рабочая манера Codex в проектах F-Engineering | При старте нового чата, нового проекта или требует сохранить рабочую манеру F-Engineering | Approved |
 | AG-007 | `agent-instructions/F_Engineering_Shared_Drive_Workspace.md` | Core | Инструкции агентам | Использование общего диска F-Engineering как основной проектной рабочей области и зеркала базы знаний | При работе в проектах на `H:\Общие диски\022-F_engineering` или при настройке нового проекта F-Engineering | Candidate |
 | DS-001 | `document-standards/Document_Style_Guide.md` | Style | Стандарты документов | Общий визуальный и структурный стиль | Для оформляемых документов | Approved |
 | DS-002 | `document-standards/Naming_and_Versioning.md` | Core | Стандарты документов | Именование файлов и версии | Для всех создаваемых файлов | Approved |
@@ -32,6 +32,9 @@
 | MT-003 | `proposals/Facade_Full_Scope_Multi_Contour_Audit.md` | Workflow | Методики | Полный многоконтурный аудит фасадных конструкций | Для фасадных конструкций и коммерческих предложений | Approved |
 | MT-004 | `methodologies/Complete_Facade_Commercial_Specification/` | Workflow | Методики | Полная проверяемая фасадная спецификация для коммерческого предложения | Когда нужен итоговый фасадный состав работ и объемов | Approved |
 | MT-005 | `methodologies/Mark_Based_Drawing_Audit/` | Workflow | Методики | Марочный аудит чертежей: полный словарь обозначений, листы по маркам, объемы, источники и комментарии | Когда нужно расшифровать все марки/обозначения и подготовить проверяемую базу объемов для КП, спецификации или Google Sheets | Candidate |
+| BPM-FW-001 | `business-processes/MODULE_STANDARD.md` | Workflow | Бизнес-процессы | Единый стандарт описания повторяемых бизнес-модулей | Перед добавлением или изменением любого бизнес-модуля | Candidate |
+| BPM-FW-002 | `business-processes/MODULE_REGISTRY.md` | Workflow | Бизнес-процессы | Реестр бизнес-модулей-кирпичиков | Когда нужно найти, добавить или проверить бизнес-модуль | Candidate |
+| BPM-FW-003 | `business-processes/PROCESS_MAP.md` | Workflow | Бизнес-процессы | Карта подключения модулей к стадиям процесса компании | Когда нужно понять, где модуль применяется в общей схеме | Candidate |
 | BPM-001 | `business-processes/modules/incoming-documentation-indexer/` | Workflow | Бизнес-процессы | Первичная индексация, классификация и визуальный навигатор входящей документации заказчика | Когда нужно быстро разобрать ворох входящих PDF/DWG/прочих файлов, создать реестр, сущности и просмотрщик для КП, старта проектирования или архивного обращения | Candidate |
 | TP-001 | `templates/Document_Request_Template.md` | Template | Шаблоны | Постановка задачи на документ | Когда нужно оформить задачу на документ | Approved |
 | TP-002 | `templates/Client_Roadmap/` | Template | Шаблоны | Эталон клиентской дорожной карты | Для дорожных карт | Approved |
@@ -53,3 +56,5 @@
 Инструмент `TL-002` добавлен в ветке `codex/grand-smeta-full-rows-utf8` и получает статус `Approved` после проверки и объединения соответствующего Pull Request с `main`.
 
 Модуль `BPM-001` добавлен в ветке `codex/incoming-documentation-indexer` и получает статус `Approved` после проверки и объединения соответствующего Pull Request с `main`.
+
+Каркас бизнес-модулей `BPM-FW-001` - `BPM-FW-003` добавлен в ветке `docs/business-module-framework` и получает статус `Approved` после проверки и объединения соответствующего Pull Request с `main`.
