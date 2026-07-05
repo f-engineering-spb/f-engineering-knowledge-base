@@ -32,6 +32,7 @@
 | MT-003 | `proposals/Facade_Full_Scope_Multi_Contour_Audit.md` | Workflow | Методики | Полный многоконтурный аудит фасадных конструкций | Для фасадных конструкций и коммерческих предложений | Approved |
 | MT-004 | `methodologies/Complete_Facade_Commercial_Specification/` | Workflow | Методики | Полная проверяемая фасадная спецификация для коммерческого предложения | Когда нужен итоговый фасадный состав работ и объемов | Approved |
 | MT-005 | `methodologies/Mark_Based_Drawing_Audit/` | Workflow | Методики | Марочный аудит чертежей: полный словарь обозначений, листы по маркам, объемы, источники и комментарии | Когда нужно расшифровать все марки/обозначения и подготовить проверяемую базу объемов для КП, спецификации или Google Sheets | Candidate |
+| BPM-001 | `business-processes/modules/incoming-documentation-indexer/` | Workflow | Бизнес-процессы | Первичная индексация, классификация и визуальный навигатор входящей документации заказчика | Когда нужно быстро разобрать ворох входящих PDF/DWG/прочих файлов, создать реестр, сущности и просмотрщик для КП, старта проектирования или архивного обращения | Candidate |
 | TP-001 | `templates/Document_Request_Template.md` | Template | Шаблоны | Постановка задачи на документ | Когда нужно оформить задачу на документ | Approved |
 | TP-002 | `templates/Client_Roadmap/` | Template | Шаблоны | Эталон клиентской дорожной карты | Для дорожных карт | Approved |
 | TP-003 | `templates/Engineering_Drawing_Audit/` | Template | Шаблоны | Постановка задачи на аудит чертежей | Для аудита чертежей | Approved |
@@ -50,3 +51,5 @@
 Методика `MT-005` добавлена в ветке `methodology/mark-based-drawing-audit` и получает статус `Approved` после объединения соответствующего Pull Request с `main`.
 
 Инструмент `TL-002` добавлен в ветке `codex/grand-smeta-full-rows-utf8` и получает статус `Approved` после проверки и объединения соответствующего Pull Request с `main`.
+
+Модуль `BPM-001` добавлен в ветке `codex/incoming-documentation-indexer` и получает статус `Approved` после проверки и объединения соответствующего Pull Request с `main`.

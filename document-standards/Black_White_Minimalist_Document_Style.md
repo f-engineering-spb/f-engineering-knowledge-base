@@ -190,6 +190,14 @@ Use this for comparisons such as:
 
 ### Tables
 
+Tables must remain simple working instruments, not presentation blocks.
+
+- Use white cells, black text, thin black or neutral gray borders.
+- Header rows may use bold text and borders, but should not use dark fills.
+- Do not use black, dark gray, blue, green, or other colored header bands with white text.
+- Do not use decorative fills, gradients, color-coded row backgrounds, or branded color blocks in ordinary working tables.
+- Use color only when it carries operational meaning, for example an exception, overdue item, warning, or status. Even then, prefer restrained text, borders, or light neutral marks over heavy fills.
+
 ```css
 table {
   width: 100%;
@@ -206,7 +214,7 @@ th, td {
 }
 
 th {
-  background: #eee;
+  background: #fff;
   text-align: center;
   font-weight: 700;
 }
