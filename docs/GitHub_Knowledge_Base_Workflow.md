@@ -35,6 +35,7 @@ GitHub здесь используется не как архив файлов, 
 3. `registry/KNOWLEDGE_REGISTRY.md`
 4. `registry/APPLICATION_MAP.md`
 5. `registry/RULE_CONFLICTS.md`
+6. `docs/F_ENGINEERING_VISUAL_STYLE.md`
 
 ## Как понять, что уже есть в базе
 

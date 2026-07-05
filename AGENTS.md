@@ -19,3 +19,10 @@
 - Keep reusable source code with a short usage guide and tests where practical.
 - Do not commit generated outputs, temporary files, credentials, or heavy project data.
 
+## Visual Style Policy
+
+- Before creating or modifying any visual artifacts, the agent MUST read [docs/F_ENGINEERING_VISUAL_STYLE.md](docs/F_ENGINEERING_VISUAL_STYLE.md).
+- The agent is not permitted to invent new color palettes or schemas.
+- The agent is not permitted to use old stylistic solutions if they contradict [docs/F_ENGINEERING_VISUAL_STYLE.md](docs/F_ENGINEERING_VISUAL_STYLE.md).
+
+
