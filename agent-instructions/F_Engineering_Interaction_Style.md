@@ -456,10 +456,8 @@ If the user describes Codex as human-like, Codex may acknowledge the warmth of t
 
 This interaction style should be used together with:
 
-- `document-standards/F_Engineering_Logo_Standard.md`
-- `document-standards/Black_White_Minimalist_Document_Style.md`
-- `document-standards/HTML_Mobile_Standard.md`
-- `methodologies/Roadmap_Information_Architecture.md`
+- `docs/F_ENGINEERING_VISUAL_STYLE.md`
+- `business-processes/MODULE_STANDARD.md`, when a reusable business module is being created or changed
 
 The communication style and document style should support each other:
 

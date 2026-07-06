@@ -1,7 +1,18 @@
 # Реестр действующих знаний
 
-Реестр является быстрым указателем утвержденных материалов базы знаний.
+Реестр является быстрым указателем действующих материалов базы знаний.
 Источником действующей версии каждого материала является ветка `main`.
+
+После очистки базы действует принцип:
+
+```text
+GitHub хранит только структурированное знание, которое можно применить без
+археологии старых черновиков.
+```
+
+Материалы, созданные до модульной методики и не отвечающие на вопросы о входе,
+выходе, пользователях, боли, стадии применения и критериях готовности, не
+считаются действующим знанием.
 
 | ID | Материал | Тип | Раздел | Назначение | Применять когда | Статус |
 |---|---|---|---|---|---|---|
@@ -15,46 +26,17 @@
 | AG-003 | `agent-instructions/User_Working_Preferences.md` | Core | Инструкции агентам | Подтвержденные предпочтения пользователя | При выборе формата результата и подхода к работе | Approved |
 | AG-004 | `agent-instructions/Codex_Desktop_State_Sync_and_Recovery.md` | Core | Инструкции агентам | Синхронизация проектов и чатов между компьютерами, резервирование и аварийное восстановление Codex Desktop | Только при задачах синхронизации Codex Desktop | Candidate |
 | AG-005 | `agent-instructions/Cyrillic_UTF8_Handling.md` | Core | Инструкции агентам | Правила чтения, записи и проверки кириллицы и UTF-8 без mojibake | Всегда при работе с русским текстом, кириллическими путями, Windows/PowerShell, GitHub Markdown, HTML, CSV, JSON и документными артефактами | Approved |
-| AG-006 | `agent-instructions/F_Engineering_Interaction_Style.md` | Core | Инструкции агентам | Стиль общения и рабочая манера Codex в проектах F-Engineering | При старте нового чата, нового проекта или требует сохранить рабочую манеру F-Engineering | Approved |
-| AG-007 | `agent-instructions/F_Engineering_Shared_Drive_Workspace.md` | Core | Инструкции агентам | Использование общего диска F-Engineering как основной проектной рабочей области и зеркала базы знаний | При работе в проектах на `H:\Общие диски\022-F_engineering` или при настройке нового проекта F-Engineering | Candidate |
-| DS-001 | `document-standards/Document_Style_Guide.md` | Style | Стандарты документов | Общий визуальный и структурный стиль | Для оформляемых документов | Approved |
-| DS-002 | `document-standards/Naming_and_Versioning.md` | Core | Стандарты документов | Именование файлов и версии | Для всех создаваемых файлов | Approved |
-| DS-003 | `document-standards/HTML_Mobile_Standard.md` | Style | Стандарты документов | Адаптивность HTML для мобильных экранов | Для всех HTML-файлов | Approved |
-| DS-004 | `document-standards/HTML_Analytical_Report_Style.md` | Style | Стандарты документов | Оформление аналитических HTML-отчетов | Для аналитических HTML, отчетов, спецификаций | Approved |
-| DS-005 | `document-standards/Client_Roadmap_Style.md` | Style | Стандарты документов | Оформление клиентских дорожных карт | Для дорожных карт и планов запуска | Approved |
-| DS-006 | `proposals/Embedded_Verification_Previews_for_HTML_Reports.md` | Style | Стандарты документов | Встроенные проверочные превью в HTML-отчётах | Для HTML с расчетами, объемами и проверкой | Approved |
-| DS-007 | `document-standards/F_Engineering_Logo_Standard.md` | Style | Стандарты документов | Единый логотипный блок F-Engineering / Facade engineering group | Для всех HTML, КП, презентаций и клиентских документов | Review |
-| DS-008 | `document-standards/Black_White_Minimalist_Document_Style.md` | Style | Стандарты документов | Черно-белая минималистичная стилистика документов | По умолчанию для большинства коммерческих и управленческих документов | Review |
-| DS-009 | `document-standards/PNG_Infographic_Roadmap_Style.md` | Style | Стандарты документов | PNG-инфографика дорожных карт на основе HTML/таблиц | Когда нужно сделать один наглядный PNG-файл маршрута, плана или дорожной карты | Review |
-| DS-010 | `docs/F_ENGINEERING_VISUAL_STYLE.md` | Style | Стандарты документов | Единый обязательный визуальный стиль (источник истины по палитрам) | Для всех HTML, Markdown, таблиц, презентаций и отчетов | Approved |
-| MT-001 | `methodologies/Roadmap_Information_Architecture.md` | Workflow | Методики | Смысловая декомпозиция и построение дорожных карт | Для дорожных карт, презентаций, планов запуска | Approved |
-| MT-002 | `methodologies/Engineering_Drawing_Audit/` | Workflow | Методики | Аудит чертежей и подсчет объемов | Для DWG/DXF/PDF, чертежей, подсчета объемов | Approved |
-| MT-003 | `proposals/Facade_Full_Scope_Multi_Contour_Audit.md` | Workflow | Методики | Полный многоконтурный аудит фасадных конструкций | Для фасадных конструкций и коммерческих предложений | Approved |
-| MT-004 | `methodologies/Complete_Facade_Commercial_Specification/` | Workflow | Методики | Полная проверяемая фасадная спецификация для коммерческого предложения | Когда нужен итоговый фасадный состав работ и объемов | Approved |
-| MT-005 | `methodologies/Mark_Based_Drawing_Audit/` | Workflow | Методики | Марочный аудит чертежей: полный словарь обозначений, листы по маркам, объемы, источники и комментарии | Когда нужно расшифровать все марки/обозначения и подготовить проверяемую базу объемов для КП, спецификации или Google Sheets | Candidate |
+| AG-006 | `agent-instructions/F_Engineering_Interaction_Style.md` | Core | Инструкции агентам | Стиль общения и рабочая манера Codex в проектах F-Engineering | При старте нового чата, нового проекта или необходимости сохранить рабочую манеру F-Engineering | Approved |
+| AG-007 | `agent-instructions/F_Engineering_Shared_Drive_Workspace.md` | Core | Инструкции агентам | Использование общего диска F-Engineering как основной проектной рабочей области и зеркала базы знаний | При работе в проектах на общем диске F-Engineering или при настройке нового проекта | Candidate |
+| DS-010 | `docs/F_ENGINEERING_VISUAL_STYLE.md` | Style | Стандарты документов | Единый обязательный визуальный стиль и источник истины по палитрам | Для всех HTML, Markdown, таблиц, презентаций и отчетов | Approved |
+| GD-001 | `document-processing/google-docs/` | Workflow | Обработка документов | Проверяемый контур правки договоров и документов в Google Docs | Когда нужно править договоры или документы через Google Docs без потери контроля правок | Candidate |
 | BF-001 | `business-processes/MODULE_STANDARD.md` | Workflow | Бизнес-процессы | Единый стандарт описания повторяемых бизнес-модулей | Перед добавлением или изменением любого бизнес-модуля | Candidate |
 | BF-002 | `business-processes/MODULE_REGISTRY.md` | Workflow | Бизнес-процессы | Реестр бизнес-модулей-кирпичиков | Когда нужно найти, добавить или проверить бизнес-модуль | Candidate |
 | BF-003 | `business-processes/PROCESS_MAP.md` | Workflow | Бизнес-процессы | Карта подключения модулей к стадиям процесса компании | Когда нужно понять, где модуль применяется в общей схеме | Candidate |
-| BPM-001 | `business-processes/modules/incoming-documentation-indexer/` | Workflow | Бизнес-процессы | Первичная индексация, классификация и визуальный навигатор входящей документации заказчика | Когда нужно быстро разобрать ворох входящих PDF/DWG/прочих файлов, создать реестр, сущности и просмотрщик для КП, старта проектирования или архивного обращения | Candidate |
-| TP-001 | `templates/Document_Request_Template.md` | Template | Шаблоны | Постановка задачи на документ | Когда нужно оформить задачу на документ | Approved |
-| TP-002 | `templates/Client_Roadmap/` | Template | Шаблоны | Эталон клиентской дорожной карты | Для дорожных карт | Approved |
-| TP-003 | `templates/Engineering_Drawing_Audit/` | Template | Шаблоны | Постановка задачи на аудит чертежей | Для аудита чертежей | Approved |
-| TP-004 | `templates/HTML_Analytical_Report/` | Template | Шаблоны | Эталон аналитического HTML-отчета | Для аналитических HTML-документов | Approved |
-| TL-001 | `tools/estimate_scope/` | Tool | Инструменты | Извлечение компактного реестра работ и объемов из Excel-смет, ВОР и Grand-Smeta XLSX-экспортов | Когда нужно понять состав работ, объемы, фасадные группы, основу для ДДС или последующей проверки по чертежам | Candidate |
-| TL-002 | `tools/estimate_scope/extract_grand_smeta_full_rows.py` | Tool | Инструменты | Полная построчная выгрузка Grand-Smeta/XLSX-смет с сохранением родительских позиций, ресурсов, НР/СП и итогов | Когда нужно доказательно показать состав сметы и не спутать ресурсные строки с самостоятельными работами | Candidate |
+| BPM-001 | `business-processes/modules/incoming-documentation-indexer/` | Workflow | Бизнес-процессы | Первичная индексация, классификация и визуальный навигатор входящей документации заказчика | Когда нужно разобрать входящие PDF/DWG/прочие файлы, создать реестр, сущности и просмотрщик для КП, старта проектирования или архивного обращения | Candidate |
 
-Статус `Approved` присвоен после объединения Pull Request №2 с веткой `main`.
+## Принцип удаления старых материалов
 
-Стандарты `DS-007` и `DS-008` добавлены в ветке `style/black-white-minimalist-documents` и получают статус `Approved` после объединения соответствующего Pull Request с `main`.
-
-Стандарт `DS-009` добавлен по образцу PNG-дорожной карты `Китай 2026` и получает статус `Approved` после проверки и объединения соответствующего Pull Request с `main`.
-
-Стандарт `AG-006` утвержден после объединения Pull Request №14 с веткой `main`.
-
-Методика `MT-005` добавлена в ветке `methodology/mark-based-drawing-audit` и получает статус `Approved` после объединения соответствующего Pull Request с `main`.
-
-Инструмент `TL-002` добавлен в ветке `codex/grand-smeta-full-rows-utf8` и получает статус `Approved` после проверки и объединения соответствующего Pull Request с `main`.
-
-Модуль `BPM-001` добавлен в ветке `codex/incoming-documentation-indexer` и получает статус `Approved` после проверки и объединения соответствующего Pull Request с `main`.
-
-Каркас бизнес-модулей `BF-001` - `BF-003` добавлен в ветке `docs/business-module-framework` и получает статус `Approved` после проверки и объединения соответствующего Pull Request с `main`.
+Старые материалы, не оформленные по новой структуре, не архивируются внутри
+действующего контура базы знаний. Если они нужны в будущем, соответствующий
+модуль, методика или инструмент создаются заново по действующему стандарту.
