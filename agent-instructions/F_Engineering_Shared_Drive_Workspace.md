@@ -31,8 +31,8 @@ At the start of project work, read the knowledge base in this order:
 2. `AGENTS.md`
 3. `registry/KNOWLEDGE_REGISTRY.md`
 4. `registry/APPLICATION_MAP.md`
-5. only the task-specific methodology, standard, template, or tool selected by
-   the application map.
+5. only the task-specific module, service workflow, standard, or tool selected
+   by the application map.
 
 If both GitHub and the shared-drive mirror are available, prefer GitHub for the
 latest approved content and use the shared-drive mirror as a fast local working
@@ -55,17 +55,11 @@ standard:
 
 1. leave the project result in the project folder;
 2. extract a generic version;
-3. add it under `agent-instructions/`, `methodologies/`, `document-standards/`,
-   `templates/`, or `tools/`;
+3. add it under the current clean-core structure: `business-processes/`,
+   `document-processing/`, `docs/`, `agent-instructions/`, or `tools/`;
 4. add tests or verification steps where practical;
 5. publish the clean reusable version to GitHub.
 
-## Estimate And VOR Tasks
-
-For Excel estimates, local estimates, object estimates, VOR/BQ files, and
-Grand-Smeta spreadsheet exports, use:
-
-`tools/estimate_scope/`
-
-Then verify important facade quantities through the applicable drawing-audit
-methodology.
+Do not revive removed legacy folders or unstructured materials. If an old
+direction is needed again, create a new module or service workflow from scratch
+under the current standard.

@@ -1,7 +1,7 @@
 # F-Engineering Knowledge Base
 
-Central repository for approved F-Engineering instructions, methodologies,
-document standards, templates, and reusable tools.
+Central repository for approved F-Engineering instructions, business-process
+modules, service workflows, visual standards, and governance rules.
 
 Start with [START_HERE.md](START_HERE.md).
 

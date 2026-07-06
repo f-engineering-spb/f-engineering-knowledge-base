@@ -8,10 +8,9 @@
 /registry/ @9379998-creator
 /.github/ @9379998-creator
 
-# Reusable methods, tools, templates, and agent instructions.
+# Clean-core knowledge surfaces.
 /agent-instructions/ @9379998-creator
-/methodologies/ @9379998-creator
-/document-standards/ @9379998-creator
-/templates/ @9379998-creator
-/tools/ @9379998-creator
+/business-processes/ @9379998-creator
+/document-processing/ @9379998-creator
 /docs/ @9379998-creator
+/tools/ @9379998-creator
