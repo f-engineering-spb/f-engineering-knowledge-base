@@ -15,8 +15,20 @@ VALID_STATUSES = {
     "Deprecated",
     "Archived",
 }
-MOJIBAKE_MARKERS = ("Рџ", "Рґ", "Рё", "СЃ", "вЂ", "Ð", "????")
-REGISTRY_ROW = re.compile(r"^\|\s*([A-Z]{2}-\d{3})\s*\|\s*`([^`]+)`\s*\|.*\|\s*([^|`]+?)\s*\|$")
+MOJIBAKE_MARKERS = (
+    "\u0420\u045f",
+    "\u0420\u0491",
+    "\u0420\u0451",
+    "\u0421\u0453",
+    "\u0432\u0402",
+    "\u00d0",
+    "????",
+)
+# Registry IDs use a short Latin prefix and a three-digit number.
+# Examples: GV-001, DS-010, MT-005, BPM-001.
+# Prefix length is intentionally limited to 2-3 letters to keep IDs compact and
+# avoid multi-part IDs such as BPM-FW-001.
+REGISTRY_ROW = re.compile(r"^\|\s*([A-Z]{2,3}-\d{3})\s*\|\s*`([^`]+)`\s*\|.*\|\s*([^|`]+?)\s*\|$")
 MOJIBAKE_EXAMPLE_FILES = {
     Path("agent-instructions/Cyrillic_UTF8_Handling.md"),
     Path("tools/validate_knowledge_base.py"),
