@@ -1,6 +1,6 @@
 ﻿# Approval: BPM-002 DWG viewer
 
-Статус: `Approved`
+Статус модуля в базе знаний: `Candidate`
 
 Дата фиксации: 2026-07-07
 
@@ -17,7 +17,7 @@
 
 ## Проверочный артефакт
 
-Approved HTML хранится в Google Drive:
+Проверочный HTML хранится в Google Drive:
 
 `OD150_DWG_viewer_test_12_standalone_v5_mobile_pan.html`
 
