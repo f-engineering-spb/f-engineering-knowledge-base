@@ -35,6 +35,7 @@
 | Направление | Рекомендуемая ветка | Назначение | Статус |
 |---|---|---|---|
 | Управление базой знаний и картой применения | `codex/knowledge-governance-registry` | реестр, карта применения, конфликты, инструкция пользователям | Active |
+| F-Engineering Launcher | `codex/rules-f-engineering-launcher` | диалоговая оболочка, маршрутизация, запуск и контроль бизнес-модулей; разделение стилей DS-010/DS-011 | Active |
 | Standalone HTML для отправки коллегам | `codex/style-sendable-html` | отдельный стандарт отправляемых HTML-файлов | Planned |
 | Фото/видео оборудования в спецификацию | `codex/rules-equipment-video-audit` | методика распознавания оборудования по фото/видео и подготовки Excel/HTML | Planned |
 | Финансовые Google Sheets / FINDEX | `codex/rules-google-finance` | методика финансовых таблиц, реестров счетов, кассовых разрывов и кошельков | Planned |
