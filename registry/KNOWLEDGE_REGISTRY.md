@@ -29,13 +29,11 @@ GitHub хранит только структурированное знание
 | AG-006 | `agent-instructions/F_Engineering_Interaction_Style.md` | Core | Инструкции агентам | Стиль общения и рабочая манера Codex в проектах F-Engineering | При старте нового чата, нового проекта или необходимости сохранить рабочую манеру F-Engineering | Approved |
 | AG-007 | `agent-instructions/F_Engineering_Shared_Drive_Workspace.md` | Core | Инструкции агентам | Использование общего диска F-Engineering как основной проектной рабочей области и зеркала базы знаний | При работе в проектах на общем диске F-Engineering или при настройке нового проекта | Candidate |
 | DS-010 | `docs/F_ENGINEERING_VISUAL_STYLE.md` | Style | Стандарты документов | Единый обязательный визуальный стиль и источник истины по палитрам | Для всех HTML, Markdown, таблиц, презентаций и отчетов | Approved |
-| PR-001 | `products/f-engineering-launcher/README.md` | Product model | Продукты | Модель рабочего места Launcher: выбор входа, пакет по формату, шаблоны, созданные модули, телеметрия и просмотрщик | При развитии F-Engineering Launcher и подключении новых модулей | Candidate |
 | GD-001 | `document-processing/google-docs/` | Workflow | Обработка документов | Проверяемый контур правки договоров и документов в Google Docs | Когда нужно править договоры или документы через Google Docs без потери контроля правок | Candidate |
 | BF-001 | `business-processes/MODULE_STANDARD.md` | Workflow | Бизнес-процессы | Единый стандарт описания повторяемых бизнес-модулей | Перед добавлением или изменением любого бизнес-модуля | Candidate |
 | BF-002 | `business-processes/MODULE_REGISTRY.md` | Workflow | Бизнес-процессы | Реестр бизнес-модулей-кирпичиков | Когда нужно найти, добавить или проверить бизнес-модуль | Candidate |
 | BF-003 | `business-processes/PROCESS_MAP.md` | Workflow | Бизнес-процессы | Карта подключения модулей к стадиям процесса компании | Когда нужно понять, где модуль применяется в общей схеме | Candidate |
 | BPM-001 | `business-processes/modules/incoming-documentation-indexer/` | Workflow | Бизнес-процессы | Первичная индексация, классификация и визуальный навигатор входящей документации заказчика | Когда нужно разобрать входящие PDF/DWG/прочие файлы, создать реестр, сущности и просмотрщик для КП, старта проектирования или архивного обращения | Candidate |
-| BPM-002 | `business-processes/modules/BPM-002-dwg-viewer/` | Workflow | Бизнес-процессы | Просмотрщик DWG-файлов без AutoCAD и без PDF: standalone HTML-навигатор с миниатюрами, путями, масштабом и pan для компьютера и телефона | Когда нужно быстро просмотреть набор DWG, присланный без PDF или без доступного AutoCAD | Candidate |
 
 ## Принцип удаления старых материалов
 
