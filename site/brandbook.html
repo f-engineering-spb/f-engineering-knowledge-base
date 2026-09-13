@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ФЕРО — Брендбук и Центр загрузок (Download Hub 2026)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0b1120;
+      color: #f8fafc;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    
+    .nav-bar {
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: rgba(15,23,42,0.85);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .nav-tag {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      background: rgba(2,132,199,0.25);
+      border: 1px solid rgba(2,132,199,0.5);
+      color: #38bdf8;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .nav-back {
+      font-size: 13px;
+      font-weight: 600;
+      color: #94a3b8;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: #ffffff; }
+
+    .hero-wrap {
+      padding: 70px 24px 50px 24px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .hero-subtitle {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.30em;
+      text-transform: uppercase;
+      color: #38bdf8;
+      margin-bottom: 14px;
+    }
+    .hero-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 38px;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .hero-desc {
+      font-size: 16px;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px 80px 24px;
+    }
+
+    .section-block {
+      margin-bottom: 56px;
+    }
+    .section-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 14px;
+    }
+    .section-icon { font-size: 22px; }
+    .section-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #f1f5f9;
+      text-transform: uppercase;
+    }
+    .section-badge {
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #64748b;
+      margin-left: auto;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 20px;
+    }
+
+    .asset-card {
+      background: #131d33;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    .asset-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(56,189,248,0.4);
+      box-shadow: 0 16px 32px rgba(0,0,0,0.4);
+      background: #18243f;
+    }
+    .asset-card.featured {
+      border-color: rgba(2,132,199,0.5);
+      background: linear-gradient(145deg, #131d33 0%, #172a4d 100%);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+    .format-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .pill-zip { background: #0284c7; color: #ffffff; }
+    .pill-pdf { background: #e11d48; color: #ffffff; }
+    .pill-docx { background: #2563eb; color: #ffffff; }
+    .pill-svg { background: #059669; color: #ffffff; }
+    .pill-png { background: #7c3aed; color: #ffffff; }
+
+    .size-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    .card-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+    .card-desc {
+      font-size: 13px;
+      color: #94a3b8;
+      line-height: 1.55;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .dl-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 12px 18px;
+      border-radius: 8px;
+      background: #1e293b;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #f8fafc;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .dl-btn:hover {
+      background: #0284c7;
+      border-color: #0284c7;
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(2,132,199,0.35);
+    }
+    .dl-btn.btn-featured {
+      background: #0284c7;
+      border-color: #38bdf8;
+      color: #ffffff;
+    }
+    .dl-btn.btn-featured:hover {
+      background: #0369a1;
+    }
+
+    .footer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 36px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: #64748b;
+    }
+    .footer a { color: #38bdf8; }
+  </style>
+</head>
+<body>
+
+  <header class="nav-bar">
+    <div class="nav-logo">
+      <span>ФЕРО</span>
+      <span class="nav-tag">BRANDBOOK &amp; DOWNLOAD HUB</span>
+    </div>
+    <a href="/" class="nav-back">← На главную ferospb.info</a>
+  </header>
+
+  <div class="hero-wrap">
+    <div class="hero-subtitle">ОФИЦИАЛЬНЫЙ АРХИВ МАТЕРИАЛОВ ФЕРО 2026</div>
+    <h1 class="hero-title">Центр загрузок и Брендбук</h1>
+    <p class="hero-desc">
+      Все утвержденные корпоративные материалы: исходные коды сайтов для переноса на другие домены (ferospb.ru), официальные бланки, штампы чертежей и векторные 3D-логотипы.
+    </p>
+  </div>
+
+  <main class="container">
+
+    <!-- 1. САЙТЫ И ДИСТРИБУТИВЫ -->
+    <section class="section-block">
+      <div class="section-title-wrap">
+        <span class="section-icon">🌐</span>
+        <h2 class="section-title">Дистрибутивы сайтов для переноса</h2>
+        <span class="section-badge">ДЛЯ СИСАДМИНОВ И ВЕБ-МАСТЕРОВ</span>
+      </div>
+      <div class="cards-grid">
+        
+        <!-- Полный сайт ferospb.ru -->
+        <div class="asset-card featured">
+          <div class="card-top">
+            <span class="format-pill pill-zip">ZIP АРХИВ</span>
+            <span class="size-label">324.4 MB</span>
+          </div>
+          <h3 class="card-title">Полный сайт для домена ferospb.ru</h3>
+          <p class="card-desc">
+            Все 2 403 файла под ключ: главная страница, все внутренние разделы, стили CSS, скрипты JS, сотни оригинальных фотографий проектов, шрифты, sitemap и .htaccess. Распаковывается сразу в корень сайта ferospb.ru.
+          </p>
+          <a href="/ferospb_ru_full_site.zip" download class="dl-btn btn-featured">
+            <span>📥</span> Скачать весь сайт (324 МБ)
+          </a>
+        </div>
+
+        <!-- Пакет сисадмина -->
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-zip">ZIP ПАКЕТ</span>
+            <span class="size-label">146 KB</span>
+          </div>
+          <h3 class="card-title">Пакет системного администратора</h3>
+          <p class="card-desc">
+            Компактный набор для быстрой замены логотипа: векторные SVG, прозрачные Ultra-HD PNG, файл index.html и пошаговая текстовая инструкция по интеграции.
+          </p>
+          <a href="/fero_sysadmin_pack.zip" download class="dl-btn">
+            <span>📥</span> Скачать лого-пакет (146 КБ)
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. ФИРМЕННЫЕ БЛАНКИ А4 -->
+    <section class="section-block">
+      <div class="section-title-wrap">
+        <span class="section-icon">📄</span>
+        <h2 class="section-title">Официальные бланки организации А4</h2>
+        <span class="section-badge">ДОКУМЕНТООБОРОТ И ПИСЬМА</span>
+      </div>
+      <div class="cards-grid">
+
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-docx">WORD .DOCX</span>
+            <span class="size-label">104 KB</span>
+          </div>
+          <h3 class="card-title">Бланк с дескриптором (Word)</h3>
+          <p class="card-desc">
+            Редактируемый шаблон письма и коммерческого предложения в MS Word. Логотип 3D «ФЕРО» с солнцем и дескриптором «ФАСАДНЫЙ ИНЖИНИРИНГ», левое поле 22 мм, разделитель, реквизиты.
+          </p>
+          <a href="/fero_letterhead_desc.docx" download class="dl-btn">
+            <span>📥</span> Скачать DOCX
+          </a>
+        </div>
+
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-pdf">PDF ПЕЧАТЬ</span>
+            <span class="size-label">175 KB</span>
+          </div>
+          <h3 class="card-title">Бланк с дескриптором (PDF)</h3>
+          <p class="card-desc">
+            Готовый печатный бланк формата А4 высокого разрешения для официальной корреспонденции и исходящих писем.
+          </p>
+          <a href="/fero_letterhead_desc.pdf" target="_blank" download class="dl-btn">
+            <span>📥</span> Скачать / Открыть PDF
+          </a>
+        </div>
+
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-docx">WORD .DOCX</span>
+            <span class="size-label">101 KB</span>
+          </div>
+          <h3 class="card-title">Бланк минималистичный (Word)</h3>
+          <p class="card-desc">
+            Альтернативный чистый шаблон Word: 3D «ФЕРО» и солнце 45° без дескриптора деятельности.
+          </p>
+          <a href="/fero_letterhead_template.docx" download class="dl-btn">
+            <span>📥</span> Скачать DOCX
+          </a>
+        </div>
+
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-pdf">PDF ПЕЧАТЬ</span>
+            <span class="size-label">134 KB</span>
+          </div>
+          <h3 class="card-title">Бланк минималистичный (PDF)</h3>
+          <p class="card-desc">
+            Чистый бланк А4 без дескриптора в полиграфическом качестве PDF.
+          </p>
+          <a href="/fero_letterhead_sun.pdf" target="_blank" download class="dl-btn">
+            <span>📥</span> Скачать / Открыть PDF
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. ЧЕРТЕЖНЫЕ ШТАМПЫ ГОСТ -->
+    <section class="section-block">
+      <div class="section-title-wrap">
+        <span class="section-icon">📐</span>
+        <h2 class="section-title">Штампы для чертежей (ГОСТ и СПДС)</h2>
+        <span class="section-badge">ПРОЕКТИРОВАНИЕ И РД</span>
+      </div>
+      <div class="cards-grid">
+
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-png">PNG HD</span>
+            <span class="size-label">53 KB</span>
+          </div>
+          <h3 class="card-title">Штамп ГОСТ с дескриптором</h3>
+          <p class="card-desc">
+            Основная надпись чертежа (185 × 55 мм, ячейка 70 × 15 мм) и угловой штамп согласования (75 × 40 мм). Идеальная центровка: отступы сверху и снизу под надписью «ФАСАДНЫЙ ИНЖИНИРИНГ» составляют 2.4 мм.
+          </p>
+          <a href="/stamp_desc_preview.png" target="_blank" download class="dl-btn">
+            <span>📥</span> Скачать превью штампа
+          </a>
+        </div>
+
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-png">PNG HD</span>
+            <span class="size-label">48 KB</span>
+          </div>
+          <h3 class="card-title">Штамп ГОСТ минималистичный</h3>
+          <p class="card-desc">
+            Вариант штампа ГОСТ Р 21.101 с чистым 3D-логотипом «ФЕРО» без дескриптора (высота 10.2 мм, отступ снизу свободный).
+          </p>
+          <a href="/stamp_perfect_preview.png" target="_blank" download class="dl-btn">
+            <span>📥</span> Скачать превью штампа
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. ОФИЦИАЛЬНЫЕ ЛОГОТИПЫ -->
+    <section class="section-block">
+      <div class="section-title-wrap">
+        <span class="section-icon">🔷</span>
+        <h2 class="section-title">Векторные и растровые логотипы</h2>
+        <span class="section-badge">ВЕРСТКА, EMAIL И САЙТЫ</span>
+      </div>
+      <div class="cards-grid">
+
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-svg">ВЕКТОР SVG</span>
+            <span class="size-label">5.8 KB</span>
+          </div>
+          <h3 class="card-title">3D ФЕРО + Фасадный инжиниринг (SVG)</h3>
+          <p class="card-desc">
+            Эталонный векторный блок: металлический 3D-рельеф, диаграмма инсоляции под 45° и дескриптор. Масштабируется до любых форматов без потери качества.
+          </p>
+          <a href="/fero_3d_sun_desc_unit.svg" target="_blank" download class="dl-btn">
+            <span>📥</span> Скачать SVG
+          </a>
+        </div>
+
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-png">РАСТР PNG</span>
+            <span class="size-label">66 KB</span>
+          </div>
+          <h3 class="card-title">3D ФЕРО + Фасадный инжиниринг (PNG)</h3>
+          <p class="card-desc">
+            Прозрачный Ultra-HD фон, оптимизация для подписи в электронной почте (Outlook, Яндекс, Gmail), презентаций PowerPoint и ячеек штампа.
+          </p>
+          <a href="/fero_3d_sun_desc_unit.png" target="_blank" download class="dl-btn">
+            <span>📥</span> Скачать Ultra-HD PNG
+          </a>
+        </div>
+
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-svg">ВЕКТОР SVG</span>
+            <span class="size-label">5.5 KB</span>
+          </div>
+          <h3 class="card-title">3D ФЕРО Минимал (SVG)</h3>
+          <p class="card-desc">
+            Компактный векторный логотип: только 3D-буквы «ФЕРО» и солнце под 45° (без дескриптора).
+          </p>
+          <a href="/fero_3d_sun_unit.svg" target="_blank" download class="dl-btn">
+            <span>📥</span> Скачать SVG
+          </a>
+        </div>
+
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-png">РАСТР PNG</span>
+            <span class="size-label">63 KB</span>
+          </div>
+          <h3 class="card-title">3D ФЕРО Минимал (PNG)</h3>
+          <p class="card-desc">
+            Компактный растровый логотип на прозрачном фоне для малых форматов и иконок.
+          </p>
+          <a href="/fero_3d_sun_unit.png" target="_blank" download class="dl-btn">
+            <span>📥</span> Скачать PNG
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. КАТАЛОГИ И БРЕНДБУК -->
+    <section class="section-block">
+      <div class="section-title-wrap">
+        <span class="section-icon">📘</span>
+        <h2 class="section-title">Брендбук и портфолио объектов</h2>
+        <span class="section-badge">ИЗДАНИЯ</span>
+      </div>
+      <div class="cards-grid">
+
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-pdf">PDF</span>
+            <span class="size-label">817 KB</span>
+          </div>
+          <h3 class="card-title">Официальный Брендбук 2026 (PDF)</h3>
+          <p class="card-desc">
+            Полное руководство по корпоративному стилю, цветовым палитрам, охранным зонам и правилам верстки.
+          </p>
+          <a href="/fero_brandbook.pdf" target="_blank" download class="dl-btn">
+            <span>📥</span> Скачать Брендбук PDF
+          </a>
+        </div>
+
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-pdf">PDF</span>
+            <span class="size-label">6.2 MB</span>
+          </div>
+          <h3 class="card-title">Каталог 39 объектов ФЕРО (PDF)</h3>
+          <p class="card-desc">
+            Презентационное издание на 40 полос: ключевые реализованные объекты, технические параметры фасадов и архитектурные решения.
+          </p>
+          <a href="/fero_mini_catalog_40p.pdf" target="_blank" download class="dl-btn">
+            <span>📥</span> Скачать Каталог PDF (6.2 МБ)
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    ООО «ФЕРО» &bull; Санкт-Петербург, ул. Невельская, д. 18, лит. А &bull; +7 (812) 603-21-11 &bull; <a href="mailto:info@ferospb.ru">info@ferospb.ru</a> &bull; <a href="https://ferospb.info">www.ferospb.info</a>
+  </footer>
+
+</body>
+</html>
