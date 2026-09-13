@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 70" width="250" height="70">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;display=swap');
+      .hdr-sun-line { stroke: #1e293b; stroke-width: 1.1; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .hdr-sun-thin { stroke: #64748b; stroke-width: 0.8; fill: none; }
+      .hdr-sun-dashed { stroke: #475569; stroke-width: 0.9; stroke-dasharray: 2.5 2.5; fill: none; }
+      .hdr-sun-text { font-family: 'Montserrat', Arial, sans-serif; font-size: 8px; font-weight: 700; fill: #1e293b; }
+      .hdr-sun-node { fill: #ffffff; stroke: #1e293b; stroke-width: 1.1; }
+      
+      .hdr-brand-title {
+        font-family: 'Montserrat', 'Arial Black', sans-serif;
+        font-weight: 900;
+        font-size: 38px;
+        letter-spacing: 2.5px;
+        fill: #0f172a;
+      }
+      .hdr-brand-sub {
+        font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 7.8px;
+        letter-spacing: 2.6px;
+        fill: #334155;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+
+  <!-- 1. 45° ARCHITECTURAL SUN DIAGRAM (top-right of ФЕРО) -->
+  <g transform="translate(150, -3) scale(0.33)">
+    <line x1="20" y1="55" x2="235" y2="55" class="hdr-sun-line"/>
+    <circle cx="235" cy="55" r="15" fill="#ffffff" stroke="#0f172a" stroke-width="1.6"/>
+    <!-- 8 Sun Corona Rays -->
+    <line x1="235" y1="33" x2="235" y2="23" class="hdr-sun-line" stroke-width="1.4"/>
+    <line x1="235" y1="77" x2="235" y2="87" class="hdr-sun-line" stroke-width="1.4"/>
+    <line x1="213" y1="55" x2="203" y2="55" class="hdr-sun-line" stroke-width="1.4"/>
+    <line x1="257" y1="55" x2="267" y2="55" class="hdr-sun-line" stroke-width="1.4"/>
+    <line x1="220" y1="40" x2="212" y2="32" class="hdr-sun-line" stroke-width="1.4"/>
+    <line x1="250" y1="70" x2="258" y2="78" class="hdr-sun-line" stroke-width="1.4"/>
+    <line x1="220" y1="70" x2="212" y2="78" class="hdr-sun-line" stroke-width="1.4"/>
+    <line x1="250" y1="40" x2="258" y2="32" class="hdr-sun-line" stroke-width="1.4"/>
+    
+    <!-- Sun Rays & Angle arcs -->
+    <line x1="235" y1="55" x2="235" y2="175" class="hdr-sun-thin"/>
+    <line x1="235" y1="55" x2="165" y2="170" class="hdr-sun-thin"/>
+    <line x1="235" y1="55" x2="105" y2="155" class="hdr-sun-thin"/>
+    <line x1="235" y1="55" x2="35" y2="135" class="hdr-sun-line" stroke-width="1.5"/>
+    <line x1="235" y1="55" x2="270" y2="40" class="hdr-sun-dashed"/>
+    <circle cx="95" cy="111" r="3.2" class="hdr-sun-node"/>
+    <path d="M 140 55 A 95 95 0 0 1 200 142" class="hdr-sun-line"/>
+    <path d="M 110 55 A 125 125 0 0 1 185 170" class="hdr-sun-thin"/>
+    
+    <text x="50" y="96" class="hdr-sun-text">SUN 60°</text>
+    <text x="142" y="112" class="hdr-sun-text">50°</text>
+    <text x="172" y="132" class="hdr-sun-text">40°</text>
+    <text x="194" y="156" class="hdr-sun-text">30°</text>
+    <circle cx="165" cy="170" r="2.5" class="hdr-sun-node"/>
+    <circle cx="185" cy="170" r="2.5" class="hdr-sun-node"/>
+    <circle cx="235" cy="175" r="2.5" class="hdr-sun-node"/>
+  </g>
+
+  <!-- 2. BRAND TITLE: ФЕРО -->
+  <text x="90" y="47" class="hdr-brand-title" text-anchor="middle">ФЕРО</text>
+
+  <!-- 3. DESCRIPTOR: ФАСАДНЫЙ ИНЖИНИРИНГ -->
+  <text x="91" y="62" class="hdr-brand-sub" text-anchor="middle">ФАСАДНЫЙ ИНЖИНИРИНГ</text>
+</svg>
