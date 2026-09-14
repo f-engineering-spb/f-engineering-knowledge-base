@@ -1377,175 +1377,190 @@ field="li_descr__1693230651813">
 
 <div id="brandbook-downloads" style="background:#f8fafc; padding: 60px 24px 70px; text-align:center; border-top: 1px solid #e2e8f0;">
 
-  <div style="max-width: 800px; margin: 0 auto 36px;">
+  <div style="max-width: 800px; margin: 0 auto 32px;">
     <div style="font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.25em;
                 text-transform:uppercase; color:#0284c7; margin-bottom:10px;">МАТЕРИАЛЫ &bull; ДОКУМЕНТЫ &bull; РЕСУРСЫ</div>
     <div style="font-family:'Montserrat',sans-serif; font-size:28px; font-weight:800; letter-spacing:0.02em;
                 color:#0f172a; line-height:1.25;">Материалы и файлы компании ФЕРО</div>
     <div style="font-family:'Inter',sans-serif; font-size:14px; font-weight:400;
                 color:#64748b; margin-top:8px; line-height:1.5;">
-      Доступ к буклету, бланкам, брендбуку и дистрибутивам открывается по нажатию соответствующих кнопок:
+      Ознакомьтесь с мини-каталогом проектов либо откройте панель брендбука со всеми спецификациями и файлами:
     </div>
   </div>
 
-  <!-- 4 PRIMARY BUTTONS -->
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:14px; max-width:960px; margin:0 auto 24px;">
-
-    <!-- КНОПКА 1: БУКЛЕТ КОМПАНИИ (прямое открытие/скачивание) -->
-    <a href="/fero_booklet_a4.html" target="_blank" class="fero-ctrl-btn" style="
-      display:inline-flex; align-items:center; gap:10px; padding:14px 22px; border-radius:10px;
-      background:#ffffff; border:1.5px solid #0284c7; color:#0f172a; text-decoration:none;
-      font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700;
-      box-shadow:0 4px 16px rgba(2,132,199,0.08); transition:all 0.25s ease; cursor:pointer;">
-      <span style="font-size:18px;">📖</span>
-      <span>Буклет компании</span>
-      <span style="color:#0284c7; font-size:14px;">↗</span>
+  <!-- ДВЕ ГЛАВНЫЕ КНОПКИ ПОДВАЛА (СТАРАЯ ЧИСТАЯ КОНФИГУРАЦИЯ) -->
+  <div class="fero-footer-actions" style="display:flex; justify-content:center; align-items:center; gap:16px; margin:0 auto 24px; flex-wrap:wrap; max-width:820px;">
+    
+    <!-- ЛЕВАЯ КНОПКА: МИНИ-КАТАЛОГ -->
+    <a href="/fero_mini_catalog.pdf" target="_blank" class="fero-ft-btn" style="
+      display:inline-flex; align-items:center; justify-content:space-between; gap:14px;
+      padding:16px 28px; background:#ffffff; border:1.5px solid #cbd5e1; border-radius:12px;
+      text-decoration:none; color:#0f172a; min-width:280px; flex:1; max-width:380px;
+      box-shadow:0 4px 16px rgba(15,23,42,0.04); transition:all 0.25s ease; cursor:pointer;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="font-size:22px;">📖</span>
+        <div style="text-align:left;">
+          <div style="font-family:'Montserrat',sans-serif; font-size:15px; font-weight:800; color:#0f172a; line-height:1.2;">Мини-каталог</div>
+          <div style="font-family:'Inter',sans-serif; font-size:12px; color:#64748b; margin-top:2px;">Портфолио проектов &bull; PDF</div>
+        </div>
+      </div>
+      <span style="color:#0284c7; font-size:16px; font-weight:700;">↗</span>
     </a>
 
-    <!-- КНОПКА 2: ОФИЦИАЛЬНЫЕ БЛАНКИ -->
-    <button type="button" onclick="toggleFeroSection('blanks')" class="fero-ctrl-btn" id="btn-blanks" style="
-      display:inline-flex; align-items:center; gap:10px; padding:14px 22px; border-radius:10px;
-      background:#ffffff; border:1.5px solid #cbd5e1; color:#0f172a; text-decoration:none;
-      font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700;
-      box-shadow:0 4px 14px rgba(15,23,42,0.04); transition:all 0.25s ease; cursor:pointer;">
-      <span style="font-size:18px;">🏛️</span>
-      <span>Официальные бланки</span>
-      <span id="arrow-blanks" style="color:#64748b; font-size:12px; transition:transform 0.25s ease;">▼</span>
-    </button>
-
-    <!-- КНОПКА 3: БРЕНДБУК И ЛОГОТИПЫ -->
-    <button type="button" onclick="toggleFeroSection('brandbook')" class="fero-ctrl-btn" id="btn-brandbook" style="
-      display:inline-flex; align-items:center; gap:10px; padding:14px 22px; border-radius:10px;
-      background:#ffffff; border:1.5px solid #cbd5e1; color:#0f172a; text-decoration:none;
-      font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700;
-      box-shadow:0 4px 14px rgba(15,23,42,0.04); transition:all 0.25s ease; cursor:pointer;">
-      <span style="font-size:18px;">🎨</span>
-      <span>Брендбук и логотипы</span>
-      <span id="arrow-brandbook" style="color:#64748b; font-size:12px; transition:transform 0.25s ease;">▼</span>
-    </button>
-
-    <!-- КНОПКА 4: ДИСТРИБУТИВ САЙТА (ferospb.ru) -->
-    <button type="button" onclick="toggleFeroSection('deploy')" class="fero-ctrl-btn" id="btn-deploy" style="
-      display:inline-flex; align-items:center; gap:10px; padding:14px 22px; border-radius:10px;
-      background:#ffffff; border:1.5px solid #cbd5e1; color:#0f172a; text-decoration:none;
-      font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700;
-      box-shadow:0 4px 14px rgba(15,23,42,0.04); transition:all 0.25s ease; cursor:pointer;">
-      <span style="font-size:18px;">⚙️</span>
-      <span>Дистрибутив сайта (ferospb.ru)</span>
-      <span id="arrow-deploy" style="color:#64748b; font-size:12px; transition:transform 0.25s ease;">▼</span>
+    <!-- ПРАВАЯ КНОПКА: БРЕНДБУК -->
+    <button type="button" onclick="toggleBrandbookPanel()" id="btn-toggle-brandbook" class="fero-ft-btn" style="
+      display:inline-flex; align-items:center; justify-content:space-between; gap:14px;
+      padding:16px 28px; background:#ffffff; border:1.5px solid #0284c7; border-radius:12px;
+      text-decoration:none; color:#0f172a; min-width:280px; flex:1; max-width:380px;
+      box-shadow:0 4px 16px rgba(2,132,199,0.08); transition:all 0.25s ease; cursor:pointer;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="font-size:22px;">🎨</span>
+        <div style="text-align:left;">
+          <div style="font-family:'Montserrat',sans-serif; font-size:15px; font-weight:800; color:#0f172a; line-height:1.2;">Брендбук и файлы</div>
+          <div style="font-family:'Inter',sans-serif; font-size:12px; color:#64748b; margin-top:2px;">Бланки, логотипы, материалы</div>
+        </div>
+      </div>
+      <span id="brandbook-arrow" style="color:#0284c7; font-size:14px; font-weight:700; transition:transform 0.25s ease;">▼</span>
     </button>
   </div>
 
-  <!-- СКРЫТЫЕ ПАНЕЛИ: ПОЯВЛЯЮТСЯ ТОЛЬКО ПО НАЖАТИЮ КНОПОК -->
+  <!-- РАСКРЫВАЮЩАЯСЯ ПАНЕЛЬ БРЕНДБУКА (ПО УМОЛЧАНИЮ СКРЫТА) -->
+  <div id="panel-brandbook-files" style="display:none; max-width:980px; margin:24px auto 0; padding:28px; background:#ffffff; border-radius:16px; border:1px solid #e2e8f0; box-shadow:0 12px 36px rgba(15,23,42,0.06); text-align:left;">
+    
+    <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #f1f5f9; padding-bottom:16px; margin-bottom:20px;">
+      <div>
+        <div style="font-family:'Montserrat',sans-serif; font-size:18px; font-weight:800; color:#0f172a;">
+          Центр фирменного стиля и ресурсов ФЕРО
+        </div>
+        <div style="font-size:12.5px; color:#64748b; margin-top:2px;">
+          Официальные бланки, векторные и растровые логотипы во всех конфигурациях
+        </div>
+      </div>
+      <a href="/brandbook.html" target="_blank" style="font-family:'Montserrat',sans-serif; font-size:12.5px; font-weight:700; color:#0284c7; text-decoration:none; padding:8px 14px; border:1px solid #bae6fd; border-radius:8px; background:#f0f9ff;">
+        Открыть онлайн-брендбук →
+      </a>
+    </div>
 
-  <!-- 1. ПАНЕЛЬ БЛАНКОВ (по умолчанию скрыта) -->
-  <div id="panel-blanks" style="display:none; max-width:960px; margin:20px auto 0; padding:24px; background:#ffffff; border-radius:14px; border:1px solid #e2e8f0; box-shadow:0 10px 30px rgba(15,23,42,0.05); text-align:left;">
-    <div style="font-family:'Montserrat',sans-serif; font-size:15px; font-weight:800; color:#0f172a; margin-bottom:14px;">
-      🏛️ Бланки компании ФЕРО
+    <!-- СЕКЦИЯ 1: БЛАНК В ФОРМАТЕ WORD С РЕКВИЗИТАМИ В ВОЗДУХЕ -->
+    <div style="margin-bottom:22px;">
+      <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0369a1; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:10px;">
+        1. Официальный бланк компании (Word)
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:12px;">
+        <a href="/blank_var1_top_requisites.docx" download style="flex:1; min-width:280px; padding:16px; border-radius:10px; border:1.5px solid #bfdbfe; background:#f8fafc; text-decoration:none; display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <div style="font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700; color:#0f172a;">Бланк ФЕРО с реквизитами вверху (.DOCX)</div>
+            <div style="font-size:11.5px; color:#64748b; margin-top:3px;">Логотип слева вверху, реквизиты банка ВТБ, телефоны, адреса, ОГРН, ИНН, КПП в воздухе без линий</div>
+          </div>
+          <span style="background:#eff6ff; color:#1d4ed8; font-size:11px; font-weight:700; padding:6px 12px; border-radius:6px; white-space:nowrap;">Скачать DOCX ↓</span>
+        </a>
+      </div>
     </div>
-    <div style="display:flex; flex-wrap:wrap; gap:14px;">
-      <!-- DOCX с реквизитами -->
-      <a href="/blank_var2_bottom_requisites.docx" download style="flex:1; min-width:240px; padding:16px; border-radius:10px; border:1.5px solid #bfdbfe; background:#f8fafc; text-decoration:none; display:flex; justify-content:space-between; align-items:center;">
-        <div>
-          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a;">Бланк с реквизитами (.DOCX)</div>
-          <div style="font-size:11.5px; color:#64748b; margin-top:2px;">Реквизиты банка ВТБ, р/с, ОГРН, ИНН, КПП</div>
-        </div>
-        <span style="background:#eff6ff; color:#1d4ed8; font-size:11px; font-weight:700; padding:4px 8px; border-radius:6px;">Скачать ↓</span>
-      </a>
-      <!-- PDF бланк -->
-      <a href="/fero_blank_a4.html" target="_blank" style="flex:1; min-width:240px; padding:16px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc; text-decoration:none; display:flex; justify-content:space-between; align-items:center;">
-        <div>
-          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a;">Фирменный бланк A4 (PDF)</div>
-          <div style="font-size:11.5px; color:#64748b; margin-top:2px;">Векторный бланк для печати и писем</div>
-        </div>
-        <span style="background:#f1f5f9; color:#475569; font-size:11px; font-weight:700; padding:4px 8px; border-radius:6px;">Открыть ↗</span>
-      </a>
-      <!-- Чертежный штамп ГОСТ -->
-      <a href="/fero_drawing_stamp.html" target="_blank" style="flex:1; min-width:240px; padding:16px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc; text-decoration:none; display:flex; justify-content:space-between; align-items:center;">
-        <div>
-          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a;">Чертежный штамп ГОСТ</div>
-          <div style="font-size:11.5px; color:#64748b; margin-top:2px;">Основная надпись 185х55 для рабочей документации</div>
-        </div>
-        <span style="background:#f1f5f9; color:#475569; font-size:11px; font-weight:700; padding:4px 8px; border-radius:6px;">Открыть ↗</span>
-      </a>
-    </div>
-  </div>
 
-  <!-- 2. ПАНЕЛЬ БРЕНДБУКА И ЛОГОТИПОВ (по умолчанию скрыта) -->
-  <div id="panel-brandbook" style="display:none; max-width:960px; margin:20px auto 0; padding:24px; background:#ffffff; border-radius:14px; border:1px solid #e2e8f0; box-shadow:0 10px 30px rgba(15,23,42,0.05); text-align:left;">
-    <div style="font-family:'Montserrat',sans-serif; font-size:15px; font-weight:800; color:#0f172a; margin-bottom:14px;">
-      🎨 Фирменный стиль и векторные логотипы ФЕРО
-    </div>
-    <div style="display:flex; flex-wrap:wrap; gap:14px;">
-      <a href="/brandbook.html" target="_blank" style="flex:1; min-width:240px; padding:16px; border-radius:10px; border:1.5px solid #bae6fd; background:#f8fafc; text-decoration:none; display:flex; justify-content:space-between; align-items:center;">
-        <div>
-          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a;">Онлайн-брендбук ФЕРО</div>
-          <div style="font-size:11.5px; color:#64748b; margin-top:2px;">Полное руководство по стилю, охранные зоны, цвета</div>
+    <!-- СЕКЦИЯ 2: КОМПЛЕКТ ЛОГОТИПОВ С СОЛНЫШКОМ 45° -->
+    <div style="margin-bottom:22px;">
+      <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0369a1; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:10px;">
+        2. Логотипы с архитектурным солнышком 45°
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
+        <!-- С фасадным инжинирингом -->
+        <div style="padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc;">
+          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">ФЕРО + Солнце + Фасадный инжиниринг</div>
+          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Основная версия бренда для всех коммуникаций</div>
+          <div style="display:flex; gap:8px;">
+            <a href="/assets/fero_sun_facade_eng.png" download style="flex:1; text-align:center; padding:6px 10px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">PNG (растр)</a>
+            <a href="/assets/fero_sun_facade_eng.svg" download style="flex:1; text-align:center; padding:6px 10px; background:#e0f2fe; border:1px solid #bae6fd; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0369a1;">SVG (вектор)</a>
+          </div>
         </div>
-        <span style="background:#e0f2fe; color:#0369a1; font-size:11px; font-weight:700; padding:4px 8px; border-radius:6px;">Открыть ↗</span>
-      </a>
-      <a href="/assets/fero_3d_sun_desc_unit.svg" download style="flex:1; min-width:240px; padding:16px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc; text-decoration:none; display:flex; justify-content:space-between; align-items:center;">
-        <div>
-          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a;">Векторный логотип с солнцем (SVG)</div>
-          <div style="font-size:11.5px; color:#64748b; margin-top:2px;">ФЕРО + солнышко 45° + фасадный инжиниринг</div>
-        </div>
-        <span style="background:#f1f5f9; color:#475569; font-size:11px; font-weight:700; padding:4px 8px; border-radius:6px;">Скачать ↓</span>
-      </a>
-    </div>
-  </div>
 
-  <!-- 3. ПАНЕЛЬ ДИСТРИБУТИВА ДЛЯ FEROSPB.RU (по умолчанию скрыта) -->
-  <div id="panel-deploy" style="display:none; max-width:960px; margin:20px auto 0; padding:24px; background:#ffffff; border-radius:14px; border:1px solid #e2e8f0; box-shadow:0 10px 30px rgba(15,23,42,0.05); text-align:left;">
-    <div style="font-family:'Montserrat',sans-serif; font-size:15px; font-weight:800; color:#0f172a; margin-bottom:14px;">
-      ⚙️ Дистрибутивы для развертывания на ferospb.ru
-    </div>
-    <div style="display:flex; flex-wrap:wrap; gap:14px;">
-      <a href="/ferospb_ru_full_site.zip" download style="flex:1; min-width:240px; padding:16px; border-radius:10px; border:1.5px solid #bae6fd; background:#f8fafc; text-decoration:none; display:flex; justify-content:space-between; align-items:center;">
-        <div>
-          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a;">Полный архив сайта (325 МБ)</div>
-          <div style="font-size:11.5px; color:#64748b; margin-top:2px;">Все 2403 файла сайта под ключ для распаковки на хостинг</div>
+        <!-- Без фасадного инжиниринга -->
+        <div style="padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc;">
+          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">ФЕРО + Солнце (без дескриптора)</div>
+          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Лаконичная версия без подписи «фасадный инжиниринг»</div>
+          <div style="display:flex; gap:8px;">
+            <a href="/assets/fero_sun_clean.png" download style="flex:1; text-align:center; padding:6px 10px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">PNG (растр)</a>
+            <a href="/assets/fero_sun_clean.svg" download style="flex:1; text-align:center; padding:6px 10px; background:#e0f2fe; border:1px solid #bae6fd; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0369a1;">SVG (вектор)</a>
+          </div>
         </div>
-        <span style="background:#e0f2fe; color:#0369a1; font-size:11px; font-weight:700; padding:4px 8px; border-radius:6px;">Скачать ZIP ↓</span>
-      </a>
-      <a href="/fero_sysadmin_pack.zip" download style="flex:1; min-width:240px; padding:16px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc; text-decoration:none; display:flex; justify-content:space-between; align-items:center;">
-        <div>
-          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a;">Пакет для сисадмина (146 КБ)</div>
-          <div style="font-size:11.5px; color:#64748b; margin-top:2px;">Инструкция по развертыванию, правила и бланки</div>
-        </div>
-        <span style="background:#f1f5f9; color:#475569; font-size:11px; font-weight:700; padding:4px 8px; border-radius:6px;">Скачать ZIP ↓</span>
-      </a>
+      </div>
     </div>
+
+    <!-- СЕКЦИЯ 3: СПЕЦИАЛЬНЫЕ ФОРМАТЫ ДЛЯ ВСТАВКИ -->
+    <div style="margin-bottom:22px;">
+      <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0369a1; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:10px;">
+        3. Специальные форматы (чертежи, подпись почты, бланки)
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
+        <!-- Для подписи электронной почты -->
+        <div style="padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc;">
+          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">Для подписи электронной почты</div>
+          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Оптимизированный компактный PNG для Outlook, Gmail, Яндекс</div>
+          <a href="/assets/fero_email_signature.png" download style="display:block; text-align:center; padding:7px 12px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">Скачать PNG для подписи ↓</a>
+        </div>
+
+        <!-- Для вставки в чертежный штамп ГОСТ -->
+        <div style="padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc;">
+          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">Для вставки в чертёж (ГОСТ штамп)</div>
+          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Специальный контрастный блок для углового штампа 185х55 мм</div>
+          <div style="display:flex; gap:8px;">
+            <a href="/assets/fero_drawing_stamp_logo.png" download style="flex:1; text-align:center; padding:7px 10px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">PNG</a>
+            <a href="/assets/fero_drawing_stamp_logo.svg" download style="flex:1; text-align:center; padding:7px 10px; background:#e0f2fe; border:1px solid #bae6fd; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0369a1;">SVG</a>
+          </div>
+        </div>
+
+        <!-- Первый экран сайта -->
+        <div style="padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc;">
+          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">Первый экран сайта (титул)</div>
+          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Полный титульный блок: логотип, направления и манифест</div>
+          <div style="display:flex; gap:8px;">
+            <a href="/assets/fero_site_hero_p1.png" download style="flex:1; text-align:center; padding:7px 10px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">PNG</a>
+            <a href="/assets/fero_site_hero_p1.svg" download style="flex:1; text-align:center; padding:7px 10px; background:#e0f2fe; border:1px solid #bae6fd; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0369a1;">SVG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- СЕКЦИЯ 4: ЧИСТАЯ НАДПИСЬ ФЕРО (МИНИМАЛИСТИЧНЫЙ КОМПЛЕКТ) -->
+    <div style="margin-bottom:10px;">
+      <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0369a1; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:10px;">
+        4. Чистый шрифтовой знак ФЕРО (без солнца и дескриптора)
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:12px;">
+        <div style="flex:1; min-width:280px; padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc; display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a;">Надпись «ФЕРО»</div>
+            <div style="font-size:11px; color:#64748b; margin-top:2px;">Минималистичный логотип для узких полей и бланков</div>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <a href="/assets/fero_letters_only.png" download style="padding:6px 12px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">PNG</a>
+            <a href="/assets/fero_letters_only.svg" download style="padding:6px 12px; background:#e0f2fe; border:1px solid #bae6fd; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0369a1;">SVG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </div>
 
 <script>
-function toggleFeroSection(id) {
-  var panels = ['blanks', 'brandbook', 'deploy'];
-  for (var i = 0; i < panels.length; i++) {
-    var pId = panels[i];
-    var panel = document.getElementById('panel-' + pId);
-    var btn = document.getElementById('btn-' + pId);
-    var arrow = document.getElementById('arrow-' + pId);
-    if (!panel) continue;
-    if (pId === id) {
-      if (panel.style.display === 'none' || panel.style.display === '') {
-        panel.style.display = 'block';
-        if (btn) { btn.style.borderColor = '#0284c7'; btn.style.background = '#f0f9ff'; }
-        if (arrow) { arrow.style.transform = 'rotate(180deg)'; arrow.style.color = '#0284c7'; }
-      } else {
-        panel.style.display = 'none';
-        if (btn) { btn.style.borderColor = '#cbd5e1'; btn.style.background = '#ffffff'; }
-        if (arrow) { arrow.style.transform = 'rotate(0deg)'; arrow.style.color = '#64748b'; }
-      }
-    } else {
-      panel.style.display = 'none';
-      if (btn) { btn.style.borderColor = '#cbd5e1'; btn.style.background = '#ffffff'; }
-      if (arrow) { arrow.style.transform = 'rotate(0deg)'; arrow.style.color = '#64748b'; }
-    }
+function toggleBrandbookPanel() {
+  var p = document.getElementById('panel-brandbook-files');
+  var btn = document.getElementById('btn-toggle-brandbook');
+  var arrow = document.getElementById('brandbook-arrow');
+  if (!p) return;
+  if (p.style.display === 'none' || p.style.display === '') {
+    p.style.display = 'block';
+    if (arrow) { arrow.style.transform = 'rotate(180deg)'; }
+    if (btn) { btn.style.background = '#f0f9ff'; }
+  } else {
+    p.style.display = 'none';
+    if (arrow) { arrow.style.transform = 'rotate(0deg)'; }
+    if (btn) { btn.style.background = '#ffffff'; }
   }
 }
 </script>
+
 
       <div style="font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; color:#0284c7; text-transform:uppercase; margin-top:14px;">
         Скачать архив сайта ↓
