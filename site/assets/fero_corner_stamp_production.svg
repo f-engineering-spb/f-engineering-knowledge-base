@@ -9,7 +9,7 @@
     </style>
   </defs>
   <rect x="2" y="2" width="446" height="236" class="c-border" rx="4"/>
-  <g transform="translate(35, 10) scale(0.60)">
+  <g transform="translate(225, 65) scale(0.34) translate(-600, -290)">
     <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;display=swap');
@@ -81,8 +81,8 @@
     </g>
     <text x="605" y="385" class="brand-sub" text-anchor="middle">ФАСАДНЫЙ ИНЖИНИРИНГ</text>
   </g>
-  <text x="225" y="180" class="c-status">В ПРОИЗВОДСТВО РАБОТ</text>
-  <line x1="20" y1="200" x2="430" y2="200" class="c-line"/>
-  <text x="25" y="222" class="c-field">Инженер ОТО: _________</text>
-  <text x="310" y="222" class="c-field">«___» _______ 2026 г.</text>
+  <text x="225" y="145" class="c-status">В ПРОИЗВОДСТВО РАБОТ</text>
+  <line x1="20" y1="175" x2="430" y2="175" class="c-line"/>
+  <text x="25" y="210" class="c-field">Инженер ОТО: _________</text>
+  <text x="300" y="210" class="c-field">«___» _______ 2026 г.</text>
 </svg>
