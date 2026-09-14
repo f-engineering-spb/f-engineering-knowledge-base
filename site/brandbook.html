@@ -198,6 +198,8 @@
     .pill-docx { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
     .pill-svg { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
     .pill-png { background: #faf5ff; color: #6b21a8; border: 1px solid #e9d5ff; }
+    .pill-dxf { background: #fff7ed; color: #c2410c; border: 1px solid #ffedd5; }
+    .pill-pdf { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
 
     .size-label {
       font-family: 'JetBrains Mono', monospace;
@@ -225,27 +227,30 @@
     /* BUTTONS */
     .card-actions {
       display: flex;
-      gap: 10px;
+      flex-wrap: wrap;
+      gap: 8px;
       width: 100%;
     }
     .dl-btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      flex: 1;
-      padding: 10px 14px;
+      gap: 6px;
+      flex: 1 1 calc(33.333% - 6px);
+      min-width: 80px;
+      padding: 9px 10px;
       border-radius: 8px;
       background: #f8fafc;
       border: 1px solid #cbd5e1;
       color: #0f172a;
       font-family: 'Montserrat', sans-serif;
-      font-size: 12px;
-      font-weight: 600;
+      font-size: 11.5px;
+      font-weight: 500;
       letter-spacing: 0.02em;
       transition: all 0.2s;
       cursor: pointer;
       text-align: center;
+      text-decoration: none;
     }
     .dl-btn:hover {
       background: #0284c7;
@@ -254,9 +259,12 @@
       box-shadow: 0 4px 12px rgba(2,132,199,0.2);
     }
     .dl-btn.btn-featured {
+      flex: 1 1 100%;
       background: #0284c7;
       border-color: #0284c7;
       color: #ffffff;
+      padding: 10px 14px;
+      font-size: 12px;
     }
     .dl-btn.btn-featured:hover {
       background: #0369a1;
@@ -353,7 +361,7 @@
           <p class="card-desc">
             Логотип «ФЕРО» с солнышком 45° вверху. Блок реквизитов расположен в верхней части в воздухе без рамок и черт (современный лаконичный стиль).
           </p>
-          <a href="/blank_var1_top_requisites.docx" download class="dl-btn btn-featured">
+          <a href="/assets/blank_var1_top_requisites.docx" download class="dl-btn btn-featured">
             <span>📥</span> Скачать бланк Word (.docx)
           </a>
         </div>
@@ -368,7 +376,7 @@
           <p class="card-desc">
             Логотип «ФЕРО» с солнышком 45° вверху страницы. Полные банковские и почтовые реквизиты аккуратно вынесены в нижний колонтитул.
           </p>
-          <a href="/blank_var2_bottom_requisites.docx" download class="dl-btn btn-featured">
+          <a href="/assets/blank_var2_bottom_requisites.docx" download class="dl-btn btn-featured">
             <span>📥</span> Скачать бланк Word (.docx)
           </a>
         </div>
@@ -376,113 +384,221 @@
       </div>
     </section>
 
-    <!-- 4. ЛОГОТИПЫ С АРХИТЕКТУРНЫМ СОЛНЫШКОМ -->
+    <!-- 4. ЛОГОТИПЫ ДЛЯ ШТАМПОВ И ПОДПИСИ (БЕЗ СОЛНЫШКА) -->
     <section class="section-block">
       <div class="section-title-wrap">
-        <span class="section-icon">🔷</span>
-        <h2 class="section-title">4. Логотипы с архитектурным солнышком</h2>
-        <span class="section-badge">ВЕКТОР SVG И РАСТР PNG</span>
+        <span class="section-icon">📐</span>
+        <h2 class="section-title">4. Логотипы для штампов и подписей (БЕЗ СОЛНЫШКА)</h2>
+        <span class="section-badge">ДЛЯ ЧЕРТЕЖЕЙ, CAD, ГОСТ И EMAIL</span>
+      </div>
+      <div class="cards-grid">
+
+        <!-- ВАРИАНТ А: ШТАМП С ПОДПИСЬЮ БЕЗ СОЛНЦА -->
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-dxf">ГОСТ / CAD</span>
+            <span class="size-label">70×15 ММ</span>
+          </div>
+          <h3 class="card-title">Штамп: «ФЕРО» + Фасадный инжиниринг (Без солнца)</h3>
+          <p class="card-desc">
+            Версия для основной надписи чертежей (ГОСТ СПДС ячейка 70×15 мм) и угловых штампов проектной документации. Вектор DXF для AutoCAD/DWG, растр PNG и вектор SVG.
+          </p>
+          <div class="card-actions">
+            <a href="/assets/fero_stamp_desc_no_sun.svg" target="_blank" download class="dl-btn">
+              <span>📥</span> SVG
+            </a>
+            <a href="/assets/fero_stamp_desc_no_sun.png" target="_blank" download class="dl-btn">
+              <span>📥</span> PNG
+            </a>
+            <a href="/assets/fero_stamp_desc_no_sun.dxf" target="_blank" download class="dl-btn">
+              <span>📥</span> DXF
+            </a>
+          </div>
+        </div>
+
+        <!-- ВАРИАНТ Б: ШТАМП ЧИСТЫЙ БЕЗ ПОДПИСИ И БЕЗ СОЛНЦА -->
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-dxf">ГОСТ / CAD</span>
+            <span class="size-label">ЧИСТЫЙ ЗНАК</span>
+          </div>
+          <h3 class="card-title">Штамп: чистый «ФЕРО» без подписи (Без солнца)</h3>
+          <p class="card-desc">
+            Монохромный лаконичный знак «ФЕРО» без дескриптора и без солнца. Для малоформатных штампов, спецификаций и технических ярлыков.
+          </p>
+          <div class="card-actions">
+            <a href="/assets/fero_stamp_pure_no_sun.svg" target="_blank" download class="dl-btn">
+              <span>📥</span> SVG
+            </a>
+            <a href="/assets/fero_stamp_pure_no_sun.png" target="_blank" download class="dl-btn">
+              <span>📥</span> PNG
+            </a>
+            <a href="/assets/fero_stamp_pure_no_sun.dxf" target="_blank" download class="dl-btn">
+              <span>📥</span> DXF
+            </a>
+          </div>
+        </div>
+
+        <!-- ВАРИАНТ В: ОБЪЕМНЫЙ 3D С ПОДПИСЬЮ БЕЗ СОЛНЦА -->
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-svg">3D ВЕКТОР</span>
+            <span class="size-label">NO SUN</span>
+          </div>
+          <h3 class="card-title">Логотип с дескриптором (Без солнца)</h3>
+          <p class="card-desc">
+            Объемный знак «ФЕРО» с надписью «ФАСАДНЫЙ ИНЖИНИРИНГ» без солнечного диска. Для полиграфии, презентаций и строгих бланков.
+          </p>
+          <div class="card-actions">
+            <a href="/assets/fero_logo_no_sun_desc.svg" target="_blank" download class="dl-btn">
+              <span>📥</span> SVG
+            </a>
+            <a href="/assets/fero_logo_no_sun_desc.png" target="_blank" download class="dl-btn">
+              <span>📥</span> PNG
+            </a>
+            <a href="/assets/fero_logo_no_sun_desc.dxf" target="_blank" download class="dl-btn">
+              <span>📥</span> DXF
+            </a>
+          </div>
+        </div>
+
+        <!-- ВАРИАНТ Г: ОБЪЕМНЫЙ 3D ЧИСТЫЙ БЕЗ СОЛНЦА -->
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-svg">3D ВЕКТОР</span>
+            <span class="size-label">NO SUN</span>
+          </div>
+          <h3 class="card-title">Логотип чистый без дескриптора (Без солнца)</h3>
+          <p class="card-desc">
+            Объемные литеры «ФЕРО» без солнца и без текстовой строки. Для фасадных вывесок, навигации, рельефного тиснения и мерча.
+          </p>
+          <div class="card-actions">
+            <a href="/assets/fero_logo_no_sun_pure.svg" target="_blank" download class="dl-btn">
+              <span>📥</span> SVG
+            </a>
+            <a href="/assets/fero_logo_no_sun_pure.png" target="_blank" download class="dl-btn">
+              <span>📥</span> PNG
+            </a>
+            <a href="/assets/fero_logo_no_sun_pure.dxf" target="_blank" download class="dl-btn">
+              <span>📥</span> DXF
+            </a>
+          </div>
+        </div>
+
+        <!-- ВАРИАНТ Д: EMAIL ПОДПИСЬ БЕЗ СОЛНЦА -->
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-png">EMAIL</span>
+            <span class="size-label">ПОДПИСЬ</span>
+          </div>
+          <h3 class="card-title">Подпись e-mail без солнца (Лаконичная)</h3>
+          <p class="card-desc">
+            Оптимизированный бейдж на прозрачном фоне для деловой переписки без графического солнца. Четко читается во всех почтовых клиентах.
+          </p>
+          <div class="card-actions">
+            <a href="/assets/fero_email_signature_no_sun.svg" target="_blank" download class="dl-btn">
+              <span>📥</span> SVG
+            </a>
+            <a href="/assets/fero_email_signature_no_sun.png" target="_blank" download class="dl-btn">
+              <span>📥</span> PNG
+            </a>
+          </div>
+        </div>
+
+        <!-- ВАРИАНТ Е: EMAIL ПОДПИСЬ С СОЛНЦЕМ -->
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-png">EMAIL</span>
+            <span class="size-label">ПОДПИСЬ</span>
+          </div>
+          <h3 class="card-title">Подпись e-mail с солнышком 45°</h3>
+          <p class="card-desc">
+            Корпоративный бейдж для подписи писем с фирменным архитектурным солнцем и дескриптором. Прозрачный фон.
+          </p>
+          <div class="card-actions">
+            <a href="/assets/fero_email_signature.svg" target="_blank" download class="dl-btn">
+              <span>📥</span> SVG
+            </a>
+            <a href="/assets/fero_email_signature.png" target="_blank" download class="dl-btn">
+              <span>📥</span> PNG
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. ЛОГОТИПЫ С АРХИТЕКТУРНЫМ СОЛНЫШКОМ ПОД 45° -->
+    <section class="section-block">
+      <div class="section-title-wrap">
+        <span class="section-icon">☀️</span>
+        <h2 class="section-title">5. Логотипы с архитектурным солнышком под 45°</h2>
+        <span class="section-badge">ФИРМЕННЫЙ ЗНАК С СОЛНЦЕМ</span>
       </div>
       <div class="cards-grid">
 
         <div class="asset-card">
           <div class="card-top">
-            <span class="format-pill pill-svg">SVG / PNG</span>
+            <span class="format-pill pill-svg">SVG / PNG / DXF</span>
             <span class="size-label">ВЕКТОР</span>
           </div>
           <h3 class="card-title">Логотип с дескриптором «Фасадный инжиниринг»</h3>
           <p class="card-desc">
-            Основной фирменный блок: объемный знак «ФЕРО», солнышко 45° и дескриптор. Для полиграфии, презентаций и фирменных носителей.
+            Основной фирменный блок: объемный знак «ФЕРО», солнышко 45° и дескриптор. Для полиграфии, презентаций и представительских материалов.
           </p>
           <div class="card-actions">
-            <a href="/assets/5_лого_вектор.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> Скачать SVG
+            <a href="/assets/fero_logo_sun_desc.svg" target="_blank" download class="dl-btn">
+              <span>📥</span> SVG
             </a>
-            <a href="/assets/3_лого.png" target="_blank" download class="dl-btn">
-              <span>📥</span> Скачать PNG
+            <a href="/assets/fero_logo_sun_desc.png" target="_blank" download class="dl-btn">
+              <span>📥</span> PNG
+            </a>
+            <a href="/assets/fero_logo_sun_desc.dxf" target="_blank" download class="dl-btn">
+              <span>📥</span> DXF
             </a>
           </div>
         </div>
 
         <div class="asset-card">
           <div class="card-top">
-            <span class="format-pill pill-svg">SVG / PNG</span>
+            <span class="format-pill pill-svg">SVG / PNG / DXF</span>
             <span class="size-label">ВЕКТОР</span>
           </div>
-          <h3 class="card-title">Логотип без дескриптора (Лаконичный)</h3>
+          <h3 class="card-title">Логотип без дескриптора (С солнышком)</h3>
           <p class="card-desc">
             Чистый блок «ФЕРО» с солнышком 45° без текстовой подписи. Для компактных размещений, навигационных элементов и мерча.
           </p>
           <div class="card-actions">
-            <a href="/assets/4_лого_лайт.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> Скачать SVG
+            <a href="/assets/fero_logo_sun_pure.svg" target="_blank" download class="dl-btn">
+              <span>📥</span> SVG
             </a>
-            <a href="/fero_badge_email.png" target="_blank" download class="dl-btn">
-              <span>📥</span> Скачать PNG
+            <a href="/assets/fero_logo_sun_pure.png" target="_blank" download class="dl-btn">
+              <span>📥</span> PNG
+            </a>
+            <a href="/assets/fero_logo_sun_pure.dxf" target="_blank" download class="dl-btn">
+              <span>📥</span> DXF
             </a>
           </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- 5. СПЕЦИАЛЬНЫЕ ФОРМАТЫ (ЧЕРТЕЖИ И EMAIL) -->
-    <section class="section-block">
-      <div class="section-title-wrap">
-        <span class="section-icon">📐</span>
-        <h2 class="section-title">5. Специальные форматы (Чертежи и Email)</h2>
-        <span class="section-badge">ГОСТ 185×55 ММ И ЭЛЕКТРОННАЯ ПОЧТА</span>
-      </div>
-      <div class="cards-grid">
-
         <div class="asset-card">
           <div class="card-top">
-            <span class="format-pill pill-svg">ГОСТ РД</span>
+            <span class="format-pill pill-dxf">ГОСТ / CAD</span>
             <span class="size-label">185×55 ММ</span>
           </div>
-          <h3 class="card-title">Блок для штампа чертежа (ГОСТ СПДС)</h3>
+          <h3 class="card-title">Штамп чертежа с солнышком (ГОСТ СПДС)</h3>
           <p class="card-desc">
-            Специально отмасштабированный контрастный блок для вставки в графу организации основной надписи чертежей (ячейка 70×15 мм).
+            Контрастный блок с солнышком для вставки в графу организации основной надписи чертежей. Векторы SVG, DXF и растр PNG.
           </p>
           <div class="card-actions">
-            <a href="/assets/fero_stamp_block.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> Штамп SVG
+            <a href="/assets/fero_drawing_stamp_logo.svg" target="_blank" download class="dl-btn">
+              <span>📥</span> SVG
             </a>
-            <a href="/assets/fero_stamp_block.png" target="_blank" download class="dl-btn">
-              <span>📥</span> Штамп PNG
+            <a href="/assets/fero_drawing_stamp_logo.png" target="_blank" download class="dl-btn">
+              <span>📥</span> PNG
             </a>
-          </div>
-        </div>
-
-        <div class="asset-card">
-          <div class="card-top">
-            <span class="format-pill pill-png">EMAIL PNG</span>
-            <span class="size-label">55 KB</span>
-          </div>
-          <h3 class="card-title">PNG для подписи электронной почты</h3>
-          <p class="card-desc">
-            Оптимизированное изображение на прозрачном фоне для корпоративной почтовой подписи (Outlook, Яндекс, Gmail, Thunderbird).
-          </p>
-          <a href="/fero_badge_email.png" target="_blank" download class="dl-btn">
-            <span>📥</span> Скачать бейдж e-mail
-          </a>
-        </div>
-
-        <div class="asset-card">
-          <div class="card-top">
-            <span class="format-pill pill-svg">HERO SVG</span>
-            <span class="size-label">ТИРАЖ</span>
-          </div>
-          <h3 class="card-title">Титульный блок первого экрана сайта</h3>
-          <p class="card-desc">
-            Фирменный блок заглавной композиции с выверенными пропорциями кегля и отступов для заставок и экранов.
-          </p>
-          <div class="card-actions">
-            <a href="/assets/fero_hero_vector.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> Титул SVG
-            </a>
-            <a href="/assets/fero_hero_vector.png" target="_blank" download class="dl-btn">
-              <span>📥</span> Титул PNG
+            <a href="/assets/fero_drawing_stamp_logo.dxf" target="_blank" download class="dl-btn">
+              <span>📥</span> DXF
             </a>
           </div>
         </div>
@@ -490,30 +606,52 @@
       </div>
     </section>
 
-    <!-- 6. ЧИСТЫЙ ШРИФТОВОЙ ЗНАК «ФЕРО» -->
+    <!-- 6. ТИТУЛЬНЫЙ БЛОК И ШРИФТОВОЙ ЗНАК -->
     <section class="section-block">
       <div class="section-title-wrap">
         <span class="section-icon">🔤</span>
-        <h2 class="section-title">6. Чистый шрифтовой знак «ФЕРО»</h2>
-        <span class="section-badge">ТИПОГРАФИКА</span>
+        <h2 class="section-title">6. Титульный блок и шрифтовой знак</h2>
+        <span class="section-badge">ТИПОГРАФИКА И ЗАГЛАВНЫЕ КОМПОЗИЦИИ</span>
       </div>
       <div class="cards-grid">
 
         <div class="asset-card">
           <div class="card-top">
-            <span class="format-pill pill-svg">SVG / PNG</span>
-            <span class="size-label">ЧИСТЫЙ ШРИФТ</span>
+            <span class="format-pill pill-svg">HERO UNIT</span>
+            <span class="size-label">ЭКРАН 1</span>
+          </div>
+          <h3 class="card-title">Титульный блок первого экрана сайта</h3>
+          <p class="card-desc">
+            Фирменный блок заглавной композиции первого экрана сайта с выверенными пропорциями кегля и отступов.
+          </p>
+          <div class="card-actions">
+            <a href="/assets/fero_site_hero_p1.svg" target="_blank" download class="dl-btn">
+              <span>📥</span> SVG
+            </a>
+            <a href="/assets/fero_site_hero_p1.png" target="_blank" download class="dl-btn">
+              <span>📥</span> PNG
+            </a>
+          </div>
+        </div>
+
+        <div class="asset-card">
+          <div class="card-top">
+            <span class="format-pill pill-svg">ШРИФТ</span>
+            <span class="size-label">ЧИСТЫЙ ТЕКСТ</span>
           </div>
           <h3 class="card-title">Шрифтовая надпись «ФЕРО»</h3>
           <p class="card-desc">
-            Минималистичная надпись без солнца и без дескриптора. Для строгой документации, гравировки, тиснения и служебных маркировок.
+            Минималистичная надпись монументальным гротеском без солнца и без дескриптора. Для гравировки, тиснения и маркировок.
           </p>
           <div class="card-actions">
-            <a href="/assets/fero_text_sign.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> Скачать SVG
+            <a href="/assets/fero_letters_only.svg" target="_blank" download class="dl-btn">
+              <span>📥</span> SVG
             </a>
-            <a href="/assets/fero_text_sign.png" target="_blank" download class="dl-btn">
-              <span>📥</span> Скачать PNG
+            <a href="/assets/fero_letters_only.png" target="_blank" download class="dl-btn">
+              <span>📥</span> PNG
+            </a>
+            <a href="/assets/fero_letters_only.dxf" target="_blank" download class="dl-btn">
+              <span>📥</span> DXF
             </a>
           </div>
         </div>
@@ -521,29 +659,41 @@
       </div>
     </section>
 
-    <!-- 7. ПОЛНЫЙ САЙТ ДЛЯ ДОМЕНА -->
+    <!-- 7. МИНИ-КАТАЛОГ И ДИСТРИБУТИВ САЙТА -->
     <section class="section-block">
       <div class="section-title-wrap">
-        <span class="section-icon">🌐</span>
-        <h2 class="section-title">7. Полный сайт для домена (Развертывание)</h2>
-        <span class="section-badge">РАЗВЕРТЫВАНИЕ НА FEROSPB.RU / FEROSPB.INFO</span>
+        <span class="section-icon">📦</span>
+        <h2 class="section-title">7. Мини-каталог и дистрибутив сайта</h2>
+        <span class="section-badge">МАТЕРИАЛЫ И РАЗВЕРТЫВАНИЕ</span>
       </div>
       <div class="cards-grid">
 
-        <div class="asset-card featured" style="grid-column: 1 / -1;">
+        <div class="asset-card featured">
           <div class="card-top">
-            <span class="format-pill pill-zip">ZIP АРХИВ ПОД КЛЮЧ</span>
-            <span class="size-label">617 MB</span>
+            <span class="format-pill pill-pdf">PDF ДОКУМЕНТ</span>
+            <span class="size-label">5.6 MB</span>
           </div>
-          <h3 class="card-title" style="font-size:16px;">Полный архив сайта ferospb_ru_full_site.zip</h3>
+          <h3 class="card-title">Мини-каталог объектов «ФЕРО» (PDF)</h3>
           <p class="card-desc">
-            Готовый к переносу полный дистрибутив сайта: все HTML-страницы объектов, главная страница с чистым двухкнопочным подвалом, мини-каталог PDF, каталог объектов, стили CSS, скрипты, шрифты и фотографии высокого разрешения. Распаковывается непосредственно в корневую директорию хостинга/веб-сервера (Nginx/Apache) для домена <b>ferospb.ru / ferospb.info</b>.
+            Печатная презентация знаковых фасадных объектов компании: высотные комплексы, панорамное остекление, архитектурные оболочки и инженерные решения.
           </p>
-          <div style="max-width:360px;">
-            <a href="/ferospb_ru_full_site.zip" download class="dl-btn btn-featured" style="padding:12px 20px; font-size:13px;">
-              <span>📥</span> Скачать полный сайт (ZIP, 617 МБ)
-            </a>
+          <a href="/assets/fero_mini_catalog.pdf" download class="dl-btn btn-featured">
+            <span>📥</span> Скачать мини-каталог (PDF, 5.6 МБ)
+          </a>
+        </div>
+
+        <div class="asset-card featured">
+          <div class="card-top">
+            <span class="format-pill pill-zip">ZIP АРХИВ</span>
+            <span class="size-label">ПОЛНЫЙ ДИСТРИБУТИВ</span>
           </div>
+          <h3 class="card-title">Полный архив сайта ferospb_ru_full_site.zip</h3>
+          <p class="card-desc">
+            Полный дистрибутив сайта: все HTML-страницы объектов, главная страница с чистым подвалом, каталог объектов, стили, скрипты, шрифты и фото высокого разрешения для домена <b>ferospb.ru / ferospb.info</b>.
+          </p>
+          <a href="/ferospb_ru_full_site.zip" download class="dl-btn btn-featured">
+            <span>📥</span> Скачать полный сайт (ZIP)
+          </a>
         </div>
 
       </div>

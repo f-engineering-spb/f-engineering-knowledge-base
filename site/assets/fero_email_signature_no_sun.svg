@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 70" width="260" height="70">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;display=swap');
+      .sig-title {
+        font-family: 'Montserrat', Arial Black, sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        letter-spacing: 2.2px;
+        fill: #0f172a;
+      }
+      .sig-sub {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 8px;
+        letter-spacing: 2.8px;
+        fill: #334155;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <text x="130" y="42" class="sig-title" text-anchor="middle">ФЕРО</text>
+  <text x="130" y="59" class="sig-sub" text-anchor="middle">ФАСАДНЫЙ ИНЖИНИРИНГ</text>
+</svg>

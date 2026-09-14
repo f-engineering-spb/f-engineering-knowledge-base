@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 55" width="185" height="55">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;display=swap');
+      .st-sun-line { stroke: #000000; stroke-width: 0.9; fill: none; }
+      .st-sun-thin { stroke: #444444; stroke-width: 0.6; fill: none; }
+      .st-title { font-family: 'Montserrat', Arial Black, sans-serif; font-weight: 900; font-size: 28px; letter-spacing: 1.8px; fill: #000000; }
+      .st-sub { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 6px; letter-spacing: 2px; fill: #000000; text-transform: uppercase; }
+    </style>
+  </defs>
+  <g transform="translate(115, -2) scale(0.25)">
+    <line x1="20" y1="55" x2="235" y2="55" class="st-sun-line"/>
+    <circle cx="235" cy="55" r="15" fill="#ffffff" stroke="#000000" stroke-width="1.5"/>
+    <line x1="235" y1="33" x2="235" y2="23" class="st-sun-line"/>
+    <line x1="235" y1="77" x2="235" y2="87" class="st-sun-line"/>
+    <line x1="213" y1="55" x2="203" y2="55" class="st-sun-line"/>
+    <line x1="257" y1="55" x2="267" y2="55" class="st-sun-line"/>
+    <line x1="235" y1="55" x2="35" y2="135" class="st-sun-line" stroke-width="1.2"/>
+  </g>
+  <text x="65" y="34" class="st-title" text-anchor="middle">ФЕРО</text>
+  <text x="66" y="47" class="st-sub" text-anchor="middle">ФАСАДНЫЙ ИНЖИНИРИНГ</text>
+</svg>

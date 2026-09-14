@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 240" width="600" height="240">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;display=swap');
+      .brand-title {
+        font-family: 'Montserrat', Arial Black, sans-serif;
+        font-weight: 800;
+        font-size: 155px;
+        letter-spacing: 8px;
+        fill: #fafbfc;
+      }
+      .brand-sub {
+        font-family: 'Montserrat', 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 10px;
+        fill: #1e293b;
+        text-transform: uppercase;
+      }
+    </style>
+    
+    <filter id="relief-3d" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow in="SourceAlpha" dx="-1.5" dy="2" stdDeviation="1.0" flood-color="#0f172a" flood-opacity="0.55" result="contactShadow"/>
+      <feDropShadow in="SourceAlpha" dx="-10" dy="14" stdDeviation="2.5" flood-color="#1e293b" flood-opacity="0.32" result="castShadow"/>
+      <feMerge result="allShadows">
+        <feMergeNode in="castShadow"/>
+        <feMergeNode in="contactShadow"/>
+      </feMerge>
+
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" result="chamferSlope"/>
+      <feDiffuseLighting in="chamferSlope" surfaceScale="5.0" diffuseConstant="1.15" lighting-color="#ffffff" result="diffuseLight">
+        <feDistantLight azimuth="315" elevation="55"/>
+      </feDiffuseLighting>
+      <feSpecularLighting in="chamferSlope" surfaceScale="4.0" specularConstant="0.80" specularExponent="20" lighting-color="#ffffff" result="specLight">
+        <feDistantLight azimuth="315" elevation="55"/>
+      </feSpecularLighting>
+      <feComposite in="diffuseLight" in2="SourceAlpha" operator="in" result="diffuseMasked"/>
+      <feComposite in="specLight" in2="SourceAlpha" operator="in" result="specMasked"/>
+      <feBlend in="specMasked" in2="diffuseMasked" mode="screen" result="shadedBevelRaw"/>
+
+      <feComponentTransfer in="shadedBevelRaw" result="shadedBevel">
+        <feFuncR type="linear" slope="0.78" intercept="0.22"/>
+        <feFuncG type="linear" slope="0.80" intercept="0.20"/>
+        <feFuncB type="linear" slope="0.82" intercept="0.18"/>
+      </feComponentTransfer>
+
+      <feMorphology in="SourceAlpha" operator="erode" radius="2.8" result="plateauAlpha"/>
+      <feFlood flood-color="#fbfcff" result="plateauFill"/>
+      <feComposite in="plateauFill" in2="plateauAlpha" operator="in" result="flatPlateau"/>
+
+      <feGaussianBlur in="plateauAlpha" stdDeviation="0.4" result="plateauBlur"/>
+      <feSpecularLighting in="plateauBlur" surfaceScale="1.5" specularConstant="0.4" specularExponent="12" lighting-color="#ffffff" result="plateauGlint"/>
+      <feComposite in="plateauGlint" in2="plateauAlpha" operator="in" result="plateauGlintMasked"/>
+      <feBlend in="plateauGlintMasked" in2="flatPlateau" mode="screen" result="finishedPlateau"/>
+
+      <feComposite in="finishedPlateau" in2="shadedBevel" operator="over" result="finishedFace"/>
+      <feMerge>
+        <feMergeNode in="allShadows"/>
+        <feMergeNode in="finishedFace"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#relief-3d)">
+    <text x="300" y="150" class="brand-title" text-anchor="middle">ФЕРО</text>
+  </g>
+  <text x="303" y="210" class="brand-sub" text-anchor="middle">ФАСАДНЫЙ ИНЖИНИРИНГ</text>
+</svg>
