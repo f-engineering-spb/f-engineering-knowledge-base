@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ФЕРО — Официальный Брендбук и Центр ресурсов</title>
+  <title>ФЕРО — Брендбук и Центр ресурсов</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -18,90 +18,57 @@
     }
     a { color: inherit; text-decoration: none; }
 
-    /* LIGHT TOP NAV */
+    /* LIGHT TOP NAV: EXACT SAME AS OBJECT PAGES */
     .nav-bar {
       border-bottom: 1px solid #e2e8f0;
-      background: rgba(255,255,255,0.94);
+      background: rgba(255,255,255,0.96);
       backdrop-filter: blur(12px);
       position: sticky;
       top: 0;
       z-index: 100;
-      padding: 16px 36px;
+      padding: 0 32px;
+      height: 64px;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
-      box-shadow: 0 2px 10px rgba(15,23,42,0.03);
-    }
-    .nav-logo {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 18px;
-      font-weight: 900;
-      letter-spacing: 0.1em;
-      color: #0f172a;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .nav-tag {
-      font-size: 10.5px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      background: #e0f2fe;
-      border: 1px solid #bae6fd;
-      color: #0284c7;
-      padding: 3px 10px;
-      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(15,23,42,0.03);
     }
     .nav-back {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      color: #0f172a;
-      background: #f1f5f9;
-      border: 1px solid #cbd5e1;
-      padding: 8px 16px;
-      border-radius: 8px;
-      transition: all 0.2s;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+      padding: 8px 18px !important;
+      background: #f8fafc !important;
+      border: 1px solid #cbd5e1 !important;
+      border-radius: 8px !important;
+      color: #0f172a !important;
+      font-family: 'Montserrat', sans-serif !important;
+      font-size: 13px !important;
+      font-weight: 700 !important;
+      text-decoration: none !important;
+      transition: all 0.2s ease !important;
+      cursor: pointer !important;
+      flex-shrink: 0 !important;
     }
     .nav-back:hover {
-      background: #0284c7;
-      border-color: #0284c7;
-      color: #ffffff;
+      background: #0284c7 !important;
+      border-color: #0284c7 !important;
+      color: #ffffff !important;
     }
 
-    /* HERO WRAPPER */
+    /* COMPACT HERO - ONLY THE REQUIRED PHRASE */
     .hero-wrap {
-      padding: 56px 24px 40px 24px;
+      padding: 24px 24px 20px 24px;
       text-align: center;
-      max-width: 920px;
+      max-width: 980px;
       margin: 0 auto;
     }
-    .hero-subtitle {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: #0284c7;
-      margin-bottom: 14px;
-    }
-    .hero-title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 38px;
-      font-weight: 900;
-      letter-spacing: 0.02em;
-      color: #0f172a;
-      line-height: 1.2;
-      margin-bottom: 16px;
-    }
     .hero-desc {
-      font-size: 16px;
-      color: #64748b;
-      line-height: 1.65;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      color: #475569;
+      line-height: 1.6;
     }
 
     .container {
@@ -114,62 +81,65 @@
     .info-card {
       background: #ffffff;
       border: 1px solid #e2e8f0;
-      border-radius: 14px;
-      padding: 28px 32px;
-      margin-bottom: 24px;
-      box-shadow: 0 4px 16px rgba(15,23,42,0.03);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(15,23,42,0.02);
     }
     .info-card-header {
       display: flex;
       align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-      padding-bottom: 12px;
+      gap: 10px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
       border-bottom: 1px solid #f1f5f9;
     }
+    /* НЕЖИРНЫЕ ЗАГОЛОВКИ */
     .info-card-title {
       font-family: 'Montserrat', sans-serif;
-      font-size: 17px;
-      font-weight: 800;
+      font-size: 16px;
+      font-weight: 400;
       color: #0f172a;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
     }
     .info-card-content {
-      font-size: 14.5px;
+      font-size: 14px;
+      font-weight: 400;
       color: #334155;
       line-height: 1.7;
     }
     .info-highlight {
       background: #f0f9ff;
-      border-left: 4px solid #0284c7;
-      padding: 14px 18px;
-      border-radius: 0 8px 8px 0;
-      margin: 14px 0;
-      font-size: 14px;
+      border-left: 3px solid #0284c7;
+      padding: 12px 16px;
+      border-radius: 0 6px 6px 0;
+      margin: 12px 0;
+      font-size: 13.5px;
       color: #0369a1;
-      font-weight: 500;
+      font-weight: 400;
     }
 
     /* SECTION BLOCKS */
     .section-block {
-      margin-top: 48px;
-      margin-bottom: 24px;
+      margin-top: 36px;
+      margin-bottom: 20px;
     }
     .section-title-wrap {
       display: flex;
       align-items: center;
-      gap: 12px;
-      margin-bottom: 22px;
+      gap: 10px;
+      margin-bottom: 18px;
       border-bottom: 1px solid #e2e8f0;
-      padding-bottom: 12px;
+      padding-bottom: 10px;
     }
-    .section-icon { font-size: 22px; }
+    .section-icon { font-size: 20px; }
+    /* НЕЖИРНЫЕ ЗАГОЛОВКИ СЕКЦИЙ */
     .section-title {
       font-family: 'Montserrat', sans-serif;
-      font-size: 18px;
-      font-weight: 800;
-      letter-spacing: 0.04em;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
       color: #0f172a;
       text-transform: uppercase;
     }
@@ -178,12 +148,13 @@
       font-family: 'JetBrains Mono', monospace;
       color: #94a3b8;
       margin-left: auto;
+      font-weight: 400;
     }
 
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 20px;
+      gap: 18px;
     }
 
     /* ASSET CARDS */
@@ -191,64 +162,63 @@
       background: #ffffff;
       border: 1px solid #e2e8f0;
       border-radius: 12px;
-      padding: 24px;
+      padding: 22px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-      box-shadow: 0 4px 16px rgba(15,23,42,0.03);
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(15,23,42,0.02);
     }
     .asset-card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-2px);
       border-color: #cbd5e1;
-      box-shadow: 0 12px 28px rgba(15,23,42,0.08);
+      box-shadow: 0 8px 20px rgba(15,23,42,0.06);
     }
     .asset-card.featured {
       border: 1.5px solid #bae6fd;
       background: linear-gradient(180deg, #ffffff 0%, #f0f9ff 100%);
-      box-shadow: 0 6px 20px rgba(2,132,199,0.07);
     }
 
     .card-top {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
     .format-pill {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 10.5px;
-      font-weight: 700;
+      font-size: 10px;
+      font-weight: 500;
       padding: 3px 8px;
       border-radius: 4px;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
     }
     .pill-zip { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
     .pill-docx { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
-    .pill-pdf { background: #fff1f2; color: #be123c; border: 1px solid #fecdd3; }
     .pill-svg { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
     .pill-png { background: #faf5ff; color: #6b21a8; border: 1px solid #e9d5ff; }
 
     .size-label {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 11.5px;
+      font-size: 11px;
       color: #94a3b8;
     }
 
     .card-title {
       font-family: 'Montserrat', sans-serif;
-      font-size: 16px;
-      font-weight: 700;
+      font-size: 15px;
+      font-weight: 500;
       color: #0f172a;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       line-height: 1.35;
     }
     .card-desc {
-      font-size: 13.5px;
+      font-size: 13px;
+      font-weight: 400;
       color: #64748b;
       line-height: 1.55;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       flex-grow: 1;
     }
 
@@ -264,14 +234,14 @@
       justify-content: center;
       gap: 8px;
       flex: 1;
-      padding: 11px 16px;
+      padding: 10px 14px;
       border-radius: 8px;
       background: #f8fafc;
       border: 1px solid #cbd5e1;
       color: #0f172a;
       font-family: 'Montserrat', sans-serif;
-      font-size: 12.5px;
-      font-weight: 700;
+      font-size: 12px;
+      font-weight: 600;
       letter-spacing: 0.02em;
       transition: all 0.2s;
       cursor: pointer;
@@ -281,7 +251,7 @@
       background: #0284c7;
       border-color: #0284c7;
       color: #ffffff;
-      box-shadow: 0 4px 12px rgba(2,132,199,0.25);
+      box-shadow: 0 4px 12px rgba(2,132,199,0.2);
     }
     .dl-btn.btn-featured {
       background: #0284c7;
@@ -296,44 +266,38 @@
     .footer {
       border-top: 1px solid #e2e8f0;
       background: #ffffff;
-      padding: 36px 24px;
+      padding: 32px 24px;
       text-align: center;
-      font-size: 13.5px;
+      font-size: 13px;
       color: #64748b;
       line-height: 1.7;
     }
-    .footer a { color: #0284c7; font-weight: 600; }
+    .footer a { color: #0284c7; font-weight: 500; }
   </style>
 </head>
 <body>
 
-  <!-- ВЕРХНЯЯ ПАНЕЛЬ НАВИГАЦИИ -->
+  <!-- ВЕРХНЯЯ ПАНЕЛЬ: СПРАВА КНОПКА ТОЧНО КАК НА САЙТЕ (СЛЕВА ПУСТО) -->
   <header class="nav-bar">
-    <div class="nav-logo">
-      <span>ФЕРО</span>
-      <span class="nav-tag">БРЕНДБУК И РЕСУРСЫ</span>
-    </div>
-    <a href="/" class="nav-back">
-      <span>&larr;</span>
-      <span>На главную ferospb.info</span>
+    <a href="/" onclick="if(window.history.length>1&&document.referrer&&document.referrer.indexOf(location.host)!==-1){history.back();return false;}else{location.href='/';return false;}" class="nav-back">
+      <span style="font-size: 16px; line-height: 1;">&larr;</span>
+      <span>На главную</span>
     </a>
   </header>
 
-  <!-- ЗАГОЛОВОК СТРАНИЦЫ -->
+  <!-- КОМПАКТНЫЙ ВЕРХНИЙ БЛОК: ТОЛЬКО ТРЕБУЕМАЯ ФРАЗА -->
   <div class="hero-wrap">
-    <div class="hero-subtitle">ОФИЦИАЛЬНЫЙ СТИЛЬ И ФИЛОСОФИЯ КОМПАНИИ 2026</div>
-    <h1 class="hero-title">Брендбук и ресурсы ФЕРО</h1>
     <p class="hero-desc">
-      Инженерная концепция, философия имени, руководство по корпоративной айдентике, официальные бланки документов, векторные исходники и полный сайт для домена <b>ferospb.ru</b>.
+      Инженерная концепция, философия имени, руководство по корпоративной айдентике, официальные бланки документов, векторные исходники и полный сайт для домена <b>ferospb.ru / ferospb.info</b>.
     </p>
   </div>
 
   <main class="container">
 
-    <!-- 1. ФИЛОСОФИЯ БРЕНДА И ЛАТИНСКАЯ ЭТИМОЛОГИЯ -->
+    <!-- 1. ЭТИМОЛОГИЯ ИМЕНИ FERO И ФИЛОСОФИЯ БРЕНДА -->
     <div class="info-card">
       <div class="info-card-header">
-        <span style="font-size:24px;">🏛️</span>
+        <span style="font-size:20px;">🏛️</span>
         <h2 class="info-card-title">1. Этимология имени FERO и философия бренда</h2>
       </div>
       <div class="info-card-content">
@@ -348,16 +312,16 @@
         <p>
           Слово <b>FERO</b> также напрямую коррелирует с латинским <b>ferrum</b> (железо) — первоосновой металлических каркасов, стальных анкерных узлов и алюминиевых фасадных систем высокой жесткости.
         </p>
-        <p style="margin-top:10px;">
+        <p style="margin-top:8px;">
           <b>Миссия «ФЕРО»:</b> Синтез математической точности инжиниринга, расчетной несущей надежности и бескомпромиссной эстетики современной архитектуры.
         </p>
       </div>
     </div>
 
-    <!-- 2. НАПИСАНИЕ ЛОГОТИПА И АРХИТЕКТУРНОЕ СОЛНЫШКО 45° -->
+    <!-- 2. НАПИСАНИЕ ЛОГОТИПА И АРХИТЕКТУРНОЕ СОЛНЫШКО ПОД 45° -->
     <div class="info-card">
       <div class="info-card-header">
-        <span style="font-size:24px;">☀️</span>
+        <span style="font-size:20px;">☀️</span>
         <h2 class="info-card-title">2. Написание логотипа и архитектурное солнышко под 45°</h2>
       </div>
       <div class="info-card-content">
@@ -370,7 +334,7 @@
       </div>
     </div>
 
-    <!-- 3. ОФИЦИАЛЬНЫЕ ФИРМЕННЫЕ БЛАНКИ А4 (БЕЗ ДУБЛЕЙ) -->
+    <!-- 3. ОФИЦИАЛЬНЫЕ ФИРМЕННЫЕ БЛАНКИ WORD (.DOCX) -->
     <section class="section-block">
       <div class="section-title-wrap">
         <span class="section-icon">📄</span>
@@ -412,7 +376,7 @@
       </div>
     </section>
 
-    <!-- 4. ЛОГОТИПЫ С АРХИТЕКТУРНЫМ СОЛНЫШКОМ 45° -->
+    <!-- 4. ЛОГОТИПЫ С АРХИТЕКТУРНЫМ СОЛНЫШКОМ -->
     <section class="section-block">
       <div class="section-title-wrap">
         <span class="section-icon">🔷</span>
@@ -421,7 +385,6 @@
       </div>
       <div class="cards-grid">
 
-        <!-- С ПОДПИСЬЮ «ФАСАДНЫЙ ИНЖИНИРИНГ» -->
         <div class="asset-card">
           <div class="card-top">
             <span class="format-pill pill-svg">SVG / PNG</span>
@@ -441,7 +404,6 @@
           </div>
         </div>
 
-        <!-- БЕЗ ДЕСКРИПТОРА -->
         <div class="asset-card">
           <div class="card-top">
             <span class="format-pill pill-svg">SVG / PNG</span>
@@ -464,7 +426,7 @@
       </div>
     </section>
 
-    <!-- 5. СПЕЦИАЛЬНЫЕ ФОРМАТЫ И ЧЕРТЕЖИ -->
+    <!-- 5. СПЕЦИАЛЬНЫЕ ФОРМАТЫ (ЧЕРТЕЖИ И EMAIL) -->
     <section class="section-block">
       <div class="section-title-wrap">
         <span class="section-icon">📐</span>
@@ -473,7 +435,6 @@
       </div>
       <div class="cards-grid">
 
-        <!-- ШТАМП ЧЕРТЕЖНЫЙ ГОСТ -->
         <div class="asset-card">
           <div class="card-top">
             <span class="format-pill pill-svg">ГОСТ РД</span>
@@ -493,7 +454,6 @@
           </div>
         </div>
 
-        <!-- ПОДПИСЬ ДЛЯ E-MAIL -->
         <div class="asset-card">
           <div class="card-top">
             <span class="format-pill pill-png">EMAIL PNG</span>
@@ -508,7 +468,6 @@
           </a>
         </div>
 
-        <!-- ТИТУЛЬНЫЙ БЛОК ПЕРВОГО ЭКРАНА -->
         <div class="asset-card">
           <div class="card-top">
             <span class="format-pill pill-svg">HERO SVG</span>
@@ -531,7 +490,7 @@
       </div>
     </section>
 
-    <!-- 6. ЧИСТЫЙ ШРИФТОВОЙ ЗНАК -->
+    <!-- 6. ЧИСТЫЙ ШРИФТОВОЙ ЗНАК «ФЕРО» -->
     <section class="section-block">
       <div class="section-title-wrap">
         <span class="section-icon">🔤</span>
@@ -562,12 +521,12 @@
       </div>
     </section>
 
-    <!-- 7. ПОЛНЫЙ ДИСТРИБУТИВ САЙТА ДЛЯ ДОМЕНА -->
+    <!-- 7. ПОЛНЫЙ САЙТ ДЛЯ ДОМЕНА -->
     <section class="section-block">
       <div class="section-title-wrap">
         <span class="section-icon">🌐</span>
         <h2 class="section-title">7. Полный сайт для домена (Развертывание)</h2>
-        <span class="section-badge">РАЗВЕРТЫВАНИЕ НА FEROSPB.RU</span>
+        <span class="section-badge">РАЗВЕРТЫВАНИЕ НА FEROSPB.RU / FEROSPB.INFO</span>
       </div>
       <div class="cards-grid">
 
@@ -576,12 +535,12 @@
             <span class="format-pill pill-zip">ZIP АРХИВ ПОД КЛЮЧ</span>
             <span class="size-label">617 MB</span>
           </div>
-          <h3 class="card-title" style="font-size:18px;">Полный архив сайта ferospb_ru_full_site.zip</h3>
+          <h3 class="card-title" style="font-size:16px;">Полный архив сайта ferospb_ru_full_site.zip</h3>
           <p class="card-desc">
-            Готовый к переносу полный дистрибутив сайта: все HTML-страницы объектов, главная страница с чистым двухкнопочным подвалом, мини-каталог PDF, каталог объектов, стили CSS, скрипты, шрифты и фотографии высокого разрешения. Распаковывается непосредственно в корневую директорию хостинга/веб-сервера (Nginx/Apache) для домена <b>ferospb.ru</b>.
+            Готовый к переносу полный дистрибутив сайта: все HTML-страницы объектов, главная страница с чистым двухкнопочным подвалом, мини-каталог PDF, каталог объектов, стили CSS, скрипты, шрифты и фотографии высокого разрешения. Распаковывается непосредственно в корневую директорию хостинга/веб-сервера (Nginx/Apache) для домена <b>ferospb.ru / ferospb.info</b>.
           </p>
           <div style="max-width:360px;">
-            <a href="/ferospb_ru_full_site.zip" download class="dl-btn btn-featured" style="padding:14px 24px; font-size:14px;">
+            <a href="/ferospb_ru_full_site.zip" download class="dl-btn btn-featured" style="padding:12px 20px; font-size:13px;">
               <span>📥</span> Скачать полный сайт (ZIP, 617 МБ)
             </a>
           </div>
