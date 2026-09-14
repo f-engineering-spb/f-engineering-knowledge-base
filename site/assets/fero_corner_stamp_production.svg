@@ -1,5 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="280 140 640 280" width="320" height="140">
-<defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 240" width="450" height="240">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&amp;display=swap');
+      .c-border { fill: #ffffff; stroke: #0f172a; stroke-width: 3.0; }
+      .c-status { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 2.8px; fill: #0284c7; text-anchor: middle; text-transform: uppercase; }
+      .c-line { stroke: #cbd5e1; stroke-width: 1.2; }
+      .c-field { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 11px; fill: #475569; }
+    </style>
+  </defs>
+  <rect x="2" y="2" width="446" height="236" class="c-border" rx="4"/>
+  <g transform="translate(35, 10) scale(0.60)">
+    <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;display=swap');
       .brand-title {
@@ -65,8 +76,13 @@
       </feMerge>
     </filter>
   </defs>
-  <g filter="url(#relief-3d)">
-    <text x="600" y="315" class="brand-title" text-anchor="middle">ФЕРО</text>
+    <g filter="url(#relief-3d)">
+      <text x="600" y="315" class="brand-title" text-anchor="middle">ФЕРО</text>
+    </g>
+    <text x="605" y="385" class="brand-sub" text-anchor="middle">ФАСАДНЫЙ ИНЖИНИРИНГ</text>
   </g>
-  <text x="605" y="385" class="brand-sub" text-anchor="middle">ФАСАДНЫЙ ИНЖИНИРИНГ</text>
+  <text x="225" y="180" class="c-status">В ПРОИЗВОДСТВО РАБОТ</text>
+  <line x1="20" y1="200" x2="430" y2="200" class="c-line"/>
+  <text x="25" y="222" class="c-field">Инженер ОТО: _________</text>
+  <text x="310" y="222" class="c-field">«___» _______ 2026 г.</text>
 </svg>

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
-  <defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="290 140 620 220" width="620" height="220">
+<defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;display=swap');
       .brand-title {
@@ -9,6 +9,19 @@
         letter-spacing: 8px;
         fill: #fafbfc;
       }
+      .brand-sub {
+        font-family: 'Montserrat', 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: 10.5px;
+        fill: #1e293b;
+        text-transform: uppercase;
+      }
+      .sun-line { stroke: #475569; stroke-width: 1.1; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .sun-thin { stroke: #94a3b8; stroke-width: 0.8; fill: none; }
+      .sun-dashed { stroke: #64748b; stroke-width: 0.9; stroke-dasharray: 3 3; fill: none; }
+      .sun-text { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; fill: #1e293b; }
+      .sun-node { fill: #ffffff; stroke: #475569; stroke-width: 1.1; }
     </style>
     
     <filter id="relief-3d" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
@@ -52,8 +65,7 @@
       </feMerge>
     </filter>
   </defs>
-
   <g filter="url(#relief-3d)">
-    <text x="300" y="150" class="brand-title" text-anchor="middle">ФЕРО</text>
+    <text x="600" y="315" class="brand-title" text-anchor="middle">ФЕРО</text>
   </g>
 </svg>

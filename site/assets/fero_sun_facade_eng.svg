@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="280 50 760 360" width="760" height="360">
-  <defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="280 50 760 380" width="760" height="380">
+<defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;display=swap');
       .brand-title {
@@ -9,26 +9,6 @@
         letter-spacing: 8px;
         fill: #fafbfc;
       }
-      .brand-title-flat {
-        font-family: 'Montserrat', Arial Black, sans-serif;
-        font-weight: 800;
-        font-size: 165px;
-        letter-spacing: 8px;
-        fill: #0f172a;
-      }
-      .brand-title-white {
-        font-family: 'Montserrat', Arial Black, sans-serif;
-        font-weight: 800;
-        font-size: 165px;
-        letter-spacing: 8px;
-        fill: #ffffff;
-      }
-      .sun-line { stroke: #334155; stroke-width: 1.2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-      .sun-thin { stroke: #64748b; stroke-width: 0.9; fill: none; }
-      .sun-dashed { stroke: #475569; stroke-width: 1.0; stroke-dasharray: 3 3; fill: none; }
-      .sun-text { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; fill: #0f172a; }
-      .sun-node { fill: #ffffff; stroke: #0f172a; stroke-width: 1.2; }
-      
       .brand-sub {
         font-family: 'Montserrat', 'Inter', sans-serif;
         font-weight: 700;
@@ -37,6 +17,11 @@
         fill: #1e293b;
         text-transform: uppercase;
       }
+      .sun-line { stroke: #475569; stroke-width: 1.1; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .sun-thin { stroke: #94a3b8; stroke-width: 0.8; fill: none; }
+      .sun-dashed { stroke: #64748b; stroke-width: 0.9; stroke-dasharray: 3 3; fill: none; }
+      .sun-text { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; fill: #1e293b; }
+      .sun-node { fill: #ffffff; stroke: #475569; stroke-width: 1.1; }
     </style>
     
     <filter id="relief-3d" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
@@ -82,7 +67,7 @@
   </defs>
   <g transform="translate(760, 65) scale(0.85)">
     <line x1="20" y1="55" x2="235" y2="55" class="sun-line"/>
-    <circle cx="235" cy="55" r="16" fill="#ffffff" stroke="#0f172a" stroke-width="1.3"/>
+    <circle cx="235" cy="55" r="16" fill="#ffffff" stroke="#1e293b" stroke-width="1.3"/>
     <line x1="235" y1="33" x2="235" y2="25" class="sun-line"/>
     <line x1="235" y1="77" x2="235" y2="85" class="sun-line"/>
     <line x1="213" y1="55" x2="205" y2="55" class="sun-line"/>
