@@ -1179,6 +1179,7 @@ t-name_xs
 js-product-name"
 field="li_title__1694092721446"> <span style="color: rgb(255, 255, 255);">остальные</span> </div> <div class="t786__price-wrapper " style="visibility: hidden"> <div class="t786__price t786__price-item t-name t-name_xs" style=" display: none;"> <div class="t786__price-value js-product-price notranslate" translate="off" field="li_price__1694092721446"></div> <div class="t786__price-currency">р.</div> </div> <div class="t786__price_old t786__price-item t-name t-name_xs" style="display: none"> <div class="t786__price-value" field="li_price_old__1694092721446"></div> <div class="t786__price-currency">р.</div> </div> </div> </div> </a> </div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t786__showMore',function() {t786__showMore('629192748');});t_onFuncLoad('t786__init',function() {t786__init('629192748');});});</script> <style>#rec629192748 .t-slds__bullet_active .t-slds__bullet_body{background-color:#222 !important;}#rec629192748 .t-slds__bullet:hover .t-slds__bullet_body{background-color:#222 !important;}</style> <style>#rec629192748 .t786__content .t786__title{font-family:'BebasNeueBold';font-weight:700;}@media screen and (min-width:900px){#rec629192748 .t786__content .t786__title{font-size:32px;line-height:1;}}@media screen and (max-width:900px){#rec629192748 .t786__content .t786__title{font-size:1.6rem;}}#rec629192748 .t786__price{font-weight:400;}#rec629192748 .t786__price_old{font-weight:400;}</style> <style>#rec629192748 .t786__textwrapper .t786__descr{font-size:16px;line-height:1;font-family:'Open Sans';}</style> <style>#rec629192748 .t-popup .t786__title{font-family:'BebasNeueBold';font-weight:700;}@media screen and (min-width:900px){#rec629192748 .t-popup .t786__title{line-height:1;}}#rec629192748 .t-popup .t786__descr{line-height:1;font-family:'Open Sans';}</style> <style>#rec629192748 .t786__container .t-product__option-title{line-height:1;font-family:'Open Sans';}</style> <style>#rec629192748 .t786__container .t-product__option-title{font-size:20px;}#rec629192748 .t-popup .t786__container .t786__title_small{font-size:20px;}</style> <style>#rec629192748 .t786__container .t-product__option-select{font-size:20px;}</style> </div> 
 <!-- ЧИСТЫЙ СВЕТЛЫЙ ПОДВАЛ ФЕРО (СТРОГО ДВЕ КНОПКИ И РЕКВИЗИТЫ) -->
+<!-- ЧИСТЫЙ СВЕТЛЫЙ ПОДВАЛ ФЕРО (СТРОГО ДВЕ КНОПКИ И РЕКВИЗИТЫ) -->
 <div id="fero-clean-footer" style="background:#f8fafc; padding: 50px 24px 60px; text-align:center; border-top: 1px solid #e2e8f0; width:100%; clear:both; margin-top:0;">
 
   <!-- ДВЕ ГЛАВНЫЕ КНОПКИ В СВЕТЛЫХ ТОНАХ -->
@@ -1200,214 +1201,35 @@ field="li_title__1694092721446"> <span style="color: rgb(255, 255, 255);">ост
       <span style="color:#0284c7; font-size:16px; font-weight:700;">↗</span>
     </a>
 
-    <!-- ПРАВАЯ КНОПКА: БРЕНДБУК И ФАЙЛЫ -->
-    <button type="button" onclick="toggleBrandbookPanel()" id="btn-toggle-brandbook" class="fero-ft-btn" style="
+    <!-- ПРАВАЯ КНОПКА: БРЕНДБУК И ФАЙЛЫ (ОТКРЫВАЕТ НОВУЮ СТРАНИЦУ) -->
+    <a href="/brandbook" target="_blank" class="fero-ft-btn" style="
       display:inline-flex; align-items:center; justify-content:space-between; gap:16px;
-      padding:18px 28px; background:#ffffff; border:1.5px solid #0284c7; border-radius:12px;
+      padding:18px 28px; background:#ffffff; border:1.5px solid #cbd5e1; border-radius:12px;
       text-decoration:none; color:#0f172a; min-width:290px; flex:1; max-width:390px;
-      box-shadow:0 4px 16px rgba(2,132,199,0.08); transition:all 0.25s ease; cursor:pointer;">
+      box-shadow:0 4px 16px rgba(15,23,42,0.04); transition:all 0.25s ease; cursor:pointer;">
       <div style="display:flex; align-items:center; gap:12px;">
         <span style="font-size:24px;">🎨</span>
         <div style="text-align:left;">
           <div style="font-family:'Montserrat',sans-serif; font-size:15px; font-weight:700; color:#0f172a; line-height:1.2;">Брендбук и файлы</div>
-          <div style="font-family:'Inter',sans-serif; font-size:12px; color:#64748b; margin-top:3px;">Философия, бланки, материалы</div>
+          <div style="font-family:'Inter',sans-serif; font-size:12px; color:#64748b; margin-top:3px;">Философия, бланки, вектор &bull; Новое окно</div>
         </div>
       </div>
-      <span id="brandbook-arrow" style="color:#0284c7; font-size:14px; font-weight:700; transition:transform 0.25s ease;">▼</span>
-    </button>
-  </div>
-
-  <!-- РАСКРЫВАЮЩАЯСЯ ПАНЕЛЬ БРЕНДБУКА (ПО УМОЛЧАНИЮ СКРЫТА ЗА КНОПКОЙ) -->
-  <div id="panel-brandbook-files" style="display:none; max-width:980px; margin:24px auto 36px; padding:32px; background:#ffffff; border-radius:16px; border:1px solid #e2e8f0; box-shadow:0 12px 36px rgba(15,23,42,0.06); text-align:left;">
-    
-    <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #f1f5f9; padding-bottom:18px; margin-bottom:24px; flex-wrap:wrap; gap:12px;">
-      <div>
-        <div style="font-family:'Montserrat',sans-serif; font-size:18px; font-weight:800; color:#0f172a;">
-          Центр фирменного стиля и ресурсов компании ФЕРО
-        </div>
-        <div style="font-size:13px; color:#64748b; margin-top:3px;">
-          Официальная философия бренда, бланки документов, векторные и растровые логотипы
-        </div>
-      </div>
-      <a href="/brandbook.html" target="_blank" style="font-family:'Montserrat',sans-serif; font-size:12.5px; font-weight:700; color:#0284c7; text-decoration:none; padding:8px 16px; border:1px solid #bae6fd; border-radius:8px; background:#f0f9ff; transition:all 0.2s ease;">
-        Открыть онлайн-брендбук →
-      </a>
-    </div>
-
-    <!-- 1. СМЫСЛОВАЯ КОНЦЕПЦИЯ И ПЕРЕВОД С ЛАТЫНИ -->
-    <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:20px 24px; margin-bottom:26px;">
-      <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:800; color:#0369a1; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:10px;">
-        Философия бренда и происхождение названия «ФЕРО»
-      </div>
-      <div style="font-family:'Inter',sans-serif; font-size:13.5px; line-height:1.7; color:#334155; margin-bottom:12px;">
-        <strong>Этимология и перевод с латыни:</strong> Название компании восходит к латинскому глаголу <em>fero</em> (инфинитив — <em>ferre</em>), базовыми значениями которого являются <strong>«несу»</strong>, <strong>«держу»</strong>, <strong>«выдерживаю нагрузки»</strong>, а также <strong>«приношу»</strong> и <strong>«созидаю»</strong>.
-      </div>
-      <div style="font-family:'Inter',sans-serif; font-size:13.5px; line-height:1.7; color:#334155;">
-        <strong>Интеграция в инженерную философию бюро «ФЕРО»:</strong>
-        <ul style="margin:8px 0 0 20px; padding:0;">
-          <li style="margin-bottom:6px;"><strong>Несущая способность оболочки:</strong> Фасад здания — это не просто эстетический контур, а сложнейшая инженерная система, которая первой принимает на себя и несёт колоссальные динамические ветровые, климатические и гравитационные нагрузки. Конструкции «ФЕРО» несут на себе физическую стойкость всего архитектурного объёма.</li>
-          <li style="margin-bottom:6px;"><strong>Связь с материалом (лат. <em>ferrum</em>):</strong> Глубокое созвучие с корнем «железо / металл» подчеркивает конструктивную основу фасадного инжиниринга — прочный стальной и алюминиевый несущий каркас.</li>
-          <li><strong>Инженерная миссия:</strong> Мы несём полную ответственность за долговечность, безопасность и математическую выверенность фасадных решений знаковых объектов России.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- 2. ОПИСАНИЕ ЛОГОТИПА И АРХИТЕКТУРНОГО СОЛНЫШКА -->
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; margin-bottom:26px;">
-      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:18px 20px;">
-        <div style="font-family:'Montserrat',sans-serif; font-size:12.5px; font-weight:800; color:#0369a1; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:8px;">
-          Описание логотипа «ФЕРО»
-        </div>
-        <div style="font-family:'Inter',sans-serif; font-size:12.5px; line-height:1.6; color:#475569;">
-          Шрифтовая часть построена на чистой геометрии, монументальных пропорциях и выверенной пластике букв без лишнего декоративного шума. Символизирует основательность, прозрачность расчётов и непоколебимую надёжность фасадных конструкций.
-        </div>
-      </div>
-
-      <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:18px 20px;">
-        <div style="font-family:'Montserrat',sans-serif; font-size:12.5px; font-weight:800; color:#0369a1; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:8px;">
-          Описание архитектурного солнышка 45°
-        </div>
-        <div style="font-family:'Inter',sans-serif; font-size:12.5px; line-height:1.6; color:#475569;">
-          Графический знак угла 45° с математической сеткой лучей отражает расчёт естественной инсоляции, светопрозрачности и теплопередачи фасадных оболочек. Это визуальный символ союза архитектурной физики, энергоэффективности и точных расчётов.
-        </div>
-      </div>
-    </div>
-
-    <!-- 3. ОФИЦИАЛЬНЫЕ БЛАНКИ WORD -->
-    <div style="margin-bottom:24px;">
-      <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:800; color:#0369a1; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">
-        1. Официальные бланки компании (Word .DOCX)
-      </div>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
-        <!-- Вариант 1 -->
-        <a href="/blank_var1_top_requisites.docx" download style="padding:16px; border-radius:10px; border:1.5px solid #bfdbfe; background:#f8fafc; text-decoration:none; display:flex; justify-content:space-between; align-items:center; transition:background 0.2s ease;">
-          <div>
-            <div style="font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700; color:#0f172a;">Бланк с реквизитами вверху</div>
-            <div style="font-size:11.5px; color:#64748b; margin-top:3px;">Логотип слева вверху, реквизиты в воздухе без рамок</div>
-          </div>
-          <span style="background:#eff6ff; color:#1d4ed8; font-size:11px; font-weight:700; padding:6px 12px; border-radius:6px; white-space:nowrap;">DOCX ↓</span>
-        </a>
-
-        <!-- Вариант 2 -->
-        <a href="/blank_var2_bottom_requisites.docx" download style="padding:16px; border-radius:10px; border:1.5px solid #bfdbfe; background:#f8fafc; text-decoration:none; display:flex; justify-content:space-between; align-items:center; transition:background 0.2s ease;">
-          <div>
-            <div style="font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700; color:#0f172a;">Бланк с реквизитами внизу</div>
-            <div style="font-size:11.5px; color:#64748b; margin-top:3px;">Логотип вверху, реквизиты в нижнем колонтитуле</div>
-          </div>
-          <span style="background:#eff6ff; color:#1d4ed8; font-size:11px; font-weight:700; padding:6px 12px; border-radius:6px; white-space:nowrap;">DOCX ↓</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- 4. ЛОГОТИПЫ С СОЛНЫШКОМ 45° -->
-    <div style="margin-bottom:24px;">
-      <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:800; color:#0369a1; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">
-        2. Логотипы с архитектурным солнышком 45°
-      </div>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
-        <div style="padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc;">
-          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">ФЕРО + Солнце + Фасадный инжиниринг</div>
-          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Основная версия бренда для всех коммуникаций</div>
-          <div style="display:flex; gap:8px;">
-            <a href="/assets/fero_sun_facade_eng.png" download style="flex:1; text-align:center; padding:6px 10px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">PNG</a>
-            <a href="/assets/fero_sun_facade_eng.svg" download style="flex:1; text-align:center; padding:6px 10px; background:#e0f2fe; border:1px solid #bae6fd; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0369a1;">SVG</a>
-          </div>
-        </div>
-
-        <div style="padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc;">
-          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">ФЕРО + Солнце (без дескриптора)</div>
-          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Лаконичная версия без дополнительной подписи</div>
-          <div style="display:flex; gap:8px;">
-            <a href="/assets/fero_sun_clean.png" download style="flex:1; text-align:center; padding:6px 10px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">PNG</a>
-            <a href="/assets/fero_sun_clean.svg" download style="flex:1; text-align:center; padding:6px 10px; background:#e0f2fe; border:1px solid #bae6fd; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0369a1;">SVG</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 5. СПЕЦИАЛЬНЫЕ ФОРМАТЫ -->
-    <div style="margin-bottom:24px;">
-      <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:800; color:#0369a1; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">
-        3. Специальные форматы (чертежи, подпись почты, титул)
-      </div>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
-        <div style="padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc;">
-          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">Для подписи электронной почты</div>
-          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Оптимизированный компактный PNG для почтовых клиентов</div>
-          <a href="/assets/fero_email_signature.png" download style="display:block; text-align:center; padding:7px 12px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">Скачать PNG для подписи ↓</a>
-        </div>
-
-        <div style="padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc;">
-          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">Для вставки в чертёж (штамп ГОСТ)</div>
-          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Контрастный блок для углового штампа 185×55 мм</div>
-          <div style="display:flex; gap:8px;">
-            <a href="/assets/fero_drawing_stamp_logo.png" download style="flex:1; text-align:center; padding:7px 10px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">PNG</a>
-            <a href="/assets/fero_drawing_stamp_logo.svg" download style="flex:1; text-align:center; padding:7px 10px; background:#e0f2fe; border:1px solid #bae6fd; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0369a1;">SVG</a>
-          </div>
-        </div>
-
-        <div style="padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc;">
-          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">Первый экран сайта (титул)</div>
-          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Полный титульный блок: логотип, направления и манифест</div>
-          <div style="display:flex; gap:8px;">
-            <a href="/assets/fero_site_hero_p1.png" download style="flex:1; text-align:center; padding:7px 10px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">PNG</a>
-            <a href="/assets/fero_site_hero_p1.svg" download style="flex:1; text-align:center; padding:7px 10px; background:#e0f2fe; border:1px solid #bae6fd; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0369a1;">SVG</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 6. ЧИСТЫЙ ШРИФТОВОЙ ЗНАК -->
-    <div style="margin-bottom:10px;">
-      <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:800; color:#0369a1; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px;">
-        4. Чистый шрифтовой знак ФЕРО (без солнца и дескриптора)
-      </div>
-      <div style="display:flex; flex-wrap:wrap; gap:12px;">
-        <div style="flex:1; min-width:280px; padding:14px 18px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc; display:flex; justify-content:space-between; align-items:center;">
-          <div>
-            <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a;">Надпись «ФЕРО»</div>
-            <div style="font-size:11px; color:#64748b; margin-top:2px;">Минималистичный текстовый знак</div>
-          </div>
-          <div style="display:flex; gap:8px;">
-            <a href="/assets/fero_letters_only.png" download style="padding:6px 12px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">PNG</a>
-            <a href="/assets/fero_letters_only.svg" download style="padding:6px 12px; background:#e0f2fe; border:1px solid #bae6fd; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0369a1;">SVG</a>
-          </div>
-        </div>
-      </div>
-    </div>
+      <span style="color:#0284c7; font-size:16px; font-weight:700;">↗</span>
+    </a>
 
   </div>
 
-  <!-- СТРОКА С РЕКВИЗИТАМИ В ПОДВАЛЕ В СВЕТЛЫХ ТОНАХ (СТРОГО ОДНА СТРОКА) -->
-  <div style="font-family:'Inter',sans-serif; font-size:12px; color:#64748b; line-height:1.7;">
-    <div style="font-weight:600; color:#334155; margin-bottom:3px;">ООО «ФЕРО» &bull; 2026</div>
-    <div>198035, Россия, г. Санкт-Петербург, ул. Невельская, д. 18, лит. А, пом. 46</div>
-    <div style="margin-top:3px;">
-      <a href="tel:+78126032111" style="color:#334155; text-decoration:none; font-weight:500;">+7 (812) 603-21-11</a> &nbsp;&bull;&nbsp; 
-      <a href="mailto:info@ferospb.ru" style="color:#0284c7; text-decoration:none; font-weight:500;">info@ferospb.ru</a> &nbsp;&bull;&nbsp; 
-      <a href="https://www.ferospb.ru" target="_blank" style="color:#334155; text-decoration:none; font-weight:500;">www.ferospb.ru</a>
-    </div>
+  <!-- ОДНА СТРОКА РЕКВИЗИТОВ ВНИЗУ -->
+  <div class="fero-footer-req" style="
+    font-family:'Inter',sans-serif; font-size:13px; color:#64748b; line-height:1.8;
+    max-width:920px; margin:0 auto; padding-top:10px;">
+    <b>ООО «ФЕРО»</b> &bull; 2026 &bull; 198035, Россия, г. Санкт-Петербург, ул. Невельская, д. 18, лит. А, пом. 46<br>
+    <a href="tel:+78126032111" style="color:#0f172a; text-decoration:none; font-weight:600;">+7 (812) 603-21-11</a> &bull; 
+    <a href="mailto:info@ferospb.ru" style="color:#0284c7; text-decoration:none; font-weight:600;">info@ferospb.ru</a> &bull; 
+    <a href="https://ferospb.ru" style="color:#0284c7; text-decoration:none; font-weight:600;">www.ferospb.ru</a>
   </div>
 
 </div>
-
-<script>
-function toggleBrandbookPanel() {
-  var p = document.getElementById('panel-brandbook-files');
-  var btn = document.getElementById('btn-toggle-brandbook');
-  var arrow = document.getElementById('brandbook-arrow');
-  if (!p) return;
-  if (p.style.display === 'none' || p.style.display === '') {
-    p.style.display = 'block';
-    if (arrow) { arrow.style.transform = 'rotate(180deg)'; }
-    if (btn) { btn.style.background = '#f0f9ff'; }
-  } else {
-    p.style.display = 'none';
-    if (arrow) { arrow.style.transform = 'rotate(0deg)'; }
-    if (btn) { btn.style.background = '#ffffff'; }
-  }
-}
-</script>
 
 <!--/allrecords--> <!-- Stat --> <script type="text/javascript">if(!window.mainTracker) {window.mainTracker='tilda';}
 window.tildastatcookie='no';setTimeout(function(){(function(d,w,k,o,g) {var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);};s.type="text/javascript";s.async=true;s.key=k;s.id="tildastatscript";s.src=g;if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,'30d47034898bc3e92a3caed8b8cb3200','script','js/tilda-stat-1.0.min.js');},2000);</script> 
