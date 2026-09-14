@@ -200,7 +200,7 @@
     }
   </style>
 </head>
-<body class="t-body">
+<body class="t-body fero-main-page">
 
   
 
@@ -1388,7 +1388,7 @@ field="li_descr__1693230651813">
     </div>
   </div>
 
-  <!-- ДВЕ ГЛАВНЫЕ КНОПКИ ПОДВАЛА (СТАРАЯ ЧИСТАЯ КОНФИГУРАЦИЯ) -->
+  <!-- ДВЕ ГЛАВНЫЕ КНОПКИ ПОДВАЛА (СТАРАЯ ЧИСТАЯ КОНФИГУРАЦИЯ В СВЕТЛЫХ ТОНАХ) -->
   <div class="fero-footer-actions" style="display:flex; justify-content:center; align-items:center; gap:16px; margin:0 auto 24px; flex-wrap:wrap; max-width:820px;">
     
     <!-- ЛЕВАЯ КНОПКА: МИНИ-КАТАЛОГ -->
@@ -1441,18 +1441,28 @@ field="li_descr__1693230651813">
       </a>
     </div>
 
-    <!-- СЕКЦИЯ 1: БЛАНК В ФОРМАТЕ WORD С РЕКВИЗИТАМИ В ВОЗДУХЕ -->
+    <!-- СЕКЦИЯ 1: ОБА ОФИЦИАЛЬНЫХ БЛАНКА WORD -->
     <div style="margin-bottom:22px;">
       <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0369a1; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:10px;">
-        1. Официальный бланк компании (Word)
+        1. Официальные бланки компании (Word .DOCX)
       </div>
-      <div style="display:flex; flex-wrap:wrap; gap:12px;">
-        <a href="/blank_var1_top_requisites.docx" download style="flex:1; min-width:280px; padding:16px; border-radius:10px; border:1.5px solid #bfdbfe; background:#f8fafc; text-decoration:none; display:flex; justify-content:space-between; align-items:center;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
+        <!-- Вариант 1: Реквизиты вверху -->
+        <a href="/blank_var1_top_requisites.docx" download style="padding:16px; border-radius:10px; border:1.5px solid #bfdbfe; background:#f8fafc; text-decoration:none; display:flex; justify-content:space-between; align-items:center;">
           <div>
-            <div style="font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700; color:#0f172a;">Бланк ФЕРО с реквизитами вверху (.DOCX)</div>
-            <div style="font-size:11.5px; color:#64748b; margin-top:3px;">Логотип слева вверху, реквизиты банка ВТБ, телефоны, адреса, ОГРН, ИНН, КПП в воздухе без линий</div>
+            <div style="font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700; color:#0f172a;">Бланк с реквизитами вверху</div>
+            <div style="font-size:11.5px; color:#64748b; margin-top:3px;">Логотип слева вверху, реквизиты в воздухе без рамок</div>
           </div>
-          <span style="background:#eff6ff; color:#1d4ed8; font-size:11px; font-weight:700; padding:6px 12px; border-radius:6px; white-space:nowrap;">Скачать DOCX ↓</span>
+          <span style="background:#eff6ff; color:#1d4ed8; font-size:11px; font-weight:700; padding:6px 12px; border-radius:6px; white-space:nowrap;">DOCX ↓</span>
+        </a>
+
+        <!-- Вариант 2: Реквизиты внизу -->
+        <a href="/blank_var2_bottom_requisites.docx" download style="padding:16px; border-radius:10px; border:1.5px solid #bfdbfe; background:#f8fafc; text-decoration:none; display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <div style="font-family:'Montserrat',sans-serif; font-size:13.5px; font-weight:700; color:#0f172a;">Бланк с реквизитами внизу</div>
+            <div style="font-size:11.5px; color:#64748b; margin-top:3px;">Логотип вверху, полный блок реквизитов в нижнем колонтитуле</div>
+          </div>
+          <span style="background:#eff6ff; color:#1d4ed8; font-size:11px; font-weight:700; padding:6px 12px; border-radius:6px; white-space:nowrap;">DOCX ↓</span>
         </a>
       </div>
     </div>
@@ -1488,20 +1498,20 @@ field="li_descr__1693230651813">
     <!-- СЕКЦИЯ 3: СПЕЦИАЛЬНЫЕ ФОРМАТЫ ДЛЯ ВСТАВКИ -->
     <div style="margin-bottom:22px;">
       <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0369a1; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:10px;">
-        3. Специальные форматы (чертежи, подпись почты, бланки)
+        3. Специальные форматы (чертежи, подпись почты, титул)
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
         <!-- Для подписи электронной почты -->
         <div style="padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc;">
           <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">Для подписи электронной почты</div>
-          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Оптимизированный компактный PNG для Outlook, Gmail, Яндекс</div>
+          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Оптимизированный компактный PNG для почтовых клиентов</div>
           <a href="/assets/fero_email_signature.png" download style="display:block; text-align:center; padding:7px 12px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">Скачать PNG для подписи ↓</a>
         </div>
 
         <!-- Для вставки в чертежный штамп ГОСТ -->
         <div style="padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc;">
-          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">Для вставки в чертёж (ГОСТ штамп)</div>
-          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Специальный контрастный блок для углового штампа 185х55 мм</div>
+          <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a; margin-bottom:4px;">Для вставки в чертёж (штамп)</div>
+          <div style="font-size:11px; color:#64748b; margin-bottom:10px;">Контрастный блок для углового штампа чертежа</div>
           <div style="display:flex; gap:8px;">
             <a href="/assets/fero_drawing_stamp_logo.png" download style="flex:1; text-align:center; padding:7px 10px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">PNG</a>
             <a href="/assets/fero_drawing_stamp_logo.svg" download style="flex:1; text-align:center; padding:7px 10px; background:#e0f2fe; border:1px solid #bae6fd; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0369a1;">SVG</a>
@@ -1520,7 +1530,7 @@ field="li_descr__1693230651813">
       </div>
     </div>
 
-    <!-- СЕКЦИЯ 4: ЧИСТАЯ НАДПИСЬ ФЕРО (МИНИМАЛИСТИЧНЫЙ КОМПЛЕКТ) -->
+    <!-- СЕКЦИЯ 4: ЧИСТАЯ НАДПИСЬ ФЕРО -->
     <div style="margin-bottom:10px;">
       <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0369a1; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:10px;">
         4. Чистый шрифтовой знак ФЕРО (без солнца и дескриптора)
@@ -1529,7 +1539,7 @@ field="li_descr__1693230651813">
         <div style="flex:1; min-width:280px; padding:14px; border-radius:10px; border:1px solid #e2e8f0; background:#f8fafc; display:flex; justify-content:space-between; align-items:center;">
           <div>
             <div style="font-family:'Montserrat',sans-serif; font-size:13px; font-weight:700; color:#0f172a;">Надпись «ФЕРО»</div>
-            <div style="font-size:11px; color:#64748b; margin-top:2px;">Минималистичный логотип для узких полей и бланков</div>
+            <div style="font-size:11px; color:#64748b; margin-top:2px;">Минималистичный текстовый знак</div>
           </div>
           <div style="display:flex; gap:8px;">
             <a href="/assets/fero_letters_only.png" download style="padding:6px 12px; background:#ffffff; border:1px solid #cbd5e1; border-radius:6px; text-decoration:none; font-size:11px; font-weight:700; color:#0f172a;">PNG</a>
@@ -1539,6 +1549,16 @@ field="li_descr__1693230651813">
       </div>
     </div>
 
+  </div>
+
+  <!-- СТРОКА С РЕКВИЗИТАМИ В ПОДВАЛЕ В СВЕТЛЫХ ТОНАХ -->
+  <div style="margin-top: 36px; font-family:'Inter',sans-serif; font-size:12px; color:#64748b; line-height:1.6;">
+    <div style="font-weight:600; color:#334155; margin-bottom:4px;">ООО «ФЕРО» &bull; 2026</div>
+    <div>198035, Россия, г. Санкт-Петербург, ул. Невельская, д. 18, лит. А, пом. 46</div>
+    <div style="margin-top:2px;">
+      <a href="mailto:info@ferospb.ru" style="color:#0284c7; text-decoration:none;">info@ferospb.ru</a> &nbsp;&bull;&nbsp; 
+      <a href="tel:+78126032111" style="color:#334155; text-decoration:none;">+7 (812) 603-21-11</a>
+    </div>
   </div>
 
 </div>
@@ -1560,6 +1580,7 @@ function toggleBrandbookPanel() {
   }
 }
 </script>
+
 
 
       <div style="font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; color:#0284c7; text-transform:uppercase; margin-top:14px;">
@@ -1801,6 +1822,24 @@ window.addEventListener('scroll', function() {
   setTimeout(enforceImageSharpness, 1000);
 })();
 </script>
+
+<!-- OBJECT THUMBNAIL SCROLL RESTORER -->
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  var urlParams = new URLSearchParams(window.location.search);
+  var fromObj = urlParams.get('from');
+  if (fromObj) {
+    var sel = 'a[href="/' + fromObj + '"], a[href="' + fromObj + '"], a[href*="/' + fromObj + '"]';
+    var link = document.querySelector(sel);
+    if (link) {
+      setTimeout(function() {
+        link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 180);
+    }
+  }
+});
+</script>
+
 </body>
  </html>
 
@@ -1851,6 +1890,24 @@ window.addEventListener('scroll', function() {
   setTimeout(enforceImageSharpness, 1000);
 })();
 </script>
+
+<!-- OBJECT THUMBNAIL SCROLL RESTORER -->
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  var urlParams = new URLSearchParams(window.location.search);
+  var fromObj = urlParams.get('from');
+  if (fromObj) {
+    var sel = 'a[href="/' + fromObj + '"], a[href="' + fromObj + '"], a[href*="/' + fromObj + '"]';
+    var link = document.querySelector(sel);
+    if (link) {
+      setTimeout(function() {
+        link.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 180);
+    }
+  }
+});
+</script>
+
 </body>
 
 </html>
