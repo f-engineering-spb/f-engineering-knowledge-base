@@ -42,82 +42,56 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* TOP HEADER */
+    /* TOP HEADER (LIGHT THEME) */
     .top-header {
-      background: var(--dark-slate);
-      color: var(--white);
+      background: var(--white);
+      color: var(--slate-800);
       position: sticky;
       top: 0;
       z-index: 1000;
-      border-bottom: 2px solid var(--copper);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 4px rgba(15, 23, 42, 0.03);
     }
     .header-inner {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 14px 24px;
+      padding: 16px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
     .header-logo {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 14px;
       text-decoration: none;
-      color: var(--white);
     }
     .header-logo img {
       height: 32px;
       width: auto;
-    }
-    .header-logo-text {
-      font-family: var(--font-heading);
-      font-size: 16px;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-    }
-    .header-badge {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      background: var(--copper);
-      color: var(--white);
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-weight: 600;
+      display: block;
     }
     .header-nav {
       display: flex;
-      gap: 20px;
+      gap: 28px;
       align-items: center;
     }
     .header-nav a {
-      color: var(--slate-300);
+      color: var(--slate-600);
       text-decoration: none;
-      font-size: 13px;
+      font-size: 13.5px;
       font-weight: 500;
       transition: color 0.2s ease;
     }
     .header-nav a:hover {
-      color: var(--white);
-    }
-    .btn-header-cta {
-      background: var(--copper);
-      color: var(--white) !important;
-      padding: 8px 16px;
-      border-radius: var(--radius-sm);
-      font-weight: 600;
-      transition: background 0.2s ease;
-    }
-    .btn-header-cta:hover {
-      background: var(--copper-hover) !important;
+      color: var(--copper);
     }
 
-    /* HERO BANNER */
+    /* HERO BANNER (LIGHT THEME) */
     .hero-banner {
-      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-      color: var(--white);
-      padding: 60px 24px 70px;
-      border-bottom: 1px solid var(--slate-700);
+      background: #F8FAFC;
+      color: var(--slate-800);
+      padding: 50px 24px 56px;
+      border-bottom: 1px solid var(--border);
     }
     .hero-content {
       max-width: 1280px;
@@ -134,63 +108,42 @@
     }
     .hero-title {
       font-family: var(--font-heading);
-      font-size: 38px;
+      font-size: 34px;
       font-weight: 900;
-      line-height: 1.2;
+      line-height: 1.25;
       letter-spacing: -0.01em;
-      margin-bottom: 16px;
+      color: var(--dark-slate);
+      margin-bottom: 14px;
     }
     .hero-title span {
       color: var(--copper);
     }
     .hero-desc {
-      font-size: 16px;
-      color: var(--slate-300);
-      max-width: 820px;
+      font-size: 15.5px;
+      color: var(--slate-600);
+      max-width: 860px;
       line-height: 1.7;
-      margin-bottom: 30px;
+      margin-bottom: 22px;
     }
-    .hero-actions {
+    .hero-links {
       display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-    .btn-main {
-      display: inline-flex;
       align-items: center;
-      gap: 8px;
-      background: var(--copper);
-      color: var(--white);
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 700;
-      padding: 12px 24px;
-      border-radius: var(--radius-sm);
-      transition: all 0.2s ease;
+      gap: 24px;
+      font-size: 13.5px;
     }
-    .btn-main:hover {
-      background: var(--copper-hover);
-      transform: translateY(-1px);
-    }
-    .btn-outline {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: transparent;
-      color: var(--white);
-      border: 1px solid var(--slate-500);
+    .hero-links a {
+      color: var(--slate-700);
       text-decoration: none;
-      font-size: 14px;
       font-weight: 600;
-      padding: 12px 24px;
-      border-radius: var(--radius-sm);
-      transition: all 0.2s ease;
+      transition: color 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
-    .btn-outline:hover {
-      border-color: var(--white);
-      background: rgba(255,255,255,0.05);
+    .hero-links a:hover {
+      color: var(--copper);
     }
-
+    
     /* MAIN CONTAINER & GRID */
     .page-wrap {
       max-width: 1280px;
@@ -519,20 +472,18 @@
     <div class="header-inner">
       <a href="index.html" class="header-logo">
         <img src="assets/fero_logo_contour_copper.png" alt="ФЕРО">
-        <span class="header-logo-text">ФЕРО</span>
-        <span class="header-badge">BRANDBOOK 2026</span>
       </a>
       <nav class="header-nav">
         <a href="#dual-system">Архитектура стиля</a>
         <a href="#logo-geometry">Логотип и значок</a>
         <a href="#drawing-stamps">Штампы ГОСТ</a>
         <a href="#letterheads">Бланки А4</a>
-        <a href="#downloads" class="btn-header-cta">Центр загрузок</a>
+        <a href="#downloads">Центр загрузок</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO BANNER -->
+  <!-- HERO BANNER (LIGHT THEME, NO DUPLICATE DOWNLOAD BUTTON BELOW) -->
   <section class="hero-banner">
     <div class="hero-content">
       <div class="hero-pre">Официальный стандарт айдентики и проектной графики</div>
@@ -542,15 +493,12 @@
         <strong>Презентационную</strong> (фирменная медь #D6632B для сайта, мини-каталогов и коммерческих предложений) и 
         <strong>Рабочую</strong> (монохромный контур #111111 для чертежей СПДС ГОСТ Р 21.101-2020 и внутренней документации).
       </p>
-      <div class="hero-actions">
-        <a href="assets/fero_brandbook_complete.zip" class="btn-main">
-          Скачать полный бренд-пакет (.ZIP)
+      <div class="hero-links">
+        <a href="assets/fero_mini_catalog.pdf" target="_blank">
+          <span>Смотреть мини-каталог (.PDF) &rarr;</span>
         </a>
-        <a href="assets/fero_mini_catalog.pdf" target="_blank" class="btn-outline">
-          Смотреть мини-каталог (.PDF)
-        </a>
-        <a href="index.html" class="btn-outline">
-          Перейти на сайт ferospb.info
+        <a href="index.html">
+          <span>Перейти на сайт ferospb.info &rarr;</span>
         </a>
       </div>
     </div>
