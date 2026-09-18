@@ -1,0 +1,170 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex index.html page38775198.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^ugmk-arena/history$ page47479257.html [NC]
+RewriteRule ^ugmk-arena/history/$ page47479257.html [NC]
+
+RewriteRule ^company$ page39163865.html [NC]
+RewriteRule ^company/$ page39163865.html [NC]
+
+RewriteRule ^news$ page39179435.html [NC]
+RewriteRule ^news/$ page39179435.html [NC]
+
+RewriteRule ^contact$ page39180445.html [NC]
+RewriteRule ^contact/$ page39180445.html [NC]
+
+RewriteRule ^reference$ page39180951.html [NC]
+RewriteRule ^reference/$ page39180951.html [NC]
+
+RewriteRule ^menu$ page38915037.html [NC]
+RewriteRule ^menu/$ page38915037.html [NC]
+
+RewriteRule ^golden-city$ page38776501.html [NC]
+RewriteRule ^golden-city/$ page38776501.html [NC]
+
+RewriteRule ^mod$ page39047932.html [NC]
+RewriteRule ^mod/$ page39047932.html [NC]
+
+RewriteRule ^pobeda5$ page39162278.html [NC]
+RewriteRule ^pobeda5/$ page39162278.html [NC]
+
+RewriteRule ^akademy-eifman$ page39160881.html [NC]
+RewriteRule ^akademy-eifman/$ page39160881.html [NC]
+
+RewriteRule ^ogni-zaliva$ page39160770.html [NC]
+RewriteRule ^ogni-zaliva/$ page39160770.html [NC]
+
+RewriteRule ^airportcity$ page39160604.html [NC]
+RewriteRule ^airportcity/$ page39160604.html [NC]
+
+RewriteRule ^office-l27$ page39160385.html [NC]
+RewriteRule ^office-l27/$ page39160385.html [NC]
+
+RewriteRule ^beregovoy$ page39160257.html [NC]
+RewriteRule ^beregovoy/$ page39160257.html [NC]
+
+RewriteRule ^balance$ page39159896.html [NC]
+RewriteRule ^balance/$ page39159896.html [NC]
+
+RewriteRule ^russian-seasons$ page39159756.html [NC]
+RewriteRule ^russian-seasons/$ page39159756.html [NC]
+
+RewriteRule ^igora-drive$ page39159332.html [NC]
+RewriteRule ^igora-drive/$ page39159332.html [NC]
+
+RewriteRule ^expoforum$ page39159114.html [NC]
+RewriteRule ^expoforum/$ page39159114.html [NC]
+
+RewriteRule ^lahta$ page39158867.html [NC]
+RewriteRule ^lahta/$ page39158867.html [NC]
+
+RewriteRule ^docklands$ page39158707.html [NC]
+RewriteRule ^docklands/$ page39158707.html [NC]
+
+RewriteRule ^royal-beach$ page39158499.html [NC]
+RewriteRule ^royal-beach/$ page39158499.html [NC]
+
+RewriteRule ^simferopol$ page39158309.html [NC]
+RewriteRule ^simferopol/$ page39158309.html [NC]
+
+RewriteRule ^salut$ page39157941.html [NC]
+RewriteRule ^salut/$ page39157941.html [NC]
+
+RewriteRule ^kemerovo$ page39106070.html [NC]
+RewriteRule ^kemerovo/$ page39106070.html [NC]
+
+RewriteRule ^gdrive-arena$ page39105871.html [NC]
+RewriteRule ^gdrive-arena/$ page39105871.html [NC]
+
+RewriteRule ^avior-tower$ page39105584.html [NC]
+RewriteRule ^avior-tower/$ page39105584.html [NC]
+
+RewriteRule ^beliy-ostrov$ page39105485.html [NC]
+RewriteRule ^beliy-ostrov/$ page39105485.html [NC]
+
+RewriteRule ^chernaya-rechka$ page39105368.html [NC]
+RewriteRule ^chernaya-rechka/$ page39105368.html [NC]
+
+RewriteRule ^manhattan$ page39105192.html [NC]
+RewriteRule ^manhattan/$ page39105192.html [NC]
+
+RewriteRule ^lucky$ page39105093.html [NC]
+RewriteRule ^lucky/$ page39105093.html [NC]
+
+RewriteRule ^legenda-geroev$ page39159562.html [NC]
+RewriteRule ^legenda-geroev/$ page39159562.html [NC]
+
+RewriteRule ^almazova$ page39163566.html [NC]
+RewriteRule ^almazova/$ page39163566.html [NC]
+
+RewriteRule ^media$ page39181634.html [NC]
+RewriteRule ^media/$ page39181634.html [NC]
+
+RewriteRule ^presentation$ page39182395.html [NC]
+RewriteRule ^presentation/$ page39182395.html [NC]
+
+RewriteRule ^catalog$ page39182570.html [NC]
+RewriteRule ^catalog/$ page39182570.html [NC]
+
+RewriteRule ^corporate-identity$ page39182624.html [NC]
+RewriteRule ^corporate-identity/$ page39182624.html [NC]
+
+RewriteRule ^project$ page39183472.html [NC]
+RewriteRule ^project/$ page39183472.html [NC]
+
+RewriteRule ^production$ page39183794.html [NC]
+RewriteRule ^production/$ page39183794.html [NC]
+
+RewriteRule ^installation$ page39184418.html [NC]
+RewriteRule ^installation/$ page39184418.html [NC]
+
+RewriteRule ^guarantee$ page39184601.html [NC]
+RewriteRule ^guarantee/$ page39184601.html [NC]
+
+RewriteRule ^loft-na-srednem$ page39243483.html [NC]
+RewriteRule ^loft-na-srednem/$ page39243483.html [NC]
+
+RewriteRule ^parklane-hotel$ page39243577.html [NC]
+RewriteRule ^parklane-hotel/$ page39243577.html [NC]
+
+RewriteRule ^legenda-yahtenoy$ page39243695.html [NC]
+RewriteRule ^legenda-yahtenoy/$ page39243695.html [NC]
+
+RewriteRule ^legenda-optikov$ page39243784.html [NC]
+RewriteRule ^legenda-optikov/$ page39243784.html [NC]
+
+RewriteRule ^legenda-komendantskogo$ page39243851.html [NC]
+RewriteRule ^legenda-komendantskogo/$ page39243851.html [NC]
+
+RewriteRule ^gorniy-institute$ page39243962.html [NC]
+RewriteRule ^gorniy-institute/$ page39243962.html [NC]
+
+RewriteRule ^tri-vetra$ page39244061.html [NC]
+RewriteRule ^tri-vetra/$ page39244061.html [NC]
+
+RewriteRule ^premire-palas$ page39244181.html [NC]
+RewriteRule ^premire-palas/$ page39244181.html [NC]
+
+RewriteRule ^archive$ page39403497.html [NC]
+RewriteRule ^archive/$ page39403497.html [NC]
+
+RewriteRule ^ugmk-arena$ page40397894.html [NC]
+RewriteRule ^ugmk-arena/$ page40397894.html [NC]
+
+RewriteRule ^zilartdiamond$ page39104808.html [NC]
+RewriteRule ^zilartdiamond/$ page39104808.html [NC]
+
+RewriteRule ^level-prichalniy$ page39104962.html [NC]
+RewriteRule ^level-prichalniy/$ page39104962.html [NC]
+
+RewriteRule ^rdd$ page39049089.html [NC]
+RewriteRule ^rdd/$ page39049089.html [NC]
+
+

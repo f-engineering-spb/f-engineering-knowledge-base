@@ -1,0 +1,554 @@
+/* ==========================================================================
+   FERO — APPLE GRAY (P02) GLOBAL DESIGN SYSTEM
+   Zero Shadows • Honest Flat Geometry • Premium Typography & Materiality
+   ========================================================================== */
+
+:root {
+  --ag-bg: #fbfbfa;
+  --ag-surface: #f3f4f4;
+  --ag-card: #ffffff;
+  --ag-border: #d5d8d8;
+  --ag-border-strong: #c4c8c8;
+  --ag-text: #3d444d;
+  --ag-muted: #727b86;
+  --ag-font: 'Open Sans', Arial, sans-serif;
+}
+
+/* 1. ABSOLUTE ZERO SHADOWS RULE ACROSS THE ENTIRE WEBSITE */
+*,
+*::before,
+*::after,
+.t-rec,
+.t-card,
+.t-popup,
+.t-btn,
+.t-input,
+.t-menu__item,
+.t776__col,
+.t774__col,
+div,
+span,
+img,
+svg {
+  box-shadow: none !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+/* 2. BASE BODY & CANVAS */
+body, html {
+  background-color: var(--ag-bg) !important;
+  color: var(--ag-text) !important;
+  font-family: var(--ag-font) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. APPLE TRANSLUCENT HEADER */
+.t228, .t280, .t456, .t199__header {
+  background-color: rgba(251, 251, 250, 0.90) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid var(--ag-border) !important;
+  box-shadow: none !important;
+}
+
+.t228__list_item a, .t-menu__link-item {
+  color: var(--ag-muted) !important;
+  font-weight: 500 !important;
+  transition: color 0.15s ease !important;
+}
+
+.t228__list_item a:hover, .t-menu__link-item:hover, .t-menu__link-item.t-active {
+  color: var(--ag-text) !important;
+}
+
+/* 4. FLAT BUTTONS (CAPSULES) */
+.t-btn, .t-submit, .t228__right_buttons a {
+  border-radius: 999px !important;
+  border: 1px solid var(--ag-border) !important;
+  box-shadow: none !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  transition: all 0.2s ease !important;
+}
+
+.t-btn:hover, .t-submit:hover {
+  border-color: var(--ag-border-strong) !important;
+  box-shadow: none !important;
+}
+
+/* 5. CARDS & OBJECTS SHOWCASE (APPLE CARDS) */
+.t776__col, .t774__col, .t-card__container, .t-feed__post {
+  border-radius: 20px !important;
+  border: 1px solid var(--ag-border) !important;
+  background: #ffffff !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.t776__col:hover, .t774__col:hover, .t-card__container:hover {
+  border-color: var(--ag-border-strong) !important;
+  box-shadow: none !important;
+}
+
+/* 6. CLEAN FOOTER & HIGH-CONTRAST CONTACTS */
+.t457, footer, #t-footer, #rec628841656, div[data-record-type="457"] {
+  background-color: #f3f4f4 !important;
+  border-top: 1px solid #d5d8d8 !important;
+  box-shadow: none !important;
+}
+
+.t457__copyright,
+#rec628841656 .t457__copyright,
+div[data-record-type="457"] .t457__copyright,
+.t457__copyright * {
+  color: #3d444d !important;
+  -webkit-text-fill-color: #3d444d !important;
+  opacity: 1 !important;
+  font-family: var(--ag-font) !important;
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+}
+
+.t457__copyright a,
+#rec628841656 .t457__copyright a,
+div[data-record-type="457"] .t457__copyright a {
+  color: #2b3037 !important;
+  -webkit-text-fill-color: #2b3037 !important;
+  opacity: 1 !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease !important;
+}
+
+.t457__copyright a:hover,
+#rec628841656 .t457__copyright a:hover,
+div[data-record-type="457"] .t457__copyright a:hover {
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+  text-decoration: underline !important;
+}
+
+
+/* ==========================================================================
+   STRICT NO-UNDERLINE & CLEAN NAVIGATION RULES
+   ========================================================================== */
+
+/* Remove ALL underlines (black, blue, grey) from objects, titles, tabs, links */
+a, 
+a:hover, 
+a:focus, 
+a:active, 
+a:visited,
+.t-card a, 
+.t-feed a, 
+.t776 a, 
+.t774 a, 
+.t776__title, 
+.t774__title, 
+.t-card__title,
+.t397__tab,
+.t397__title,
+.t-name,
+.t-title,
+.t-descr,
+.t-btn,
+.t979 a,
+.t1033 a,
+.t396 a {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  text-decoration-line: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove bottom borders from tabs completely */
+.t397__tab,
+.t397__tab_active,
+li[role="presentation"].t397__tab {
+  border-bottom: none !important;
+}
+
+/* In burger menu: ONLY KEEP OBJECTS (1692271902220) and CONTACTS (1692271861287) */
+/* Hide: Company (1692272175590), News (1692271903920), Media (1692271937558) */
+[data-elem-id="1692272175590"],
+[data-elem-id="1692271903920"],
+[data-elem-id="1692271937558"] {
+  display: none !important;
+}
+
+/* Reposition Objects, Contacts, and Info in Burger Menu */
+.uc-menu [data-elem-id="1692271902220"] {
+  top: calc(50vh - 27.5px - 70px) !important;
+}
+.uc-menu [data-elem-id="1692271861287"] {
+  top: calc(50vh - 27.5px + 10px) !important;
+}
+.uc-menu [data-elem-id="1692272927684"] {
+  top: calc(50vh - 8px + 100px) !important;
+}
+
+/* Ensure collage images are block and visible */
+.t979__image, .t979__grid-item img {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+
+/* Prevent layout scale shift / zoom jumping on initial load */
+#rec629143411,
+#rec629143411 h1,
+#rec629143411 div,
+#rec629143411 span {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+
+/* ==========================================================================
+   ULTRA-MINIMALIST RULES
+   ========================================================================== */
+
+/* 1. Hide tabs switcher ("ВСЕ ОБЪЕКТЫ" / "ОБЪЕКТЫ В РАБОТЕ") completely */
+#rec629097843, .t397 {
+  display: none !important;
+}
+
+/* 2. Hide footer menu links ("Объекты", "Контакты"), keeping only direct contacts info */
+.t457__ul {
+  display: none !important;
+}
+
+.t457 {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  text-align: center !important;
+}
+
+.t457__copyright {
+  text-align: center !important;
+  line-height: 1.8 !important;
+}
+
+
+/* Guaranteed display of portfolio objects when tabs are removed */
+#rec629097843, .t397 {
+  display: none !important;
+}
+
+#rec629192748 {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+#rec633211149 {
+  display: none !important;
+}
+
+
+/* ==========================================================================
+   BURGER MENU COMPLETE ELIMINATION (HERO & GLOBAL)
+   ========================================================================== */
+.icon-menu,
+.Trigger,
+.NavIconWrap,
+.uc-menu,
+#rec629117536,
+.NavBlock,
+.overlay-close,
+[data-elem-id="1692271351075"],
+.tn-elem__6291132051692271351075 {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+
+
+
+/* ==========================================================================
+   OBJECT PAGE HEADER: REMOVE WHITE BAR, FLOATING FROSTED GLASS BACK BUTTON
+   ========================================================================== */
+#t-header,
+.uc-menu-header,
+.uc-menu-header.out,
+#rec629113205 {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+  overflow: visible !important;
+  z-index: 999999 !important;
+}
+
+#rec629113205 .t396__artboard {
+  height: 0 !important;
+  max-height: 0 !important;
+  background: transparent !important;
+  pointer-events: none !important;
+  overflow: visible !important;
+}
+
+#rec629113205 .t396__carrier,
+#rec629113205 .t396__filter,
+#rec629113205 .tn-elem {
+  display: none !important;
+}
+
+/* FLOATING SEMI-TRANSPARENT 'НА ГЛАВНУЮ' BUTTON (FROSTED GLASS) */
+.fero-back-btn {
+  position: fixed !important;
+  top: 24px !important;
+  right: 32px !important;
+  transform: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 10px 22px !important;
+  background: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.9) !important;
+  border-radius: 30px !important;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Arial, sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: #0f172a !important;
+  text-decoration: none !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  z-index: 1000000 !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.10) !important;
+  pointer-events: auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.fero-back-btn:hover {
+  background: rgba(255, 255, 255, 0.96) !important;
+  border-color: #0284c7 !important;
+  color: #0284c7 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.18) !important;
+}
+
+.fero-back-btn .back-arrow {
+  font-size: 15px !important;
+  line-height: 1 !important;
+  color: #0284c7 !important;
+  transition: transform 0.2s ease !important;
+}
+
+.fero-back-btn:hover .back-arrow {
+  transform: translateX(-3px) !important;
+}
+
+@media screen and (max-width: 959px) {
+  .fero-back-btn {
+    top: 16px !important;
+    right: 18px !important;
+    padding: 8px 16px !important;
+    font-size: 10px !important;
+  }
+}
+
+/* 1. HERO SECTION */
+#rec629143411 {
+  padding-top: 130px !important;
+  padding-bottom: 35px !important;
+}
+
+.hero-eyebrow {
+  font-family: 'Open Sans', Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: #727b86 !important;
+  margin-bottom: 18px !important;
+  line-height: 1.4 !important;
+  font-stretch: 100% !important;
+  font-variation-settings: normal !important;
+}
+
+#rec629143411 .t050__title,
+.hero-title {
+  font-family: 'Open Sans', Arial, sans-serif !important;
+  font-weight: 600 !important;
+  font-size: clamp(20px, 2.2vw, 30px) !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: #3d444d !important;
+  margin: 0 auto 20px auto !important;
+  max-width: 1200px !important;
+  word-wrap: break-word !important;
+  font-stretch: 100% !important;
+  font-variation-settings: normal !important;
+}
+
+.hero-subtitle {
+  font-family: 'Open Sans', Arial, sans-serif !important;
+  color: #727b86 !important;
+  font-size: clamp(12px, 1.05vw, 14px) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  line-height: 1.6 !important;
+  font-stretch: 100% !important;
+  font-variation-settings: normal !important;
+}
+
+@media screen and (max-width: 768px) {
+  #rec629143411 {
+    padding-top: 100px !important;
+    padding-bottom: 25px !important;
+  }
+  .hero-eyebrow {
+    font-size: 11px !important;
+    letter-spacing: 0.14em !important;
+    padding: 0 10px !important;
+  }
+  #rec629143411 .t050__title,
+  .hero-title {
+    font-size: clamp(16px, 4.2vw, 20px) !important;
+    letter-spacing: 0.12em !important;
+    line-height: 1.35 !important;
+    padding: 0 12px !important;
+  }
+  .hero-subtitle {
+    font-size: 11px !important;
+    letter-spacing: 0.12em !important;
+    padding: 0 10px !important;
+  }
+}
+
+/* 2. PORTFOLIO OBJECT CARDS (HOMEPAGE & ARCHIVE) */
+.t786__title,
+.t786__title.t-name,
+.t786__title a,
+.t786__content a .t786__title,
+.t786__textwrapper .t786__title,
+.js-product-name,
+.t-card__title,
+.t-card__title a {
+  color: #3d444d !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  transition: color 0.2s ease !important;
+}
+
+.t786__descr,
+.t786__descr.t-descr,
+.t786__textwrapper .t786__descr,
+.t-card__descr {
+  color: #727b86 !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+.t786__mark {
+  background-color: #f3f4f4 !important;
+  color: #3d444d !important;
+  border: 1px solid #d5d8d8 !important;
+  box-shadow: none !important;
+  text-transform: uppercase !important;
+}
+
+/* 3. PROJECT SUBPAGES: MAIN OBJECT TITLE (E.G. GOLDEN CITY, MOD) */
+[field^="tn_text_1692786719617"],
+.tn-elem[data-elem-id="1692786719617"] .tn-atom,
+.tn-elem[data-elem-id="1692786719617"],
+div[data-record-type="396"]:not(#rec629113205):not(#rec629117536):not(#rec628841656) .tn-atom[field*="1692786719617"] {
+  color: #3d444d !important;
+  text-transform: uppercase !important;
+}
+
+/* 4. PROJECT SUBPAGES: SPECIFICATIONS TABLE (T1033) */
+.t1033__title {
+  color: #8a929e !important;
+  letter-spacing: 0.08em !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+}
+
+.t1033__text {
+  color: #3d444d !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+}
+
+.t1033__line {
+  background-color: #d5d8d8 !important;
+  opacity: 0.9 !important;
+}
+
+/* 5. GENERAL HEADINGS ACROSS ALL PAGES (CONTACTS, COMPANY, ETC.) */
+.t-title:not(.t208__text *):not(.uc-menu *),
+.t-name:not(.t208__text *):not(.uc-menu *),
+.t-section__title,
+.t795__title,
+.t337__title,
+.t1052__title,
+.t1108__title,
+.t551__contacts {
+  color: #3d444d !important;
+}
+
+.t-descr:not(.t208__text *):not(.uc-menu *),
+.t-text:not(.t208__text *):not(.uc-menu *),
+.t-section__descr,
+.t337__descr,
+.t589__text,
+.t1052__text,
+.t551__address {
+  color: #727b86 !important;
+}
+
+/* 6. PHOTO COVER TEXT OVERLAYS (WHITE ON DARK IMAGES) */
+.t208__text {
+  color: #ffffff !important;
+}
+
+
+/* ==========================================================================
+   OBJECT PAGES: REMOVE FOOTER COMPLETELY AFTER MAP AND PHOTOS
+   ========================================================================== */
+body:not(.fero-main-page) #t-footer,
+body:not(.fero-main-page) footer,
+body:not(.fero-main-page) .t-records[data-tilda-page-alias="footer"],
+body:not(.fero-main-page) [data-tilda-page-id="38899125"],
+body:not(.fero-main-page) #rec633601501,
+body:not(.fero-main-page) #rec628841656 {
+  display: none !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
