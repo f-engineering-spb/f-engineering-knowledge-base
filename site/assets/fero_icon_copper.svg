@@ -1,9 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="160 280 216 216" width="216" height="216">
-  <g fill="none" stroke="#D6632B" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt">
+  <defs>
+    <mask id="iconHole">
+      <!-- white shows, black hides -->
+      <rect x="150" y="270" width="240" height="240" fill="white" />
+      <path d="M255,333 H220 C206,333 192,347 192,361 V415 C192,429 206,443 220,443 H255 Z" fill="black" />
+      <path d="M281,333 H317 C331,333 345,347 345,361 V415 C345,429 331,443 317,443 H281 Z" fill="black" />
+    </mask>
+  </defs>
+  <!-- Outer shape with copper fill and cutouts -->
+  <path d="M258,290 H278 L281,293 V309 H321 C348,309 369,330 369,357 V419 C369,446 348,467 321,467 H281 V484 L278,487 H258 L255,484 V467 H216 C189,467 168,446 168,419 V357 C168,330 189,309 216,309 H255 V293 L258,290 Z"
+        fill="#D6632B" mask="url(#iconHole)" />
+  <!-- Dark contour strokes -->
+  <g fill="none" stroke="#111111" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="butt">
     <path d="M258,290 H278 L281,293 V309 H321 C348,309 369,330 369,357 V419 C369,446 348,467 321,467 H281 V484 L278,487 H258 L255,484 V467 H216 C189,467 168,446 168,419 V357 C168,330 189,309 216,309 H255 V293 L258,290 Z"/>
-    <path d="M255,333 H220 C206,333 192,347 192,361 V415 C192,429 206,443 220,443 H255"/>
-    <path d="M281,333 H317 C331,333 345,347 345,361 V415 C345,429 331,443 317,443 H281"/>
-    <line x1="255" y1="333" x2="255" y2="443"/>
-    <line x1="281" y1="333" x2="281" y2="443"/>
+    <path d="M255,333 H220 C206,333 192,347 192,361 V415 C192,429 206,443 220,443 H255 Z"/>
+    <path d="M281,333 H317 C331,333 345,347 345,361 V415 C345,429 331,443 317,443 H281 Z"/>
   </g>
 </svg>
