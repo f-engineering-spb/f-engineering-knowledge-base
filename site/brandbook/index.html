@@ -3,752 +3,1047 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ФЕРО — Брендбук и Центр ресурсов</title>
+  <title>ФЕРО • Официальный брендбук и стандарты стиля 2026</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/fero_icon_copper_32.png">
+  <link rel="icon" type="image/svg+xml" href="../assets/fero_icon_copper.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --copper: #D6632B;
+      --copper-hover: #b84f1f;
+      --copper-light: rgba(214, 99, 43, 0.08);
+      --dark-slate: #0F172A;
+      --slate-800: #1E293B;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-500: #64748B;
+      --slate-300: #CBD5E1;
+      --slate-100: #F1F5F9;
+      --slate-50: #F8FAFC;
+      --black: #111111;
+      --white: #FFFFFF;
+      --border: #E2E8F0;
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f8fafc;
-      color: #0f172a;
-      min-height: 100vh;
+      font-family: var(--font-body);
+      background: var(--slate-50);
+      color: var(--slate-800);
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
-    a { color: inherit; text-decoration: none; }
 
-    /* LIGHT TOP NAV: EXACT SAME AS OBJECT PAGES */
-    .nav-bar {
-      border-bottom: 1px solid #e2e8f0;
-      background: rgba(255,255,255,0.96);
-      backdrop-filter: blur(12px);
+    /* TOP HEADER */
+    .top-header {
+      background: var(--dark-slate);
+      color: var(--white);
       position: sticky;
       top: 0;
-      z-index: 100;
-      padding: 0 32px;
-      height: 64px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      box-shadow: 0 1px 3px rgba(15,23,42,0.03);
+      z-index: 1000;
+      border-bottom: 2px solid var(--copper);
     }
-    .nav-back {
-      display: inline-flex !important;
-      align-items: center !important;
-      gap: 8px !important;
-      padding: 8px 18px !important;
-      background: #f8fafc !important;
-      border: 1px solid #cbd5e1 !important;
-      border-radius: 8px !important;
-      color: #0f172a !important;
-      font-family: 'Montserrat', sans-serif !important;
-      font-size: 13px !important;
-      font-weight: 400 !important;
-      text-decoration: none !important;
-      transition: all 0.2s ease !important;
-      cursor: pointer !important;
-      flex-shrink: 0 !important;
-    }
-    .nav-back:hover {
-      background: #0284c7 !important;
-      border-color: #0284c7 !important;
-      color: #ffffff !important;
-    }
-
-    /* COMPACT HERO - ONLY THE REQUIRED PHRASE */
-    .hero-wrap {
-      padding: 24px 24px 20px 24px;
-      text-align: center;
-      max-width: 980px;
+    .header-inner {
+      max-width: 1280px;
       margin: 0 auto;
-    }
-    .hero-desc {
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
-      font-weight: 400;
-      color: #475569;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1160px;
-      margin: 0 auto;
-      padding: 0 24px 80px 24px;
-    }
-
-    /* PHILOSOPHY & GEOMETRY CARDS */
-    .info-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 24px 28px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 10px rgba(15,23,42,0.02);
-    }
-    .info-card-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 14px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #f1f5f9;
-    }
-    /* НЕЖИРНЫЕ ЗАГОЛОВКИ */
-    .info-card-title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      color: #0f172a;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-    .info-card-content {
-      font-size: 14px;
-      font-weight: 400;
-      color: #334155;
-      line-height: 1.7;
-    }
-    .info-highlight {
-      background: #f0f9ff;
-      border-left: 3px solid #0284c7;
-      padding: 12px 16px;
-      border-radius: 0 6px 6px 0;
-      margin: 12px 0;
-      font-size: 13.5px;
-      color: #0369a1;
-      font-weight: 400;
-    }
-
-    /* SECTION BLOCKS */
-    .section-block {
-      margin-top: 36px;
-      margin-bottom: 20px;
-    }
-    .section-title-wrap {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 18px;
-      border-bottom: 1px solid #e2e8f0;
-      padding-bottom: 10px;
-    }
-    .section-icon { font-size: 20px; }
-    .section-title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      letter-spacing: 0.05em;
-      color: #0f172a;
-      text-transform: uppercase;
-    }
-    .section-badge {
-      font-size: 11px;
-      font-family: 'JetBrains Mono', monospace;
-      color: #94a3b8;
-      margin-left: auto;
-      font-weight: 400;
-    }
-
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 18px;
-    }
-
-    /* ASSET CARDS */
-    .asset-card {
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 12px;
-      padding: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: all 0.2s ease;
-      box-shadow: 0 2px 8px rgba(15,23,42,0.02);
-    }
-    .asset-card:hover {
-      transform: translateY(-2px);
-      border-color: #cbd5e1;
-      box-shadow: 0 8px 20px rgba(15,23,42,0.06);
-    }
-    .asset-card.featured {
-      border: 1.5px solid #bae6fd;
-      background: linear-gradient(180deg, #ffffff 0%, #f0f9ff 100%);
-    }
-
-    .card-top {
+      padding: 14px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: var(--white);
+    }
+    .header-logo img {
+      height: 32px;
+      width: auto;
+    }
+    .header-logo-text {
+      font-family: var(--font-heading);
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+    }
+    .header-badge {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      background: var(--copper);
+      color: var(--white);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    .header-nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .header-nav a {
+      color: var(--slate-300);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    .header-nav a:hover {
+      color: var(--white);
+    }
+    .btn-header-cta {
+      background: var(--copper);
+      color: var(--white) !important;
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+    .btn-header-cta:hover {
+      background: var(--copper-hover) !important;
+    }
+
+    /* HERO BANNER */
+    .hero-banner {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+      color: var(--white);
+      padding: 60px 24px 70px;
+      border-bottom: 1px solid var(--slate-700);
+    }
+    .hero-content {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .hero-pre {
+      font-family: var(--font-mono);
+      color: var(--copper);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
       margin-bottom: 12px;
     }
-    .format-pill {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 10px;
-      font-weight: 500;
-      padding: 3px 8px;
-      border-radius: 4px;
-      letter-spacing: 0.04em;
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: 38px;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+    }
+    .hero-title span {
+      color: var(--copper);
+    }
+    .hero-desc {
+      font-size: 16px;
+      color: var(--slate-300);
+      max-width: 820px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .btn-main {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--copper);
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s ease;
+    }
+    .btn-main:hover {
+      background: var(--copper-hover);
+      transform: translateY(-1px);
+    }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--white);
+      border: 1px solid var(--slate-500);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s ease;
+    }
+    .btn-outline:hover {
+      border-color: var(--white);
+      background: rgba(255,255,255,0.05);
+    }
+
+    /* MAIN CONTAINER & GRID */
+    .page-wrap {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    .section-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 4px 16px rgba(15,23,42,0.04);
+      padding: 40px;
+      margin-bottom: 40px;
+    }
+    .section-head {
+      margin-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .sec-num {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--copper);
+      letter-spacing: 0.1em;
       text-transform: uppercase;
+      display: block;
+      margin-bottom: 4px;
     }
-    .pill-zip { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
-    .pill-docx { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
-    .pill-svg { background: #f0fdf4; color: #15803d; border: 1px solid #bbf7d0; }
-    .pill-png { background: #faf5ff; color: #6b21a8; border: 1px solid #e9d5ff; }
-    .pill-dxf { background: #fff7ed; color: #c2410c; border: 1px solid #ffedd5; }
-    .pill-pdf { background: #fef2f2; color: #b91c1c; border: 1px solid #fecaca; }
+    .sec-title {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--dark-slate);
+    }
 
-    .size-label {
-      font-family: 'JetBrains Mono', monospace;
+    /* DUAL SYSTEM OVERVIEW GRID */
+    .dual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-top: 24px;
+    }
+    .dual-tier-card {
+      border-radius: var(--radius-md);
+      padding: 28px;
+      position: relative;
+      border: 2px solid transparent;
+    }
+    .tier-copper {
+      background: #FFF9F5;
+      border-color: var(--copper);
+    }
+    .tier-bw {
+      background: #F8FAFC;
+      border-color: #334155;
+    }
+    .tier-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
       font-size: 11px;
-      color: #94a3b8;
-    }
-
-    .card-title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 15px;
-      font-weight: 500;
-      color: #0f172a;
-      margin-bottom: 6px;
-      line-height: 1.35;
-    }
-    .card-desc {
-      font-size: 13px;
-      font-weight: 400;
-      color: #64748b;
-      line-height: 1.55;
-      margin-bottom: 18px;
-      flex-grow: 1;
-    }
-
-    /* PREVIEW THUMBNAIL */
-    .card-thumb {
-      background: #f8fafc;
-      border: 1px solid #f1f5f9;
-      border-radius: 8px;
-      padding: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 4px;
+      text-transform: uppercase;
       margin-bottom: 14px;
+    }
+    .badge-copper-style {
+      background: var(--copper);
+      color: var(--white);
+    }
+    .badge-bw-style {
+      background: #111111;
+      color: var(--white);
+    }
+    .tier-title {
+      font-family: var(--font-heading);
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--dark-slate);
+      margin-bottom: 10px;
+    }
+    .tier-desc {
+      font-size: 13.5px;
+      color: var(--slate-600);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+    .tier-list {
+      list-style: none;
+      font-size: 13px;
+      color: var(--slate-700);
+    }
+    .tier-list li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .tier-list li::before {
+      content: "•";
+      font-weight: bold;
+      color: var(--copper);
+    }
+    .tier-bw .tier-list li::before {
+      color: #111111;
+    }
+
+    /* SHOWCASE BOXES */
+    .showcase-box {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: var(--slate-50);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .showcase-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .showcase-title {
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--dark-slate);
+    }
+    .showcase-tags {
+      display: flex;
+      gap: 8px;
+    }
+    .tag-item {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: var(--slate-100);
+      color: var(--slate-700);
+      font-weight: 600;
+    }
+    .preview-canvas {
+      background: var(--white);
+      border: 1px solid var(--slate-300);
+      border-radius: var(--radius-sm);
+      padding: 24px;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 70px;
+      min-height: 160px;
     }
-    .card-thumb img {
-      max-height: 50px;
+    .preview-canvas img {
       max-width: 100%;
       height: auto;
       display: block;
     }
 
-    /* BUTTONS */
-    .card-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+    /* COLOR PALETTE CARDS */
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .color-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--white);
+    }
+    .color-swatch {
+      height: 100px;
       width: 100%;
     }
-    .dl-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      flex: 1 1 calc(33.333% - 6px);
-      min-width: 80px;
-      padding: 9px 10px;
-      border-radius: 8px;
-      background: #f8fafc;
-      border: 1px solid #cbd5e1;
-      color: #0f172a;
-      font-family: 'Montserrat', sans-serif;
+    .color-info {
+      padding: 16px;
+    }
+    .color-name {
+      font-family: var(--font-heading);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--dark-slate);
+      margin-bottom: 4px;
+    }
+    .color-role {
       font-size: 11.5px;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      transition: all 0.2s;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
+      color: var(--slate-500);
+      margin-bottom: 10px;
     }
-    .dl-btn:hover {
-      background: #0284c7;
-      border-color: #0284c7;
-      color: #ffffff;
-      box-shadow: 0 4px 12px rgba(2,132,199,0.2);
-    }
-    .dl-btn.btn-featured {
-      flex: 1 1 100%;
-      background: #0284c7;
-      border-color: #0284c7;
-      color: #ffffff;
-      padding: 10px 14px;
-      font-size: 12px;
-    }
-    .dl-btn.btn-featured:hover {
-      background: #0369a1;
-      border-color: #0369a1;
+    .color-values {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--slate-700);
+      line-height: 1.6;
     }
 
-    .footer {
-      border-top: 1px solid #e2e8f0;
-      background: #ffffff;
-      padding: 32px 24px;
-      text-align: center;
-      font-size: 13px;
-      color: #64748b;
-      line-height: 1.7;
+    /* DOWNLOAD TABLE & BUTTONS */
+    .download-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 32px;
     }
-    .footer a { color: #0284c7; font-weight: 500; }
+    .pkg-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      background: var(--white);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .pkg-title {
+      font-family: var(--font-heading);
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--dark-slate);
+      margin-bottom: 8px;
+    }
+    .pkg-desc {
+      font-size: 12.5px;
+      color: var(--slate-600);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .pkg-size {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--slate-500);
+      margin-bottom: 16px;
+    }
+    .btn-pkg-dl {
+      display: block;
+      text-align: center;
+      background: var(--dark-slate);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 10px 18px;
+      border-radius: var(--radius-sm);
+      transition: background 0.2s ease;
+    }
+    .btn-pkg-dl:hover {
+      background: var(--copper);
+    }
+
+    .table-responsive {
+      overflow-x: auto;
+    }
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: left;
+    }
+    table.data-table th {
+      background: var(--slate-100);
+      padding: 12px 16px;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: var(--dark-slate);
+      border-bottom: 2px solid var(--border);
+    }
+    table.data-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--slate-700);
+    }
+    table.data-table tr:hover td {
+      background: var(--slate-50);
+    }
+    .dl-link {
+      color: var(--copper);
+      font-weight: 600;
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: 12px;
+    }
+    .dl-link:hover {
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    .brandbook-footer {
+      background: var(--dark-slate);
+      color: var(--slate-300);
+      padding: 40px 24px;
+      font-size: 13px;
+      border-top: 1px solid var(--slate-700);
+    }
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .footer-links a {
+      color: var(--slate-300);
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    .footer-links a:hover {
+      color: var(--white);
+    }
+
+    @media (max-width: 900px) {
+      .dual-grid { grid-template-columns: 1fr; }
+      .hero-title { font-size: 28px; }
+      .section-card { padding: 24px; }
+    }
   </style>
 </head>
 <body>
 
-  <!-- ВЕРХНЯЯ ПАНЕЛЬ: СПРАВА КНОПКА ТОЧНО КАК НА САЙТЕ (СЛЕВА ПУСТО) -->
-  <header class="nav-bar">
-    <a href="/" onclick="if(window.history.length>1&&document.referrer&&document.referrer.indexOf(location.host)!==-1){history.back();return false;}else{location.href='/';return false;}" class="nav-back">
-      <span style="font-size: 16px; line-height: 1;">&larr;</span>
-      <span>На главную</span>
-    </a>
+  <!-- TOP HEADER -->
+  <header class="top-header">
+    <div class="header-inner">
+      <a href="../index.html" class="header-logo">
+        <img src="../assets/fero_logo_contour_copper.png" alt="ФЕРО">
+        <span class="header-logo-text">ФЕРО</span>
+        <span class="header-badge">BRANDBOOK 2026</span>
+      </a>
+      <nav class="header-nav">
+        <a href="#dual-system">Архитектура стиля</a>
+        <a href="#logo-geometry">Логотип и значок</a>
+        <a href="#drawing-stamps">Штампы ГОСТ</a>
+        <a href="#letterheads">Бланки А4</a>
+        <a href="#downloads" class="btn-header-cta">Центр загрузок</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- КОМПАКТНЫЙ ВЕРХНИЙ БЛОК: ТОЛЬКО ТРЕБУЕМАЯ ФРАЗА -->
-  <div class="hero-wrap">
-    <p class="hero-desc">
-      Инженерная концепция, философия имени, руководство по корпоративной айдентике, официальные бланки документов, векторные исходники и полный сайт для домена <b>ferospb.ru / ferospb.info</b>.
-    </p>
-  </div>
-
-  <main class="container">
-
-    <!-- 1. ЭТИМОЛОГИЯ ИМЕНИ FERO И ФИЛОСОФИЯ БРЕНДА -->
-    <div class="info-card">
-      <div class="info-card-header">
-        <span style="font-size:20px;">🏛️</span>
-        <h2 class="info-card-title">1. Этимология имени FERO и философия бренда</h2>
-      </div>
-      <div class="info-card-content">
-        <p>
-          Название компании восходит к классическому латинскому глаголу <b>fero</b> (инфинитив <b>ferre</b>), фундаментальные значения которого — <i>«несу»</i>, <i>«держу»</i>, <i>«выдерживаю нагрузки»</i>, <i>«приношу»</i>, <i>«созидаю»</i>.
-        </p>
-        
-        <div class="info-highlight">
-          <b>Конструктивная философия:</b> В фасадном инжиниринге ограждающие конструкции высотных и знаковых сооружений принимают на себя колоссальные ветровые, температурные, сейсмические и весовые нагрузки. Оболочки, проектируемые и монтируемые компанией «ФЕРО», буквально «несут» эти воздействия, гарантируя абсолютную надежность, безопасность и долговечность архитектурных объектов.
-        </div>
-
-        <p>
-          Слово <b>FERO</b> также напрямую коррелирует с латинским <b>ferrum</b> (железо) — первоосновой металлических каркасов, стальных анкерных узлов и алюминиевых фасадных систем высокой жесткости.
-        </p>
-        <p style="margin-top:8px;">
-          <b>Миссия «ФЕРО»:</b> Синтез математической точности инжиниринга, расчетной несущей надежности и бескомпромиссной эстетики современной архитектуры.
-        </p>
+  <!-- HERO BANNER -->
+  <section class="hero-banner">
+    <div class="hero-content">
+      <div class="hero-pre">Официальный стандарт айдентики и проектной графики</div>
+      <h1 class="hero-title">ДВУХУРОВНЕВАЯ СИСТЕМА СТИЛЯ <span>«ФЕРО»</span></h1>
+      <p class="hero-desc">
+        Единый регламент визуальной идентификации инженерного бюро «ФЕРО». Система строго разделена на две взаимодополняющие линейки: 
+        <strong>Презентационную</strong> (фирменная медь #D6632B для сайта, мини-каталогов и коммерческих предложений) и 
+        <strong>Рабочую</strong> (монохромный контур #111111 для чертежей СПДС ГОСТ Р 21.101-2020 и внутренней документации).
+      </p>
+      <div class="hero-actions">
+        <a href="../assets/fero_brandbook_complete.zip" class="btn-main">
+          Скачать полный бренд-пакет (.ZIP)
+        </a>
+        <a href="../assets/fero_mini_catalog.pdf" target="_blank" class="btn-outline">
+          Смотреть мини-каталог (.PDF)
+        </a>
+        <a href="../index.html" class="btn-outline">
+          Перейти на сайт ferospb.info
+        </a>
       </div>
     </div>
+  </section>
 
-    <!-- 2. НАПИСАНИЕ ЛОГОТИПА И АРХИТЕКТУРНОЕ СОЛНЫШКО ПОД 45° -->
-    <div class="info-card">
-      <div class="info-card-header">
-        <span style="font-size:20px;">☀️</span>
-        <h2 class="info-card-title">2. Написание логотипа и архитектурное солнышко под 45°</h2>
-      </div>
-      <div class="info-card-content">
-        <p>
-          <b>Геометрия знака:</b> Написание «ФЕРО» выполнено монументальным геометрическим гротеском с белыми рельефными литерами и объемными тенями. Чистые вертикали и выверенные скругления подчеркивают точность проектирования и стабильность несущих конструкций.
-        </p>
-        <div class="info-highlight">
-          <b>Солнце под углом 45°:</b> Фирменный графический акцент — стилизованное солнце с расходящимися лучами над правой частью буквы «О». Угол 45° является базовой расчетной константой в фасадном проектировании: он определяет инсоляционный угол падения солнечных лучей при теплофизическом моделировании фасада, расчете солнцезащиты и энергоэффективности светопрозрачных оболочек.
+  <!-- MAIN WRAP -->
+  <main class="page-wrap">
+
+    <!-- 1. ДВУХУРОВНЕВАЯ СИСТЕМА -->
+    <section id="dual-system" class="section-card">
+      <div class="section-head">
+        <div>
+          <span class="sec-num">Раздел 01</span>
+          <h2 class="sec-title">Архитектура двухуровневой системы стиля</h2>
         </div>
       </div>
-    </div>
+      <p style="color: var(--slate-600); font-size: 14.5px; max-width: 900px; margin-bottom: 24px;">
+        Для предотвращения визуального шума и соответствия отраслевым стандартам проектирования в бюро «ФЕРО» действует четкое правило применения материалов:
+      </p>
 
-    <!-- 3. ОФИЦИАЛЬНЫЕ ФИРМЕННЫЕ БЛАНКИ WORD (.DOCX) -->
-    <section class="section-block">
-      <div class="section-title-wrap">
-        <span class="section-icon">📄</span>
-        <h2 class="section-title">3. Официальные бланки Word (.docx)</h2>
-        <span class="section-badge">ДОКУМЕНТООБОРОТ И ПЕРЕПИСКА</span>
-      </div>
-      <div class="cards-grid">
-
-        <!-- ВАРИАНТ 1: ВЕРХНИЕ РЕКВИЗИТЫ -->
-        <div class="asset-card featured">
-          <div class="card-top">
-            <span class="format-pill pill-docx">WORD .DOCX</span>
-            <span class="size-label">98 KB</span>
-          </div>
-          <h3 class="card-title">Бланк: реквизиты вверху (Вариант 1)</h3>
-          <p class="card-desc">
-            Официальный утвержденный бланк. Логотип «ФЕРО» с солнышком 45° вверху. Блок реквизитов расположен в верхней части в воздухе без рамок и черт.
+      <div class="dual-grid">
+        <!-- ТИР 1: ПРЕЗЕНТАЦИЯ -->
+        <div class="dual-tier-card tier-copper">
+          <span class="tier-badge badge-copper-style">Линейка 1: Презентационная (Медь)</span>
+          <h3 class="tier-title">Клиентские и презентационные материалы</h3>
+          <p class="tier-desc">
+            Использует фирменный медный оттенок <strong>#D6632B</strong> с графитовым контуром. Создает премиальный технологичный образ на цифровых экранах и полиграфии высокого качества.
           </p>
-          <a href="../assets/blank_var1_top_requisites.docx" download class="dl-btn btn-featured">
-            <span>📥</span> Скачать бланк Word (.docx)
+          <ul class="tier-list">
+            <li>Официальный сайт <strong>ferospb.info</strong> и <strong>ferospb.ru</strong></li>
+            <li>Презентационный буклет / мини-каталог (<code>fero_mini_catalog.pdf</code>)</li>
+            <li>Коммерческие предложения и договоры (Бланки А4 в DOCX / PDF)</li>
+            <li>Презентационные альбомы концепций и эскизных проектов (ЭП)</li>
+            <li>Электронные подписи руководства и директоров проектов</li>
+            <li>Цветные иконки приложений и фавиконы (<code>favicon.ico</code>)</li>
+          </ul>
+        </div>
+
+        <!-- ТИР 2: РАБОЧИЙ КОНТУР -->
+        <div class="dual-tier-card tier-bw">
+          <span class="tier-badge badge-bw-style">Линейка 2: Рабочая (Ч/Б Контур)</span>
+          <h3 class="tier-title">Рабочая и проектная документация</h3>
+          <p class="tier-desc">
+            Строгий монохромный контур <strong>#111111</strong> на прозрачном или белом фоне без сплошных заливок и цветных подложек. Оптимизирован под плоттерную печать и лазерные принтеры.
+          </p>
+          <ul class="tier-list">
+            <li>Рабочие комплекты чертежей (РД) и проектная документация (ПД)</li>
+            <li>Штампы СПДС ГОСТ Р 21.101-2020 (Форма 1: 185×55 мм, Форма 3: 185×15 мм)</li>
+            <li>Ячейка организации: 50×15 мм, надпись строго <strong>10 × 42 мм</strong></li>
+            <li>Внутренние рабочие бланки, акты приемки, служебные записки</li>
+            <li>Повседневная техническая переписка с экспертизой и подрядчиками</li>
+            <li>Монохромные CAD-блоки и векторные библиотеки для проектировщиков</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ЦВЕТОВАЯ ПАЛИТРА -->
+    <section class="section-card">
+      <div class="section-head">
+        <div>
+          <span class="sec-num">Раздел 02</span>
+          <h2 class="sec-title">Корпоративная цветовая палитра</h2>
+        </div>
+      </div>
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-swatch" style="background: #D6632B;"></div>
+          <div class="color-info">
+            <div class="color-name">Architectural Copper</div>
+            <div class="color-role">Основной презентационный акцент</div>
+            <div class="color-values">
+              HEX: #D6632B<br>
+              RGB: 214, 99, 43<br>
+              CMYK: 15, 75, 95, 5
+            </div>
+          </div>
+        </div>
+
+        <div class="color-card">
+          <div class="color-swatch" style="background: #111111;"></div>
+          <div class="color-info">
+            <div class="color-name">Deep Graphite</div>
+            <div class="color-role">Линии контура, штампы, текст чертежей</div>
+            <div class="color-values">
+              HEX: #111111<br>
+              RGB: 17, 17, 17<br>
+              CMYK: 0, 0, 0, 95
+            </div>
+          </div>
+        </div>
+
+        <div class="color-card">
+          <div class="color-swatch" style="background: #0F172A;"></div>
+          <div class="color-info">
+            <div class="color-name">Dark Slate</div>
+            <div class="color-role">Цифровой фон, шапки презентаций</div>
+            <div class="color-values">
+              HEX: #0F172A<br>
+              RGB: 15, 23, 42<br>
+              CMYK: 65, 45, 0, 84
+            </div>
+          </div>
+        </div>
+
+        <div class="color-card">
+          <div class="color-swatch" style="background: #FFFFFF; border-bottom: 1px solid var(--border);"></div>
+          <div class="color-info">
+            <div class="color-name">Pure White</div>
+            <div class="color-role">Бумага документов, фоны чертежей</div>
+            <div class="color-values">
+              HEX: #FFFFFF<br>
+              RGB: 255, 255, 255<br>
+              CMYK: 0, 0, 0, 0
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ЛОГОТИП И ИКОНКА -->
+    <section id="logo-geometry" class="section-card">
+      <div class="section-head">
+        <div>
+          <span class="sec-num">Раздел 03</span>
+          <h2 class="sec-title">Фирменный логотип и монограмма «Ф»</h2>
+        </div>
+      </div>
+
+      <!-- Медный логотип -->
+      <div class="showcase-box">
+        <div class="showcase-head">
+          <div class="showcase-title">Презентационный логотип (Цветная медь #D6632B)</div>
+          <div class="showcase-tags">
+            <span class="tag-item">Для сайта и буклетов</span>
+            <span class="tag-item">SVG / PNG / JPG</span>
+          </div>
+        </div>
+        <div class="preview-canvas" style="background: #ffffff;">
+          <img src="../assets/fero_logo_contour_copper.png" alt="Логотип ФЕРО Медь" style="max-height: 80px;">
+        </div>
+      </div>
+
+      <!-- Ч/Б контурный логотип -->
+      <div class="showcase-box">
+        <div class="showcase-head">
+          <div class="showcase-title">Рабочий логотип (Контур #111111 без заливки)</div>
+          <div class="showcase-tags">
+            <span class="tag-item">Для штампов и печати</span>
+            <span class="tag-item">Прозрачный RGBA</span>
+          </div>
+        </div>
+        <div class="preview-canvas" style="background: #ffffff;">
+          <img src="../assets/fero_logo_contour.png" alt="Логотип ФЕРО Ч/Б" style="max-height: 80px;">
+        </div>
+      </div>
+
+      <!-- Значок монограмма Ф -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <div class="showcase-box">
+          <div class="showcase-head">
+            <div class="showcase-title">Иконка «Ф» (Медь)</div>
+          </div>
+          <div class="preview-canvas">
+            <img src="../assets/fero_icon_copper.png" alt="Иконка Ф Медь" style="max-height: 80px;">
+          </div>
+        </div>
+        <div class="showcase-box">
+          <div class="showcase-head">
+            <div class="showcase-title">Иконка «Ф» (Ч/Б Контур)</div>
+          </div>
+          <div class="preview-canvas">
+            <img src="../assets/fero_icon_bw_512.png" alt="Иконка Ф Ч/Б" style="max-height: 80px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ЧЕРТЕЖНЫЕ ШТАМПЫ ГОСТ Р 21.101-2020 -->
+    <section id="drawing-stamps" class="section-card">
+      <div class="section-head">
+        <div>
+          <span class="sec-num">Раздел 04</span>
+          <h2 class="sec-title">Чертежные штампы (ГОСТ Р 21.101-2020)</h2>
+        </div>
+        <a href="../assets/fero_stamps_gost_spec_sheet.pdf" target="_blank" class="dl-link" style="font-size: 13px;">
+          Открыть спецификацию листа А4 (.PDF) &rarr;
+        </a>
+      </div>
+
+      <p style="color: var(--slate-600); font-size: 14px; margin-bottom: 20px;">
+        Графа 9 (Наименование предприятия) строго регламентирована: ширина <strong>50 мм</strong>, высота <strong>15 мм</strong>.
+        Размер блока надписи «ФЕРО»: строго <strong>10 × 42 мм</strong>. Отступы: по 4.08 мм по бокам, по 2.48 мм сверху и снизу.
+      </p>
+
+      <!-- Форма 1 Ч/Б -->
+      <div class="showcase-box">
+        <div class="showcase-head">
+          <div class="showcase-title">Форма 1 (185 × 55 мм) — Рабочая Ч/Б версия для комплектов РД/ПД</div>
+          <div class="showcase-tags">
+            <span class="tag-item">ГОСТ Р 21.101-2020</span>
+            <span class="tag-item">DXF / SVG / PNG</span>
+          </div>
+        </div>
+        <div class="preview-canvas">
+          <img src="../assets/fero_stamp_gost_bw_forma1.png" alt="Штамп Форма 1 Ч/Б">
+        </div>
+      </div>
+
+      <!-- Форма 1 Медь -->
+      <div class="showcase-box">
+        <div class="showcase-head">
+          <div class="showcase-title">Форма 1 (185 × 55 мм) — Презентационная медная версия для концептуальных альбомов</div>
+          <div class="showcase-tags">
+            <span class="tag-item">Презентационная медь</span>
+            <span class="tag-item">DXF / SVG / PNG</span>
+          </div>
+        </div>
+        <div class="preview-canvas">
+          <img src="../assets/fero_stamp_gost_copper_forma1.png" alt="Штамп Форма 1 Медь">
+        </div>
+      </div>
+
+      <!-- Форма 3 -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <div class="showcase-box">
+          <div class="showcase-head">
+            <div class="showcase-title">Форма 3 (185 × 15 мм) Ч/Б</div>
+          </div>
+          <div class="preview-canvas">
+            <img src="../assets/fero_stamp_gost_bw_forma3.png" alt="Форма 3 Ч/Б">
+          </div>
+        </div>
+        <div class="showcase-box">
+          <div class="showcase-head">
+            <div class="showcase-title">Форма 3 (185 × 15 мм) Медь</div>
+          </div>
+          <div class="preview-canvas">
+            <img src="../assets/fero_stamp_gost_copper_forma3.png" alt="Форма 3 Медь">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ФИРМЕННЫЕ БЛАНКИ А4 -->
+    <section id="letterheads" class="section-card">
+      <div class="section-head">
+        <div>
+          <span class="sec-num">Раздел 05</span>
+          <h2 class="sec-title">Официальные фирменные бланки А4</h2>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px;">
+        <div class="showcase-box">
+          <div class="showcase-head">
+            <div class="showcase-title">Рабочий бланк А4 (Ч/Б Контур)</div>
+            <span class="tag-item">DOCX / PDF</span>
+          </div>
+          <div class="preview-canvas" style="padding: 12px;">
+            <img src="../assets/fero_letterhead_bw.png" alt="Рабочий бланк" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-height: 380px;">
+          </div>
+          <div style="margin-top: 14px; display: flex; gap: 10px;">
+            <a href="../assets/fero_letterhead_bw.docx" class="dl-link">Скачать .DOCX</a>
+            <a href="../assets/fero_letterhead_bw.pdf" target="_blank" class="dl-link">Скачать .PDF</a>
+          </div>
+        </div>
+
+        <div class="showcase-box">
+          <div class="showcase-head">
+            <div class="showcase-title">Презентационный бланк А4 (Медь)</div>
+            <span class="tag-item">DOCX / PDF</span>
+          </div>
+          <div class="preview-canvas" style="padding: 12px;">
+            <img src="../assets/fero_letterhead_copper.png" alt="Презентационный бланк" style="box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-height: 380px;">
+          </div>
+          <div style="margin-top: 14px; display: flex; gap: 10px;">
+            <a href="../assets/fero_letterhead_copper.docx" class="dl-link">Скачать .DOCX</a>
+            <a href="../assets/fero_letterhead_copper.pdf" target="_blank" class="dl-link">Скачать .PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ЭЛЕКТРОННЫЕ ПОДПИСИ -->
+    <section class="section-card">
+      <div class="section-head">
+        <div>
+          <span class="sec-num">Раздел 06</span>
+          <h2 class="sec-title">Электронные почтовые подписи (Email Signatures)</h2>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div class="showcase-box">
+          <div class="showcase-head">
+            <div class="showcase-title">Рабочая подпись (Ч/Б)</div>
+          </div>
+          <div class="preview-canvas" style="padding: 16px;">
+            <img src="../assets/fero_email_signature_bw.png" alt="Email signature BW">
+          </div>
+          <div style="margin-top: 10px;">
+            <a href="../assets/fero_email_signature_bw.html" target="_blank" class="dl-link">Открыть HTML-код подписи &rarr;</a>
+          </div>
+        </div>
+
+        <div class="showcase-box">
+          <div class="showcase-head">
+            <div class="showcase-title">Презентационная подпись (Медь)</div>
+          </div>
+          <div class="preview-canvas" style="padding: 16px;">
+            <img src="../assets/fero_email_signature_copper.png" alt="Email signature Copper">
+          </div>
+          <div style="margin-top: 10px;">
+            <a href="../assets/fero_email_signature_copper.html" target="_blank" class="dl-link">Открыть HTML-код подписи &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. ЦЕНТР ЗАГРУЗОК -->
+    <section id="downloads" class="section-card">
+      <div class="section-head">
+        <div>
+          <span class="sec-num">Раздел 07</span>
+          <h2 class="sec-title">Центр загрузок (Download Center)</h2>
+        </div>
+      </div>
+
+      <!-- Главные архивные пакеты -->
+      <div class="download-grid">
+        <div class="pkg-card" style="border-top: 4px solid var(--copper);">
+          <div>
+            <div class="pkg-title">Презентационный пакет (Медь)</div>
+            <div class="pkg-desc">
+              Включает медные логотипы, иконки, мини-каталог PDF, презентационные штампы ГОСТ, презентационный бланк А4 (.DOCX и .PDF), email-подпись.
+            </div>
+            <div class="pkg-size">Архив: fero_brandbook_presentation_copper.zip (6.0 MB)</div>
+          </div>
+          <a href="../assets/fero_brandbook_presentation_copper.zip" class="btn-pkg-dl" style="background: var(--copper);">
+            Скачать презентационный пакет
           </a>
         </div>
 
-        <!-- ВАРИАНТ 2: НИЖНИЕ РЕКВИЗИТЫ -->
-        <div class="asset-card featured">
-          <div class="card-top">
-            <span class="format-pill pill-docx">WORD .DOCX</span>
-            <span class="size-label">99 KB</span>
+        <div class="pkg-card" style="border-top: 4px solid #334155;">
+          <div>
+            <div class="pkg-title">Рабочий пакет (Ч/Б Контур)</div>
+            <div class="pkg-desc">
+              Включает монохромные контурные логотипы, иконки, чертежные штампы ГОСТ Р 21.101-2020 Форма 1 и 3 в DXF/SVG/PNG, рабочий бланк А4, email-подпись.
+            </div>
+            <div class="pkg-size">Архив: fero_brandbook_working_bw.zip (827 KB)</div>
           </div>
-          <h3 class="card-title">Бланк: реквизиты внизу (Вариант 2)</h3>
-          <p class="card-desc">
-            Официальный утвержденный бланк. Логотип «ФЕРО» с солнышком 45° вверху страницы. Полные банковские и почтовые реквизиты вынесены в нижний колонтитул.
-          </p>
-          <a href="../assets/blank_var2_bottom_requisites.docx" download class="dl-btn btn-featured">
-            <span>📥</span> Скачать бланк Word (.docx)
+          <a href="../assets/fero_brandbook_working_bw.zip" class="btn-pkg-dl">
+            Скачать рабочий пакет (Ч/Б)
           </a>
         </div>
 
-      </div>
-    </section>
-
-    <!-- 4. ЛОГОТИПЫ С АРХИТЕКТУРНЫМ СОЛНЫШКОМ ПОД 45° -->
-    <section class="section-block">
-      <div class="section-title-wrap">
-        <span class="section-icon">☀️</span>
-        <h2 class="section-title">4. Логотипы с архитектурным солнышком под 45°</h2>
-        <span class="section-badge">ФИРМЕННЫЙ 3D ЭТАЛОН</span>
-      </div>
-      <div class="cards-grid">
-
-        <!-- С СОЛНЫШКОМ + ДЕСКРИПТОР -->
-        <div class="asset-card">
-          <div class="card-top">
-            <span class="format-pill pill-svg">3D ВЕКТОР / РАСТР / CAD</span>
-            <span class="size-label">ЭТАЛОН</span>
+        <div class="pkg-card" style="border-top: 4px solid var(--dark-slate);">
+          <div>
+            <div class="pkg-title">Полный мастер-пакет (Все файлы)</div>
+            <div class="pkg-desc">
+              Содержит полную структуру обеих линеек (Презентационная + Рабочая), все исходники CAD/DXF, векторные SVG, шрифтовые стандарты, каталог и шаблоны.
+            </div>
+            <div class="pkg-size">Архив: fero_brandbook_complete.zip (12.4 MB)</div>
           </div>
-          <div class="card-thumb">
-            <img src="../assets/fero_logo_sun_desc.png" alt="ФЕРО Фасадный инжиниринг с солнышком">
-          </div>
-          <h3 class="card-title">«ФЕРО» + Фасадный инжиниринг с солнышком</h3>
-          <p class="card-desc">
-            Главный фирменный блок: объемные белые буквы с тенями, архитектурное солнце 45° и дескриптор. Для полиграфии, презентаций и титулов.
-          </p>
-          <div class="card-actions">
-            <a href="../assets/fero_logo_sun_desc.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> SVG
-            </a>
-            <a href="../assets/fero_logo_sun_desc.png" target="_blank" download class="dl-btn">
-              <span>📥</span> PNG
-            </a>
-            <a href="../assets/fero_logo_sun_desc.dxf" target="_blank" download class="dl-btn">
-              <span>📥</span> DXF
-            </a>
-          </div>
-        </div>
-
-        <!-- С СОЛНЫШКОМ БЕЗ ДЕСКРИПТОРА -->
-        <div class="asset-card">
-          <div class="card-top">
-            <span class="format-pill pill-svg">3D ВЕКТОР / РАСТР / CAD</span>
-            <span class="size-label">БЕЗ ПОДПИСИ</span>
-          </div>
-          <div class="card-thumb">
-            <img src="../assets/fero_logo_sun_pure.png" alt="ФЕРО с солнышком без подписи">
-          </div>
-          <h3 class="card-title">«ФЕРО» с солнышком (Лаконичный)</h3>
-          <p class="card-desc">
-            Объемные белые буквы «ФЕРО» с солнышком 45° без текстовой строки. Для компактных блоков, экранов и навигации.
-          </p>
-          <div class="card-actions">
-            <a href="../assets/fero_logo_sun_pure.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> SVG
-            </a>
-            <a href="../assets/fero_logo_sun_pure.png" target="_blank" download class="dl-btn">
-              <span>📥</span> PNG
-            </a>
-            <a href="../assets/fero_logo_sun_pure.dxf" target="_blank" download class="dl-btn">
-              <span>📥</span> DXF
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 5. ЛОГОТИПЫ БЕЗ СОЛНЫШКА (СТРОГИЙ СТАНДАРТ) -->
-    <section class="section-block">
-      <div class="section-title-wrap">
-        <span class="section-icon">🔷</span>
-        <h2 class="section-title">5. Логотипы БЕЗ СОЛНЫШКА (Строгий стандарт)</h2>
-        <span class="section-badge">БЕЗ ГРАФИЧЕСКОГО СОЛНЦА</span>
-      </div>
-      <div class="cards-grid">
-
-        <!-- БЕЗ СОЛНЦА + ДЕСКРИПТОР -->
-        <div class="asset-card">
-          <div class="card-top">
-            <span class="format-pill pill-svg">3D ВЕКТОР / РАСТР / CAD</span>
-            <span class="size-label">NO SUN</span>
-          </div>
-          <div class="card-thumb">
-            <img src="../assets/fero_logo_no_sun_desc.png" alt="ФЕРО Фасадный инжиниринг без солнца">
-          </div>
-          <h3 class="card-title">«ФЕРО» + Фасадный инжиниринг (Без солнца)</h3>
-          <p class="card-desc">
-            Белые объемные буквы «ФЕРО» с тенями и дескриптором без солнечного диска. Для строгой документации и отчетов.
-          </p>
-          <div class="card-actions">
-            <a href="../assets/fero_logo_no_sun_desc.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> SVG
-            </a>
-            <a href="../assets/fero_logo_no_sun_desc.png" target="_blank" download class="dl-btn">
-              <span>📥</span> PNG
-            </a>
-            <a href="../assets/fero_logo_no_sun_desc.dxf" target="_blank" download class="dl-btn">
-              <span>📥</span> DXF
-            </a>
-          </div>
-        </div>
-
-        <!-- ЧИСТЫЙ ЗНАК БЕЗ СОЛНЦА И БЕЗ ДЕСКРИПТОРА -->
-        <div class="asset-card">
-          <div class="card-top">
-            <span class="format-pill pill-svg">3D ВЕКТОР / РАСТР / CAD</span>
-            <span class="size-label">ЧИСТЫЙ ЗНАК</span>
-          </div>
-          <div class="card-thumb">
-            <img src="../assets/fero_logo_no_sun_pure.png" alt="ФЕРО чистый 3D знак">
-          </div>
-          <h3 class="card-title">Просто «ФЕРО» (Чистый 3D знак)</h3>
-          <p class="card-desc">
-            Объемные белые литеры «ФЕРО» с тенями без солнца и без дескриптора. Для гравировки, тиснения, фасадных табличек и мерча.
-          </p>
-          <div class="card-actions">
-            <a href="../assets/fero_logo_no_sun_pure.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> SVG
-            </a>
-            <a href="../assets/fero_logo_no_sun_pure.png" target="_blank" download class="dl-btn">
-              <span>📥</span> PNG
-            </a>
-            <a href="../assets/fero_logo_no_sun_pure.dxf" target="_blank" download class="dl-btn">
-              <span>📥</span> DXF
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 6. ШТАМПЫ ЧЕРТЕЖЕЙ (ГОСТ СПДС 70×15 ММ И УГЛОВОЙ) -->
-    <section class="section-block">
-      <div class="section-title-wrap">
-        <span class="section-icon">📐</span>
-        <h2 class="section-title">6. Штампы чертежей (ГОСТ СПДС и рабочий штамп)</h2>
-        <span class="section-badge">ДЛЯ ЧЕРТЕЖЕЙ И AUTOCAD</span>
-      </div>
-      <div class="cards-grid">
-
-        <!-- ШТАМП ГОСТ С СОЛНЫШКОМ -->
-        <div class="asset-card">
-          <div class="card-top">
-            <span class="format-pill pill-dxf">ГОСТ / CAD</span>
-            <span class="size-label">70×15 ММ</span>
-          </div>
-          <div class="card-thumb">
-            <img src="../assets/fero_stamp_sun_gost.png" alt="Штамп ГОСТ с солнышком">
-          </div>
-          <h3 class="card-title">Штамп: «ФЕРО» + дескриптор С СОЛНЫШКОМ</h3>
-          <p class="card-desc">
-            Вставка в графу 9 основной надписи чертежей (ячейка 70×15 мм). Векторный CAD-блок DXF масштаба 1:1, SVG и PNG 300 DPI.
-          </p>
-          <div class="card-actions">
-            <a href="../assets/fero_stamp_sun_gost.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> SVG
-            </a>
-            <a href="../assets/fero_stamp_sun_gost.png" target="_blank" download class="dl-btn">
-              <span>📥</span> PNG
-            </a>
-            <a href="../assets/fero_stamp_sun_gost.dxf" target="_blank" download class="dl-btn">
-              <span>📥</span> DXF
-            </a>
-          </div>
-        </div>
-
-        <!-- ШТАМП ГОСТ БЕЗ СОЛНЫШКА -->
-        <div class="asset-card">
-          <div class="card-top">
-            <span class="format-pill pill-dxf">ГОСТ / CAD</span>
-            <span class="size-label">70×15 ММ</span>
-          </div>
-          <div class="card-thumb">
-            <img src="../assets/fero_stamp_no_sun_desc.png" alt="Штамп ГОСТ без солнышка">
-          </div>
-          <h3 class="card-title">Штамп: «ФЕРО» + дескриптор БЕЗ СОЛНЫШКА</h3>
-          <p class="card-desc">
-            Для основной надписи чертежей без солнечного диска. Строгий инженерный блок «ФЕРО» + «Фасадный инжиниринг».
-          </p>
-          <div class="card-actions">
-            <a href="../assets/fero_stamp_no_sun_desc.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> SVG
-            </a>
-            <a href="../assets/fero_stamp_no_sun_desc.png" target="_blank" download class="dl-btn">
-              <span>📥</span> PNG
-            </a>
-            <a href="../assets/fero_stamp_no_sun_desc.dxf" target="_blank" download class="dl-btn">
-              <span>📥</span> DXF
-            </a>
-          </div>
-        </div>
-
-        <!-- ШТАМП ГОСТ ЧИСТЫЙ БЕЗ СОЛНЦА И БЕЗ ПОДПИСИ -->
-        <div class="asset-card">
-          <div class="card-top">
-            <span class="format-pill pill-dxf">ГОСТ / CAD</span>
-            <span class="size-label">ЧИСТЫЙ ЗНАК</span>
-          </div>
-          <div class="card-thumb">
-            <img src="../assets/fero_stamp_no_sun_pure.png" alt="Штамп ГОСТ чистый знак">
-          </div>
-          <h3 class="card-title">Штамп: просто «ФЕРО» (Чистый знак)</h3>
-          <p class="card-desc">
-            Лаконичный блок только с литерами «ФЕРО» для узких штампов, спецификаций и технических ярлыков.
-          </p>
-          <div class="card-actions">
-            <a href="../assets/fero_stamp_no_sun_pure.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> SVG
-            </a>
-            <a href="../assets/fero_stamp_no_sun_pure.png" target="_blank" download class="dl-btn">
-              <span>📥</span> PNG
-            </a>
-            <a href="../assets/fero_stamp_no_sun_pure.dxf" target="_blank" download class="dl-btn">
-              <span>📥</span> DXF
-            </a>
-          </div>
-        </div>
-
-        <!-- УГЛОВОЙ РАБОЧИЙ ШТАМП СОГЛАСОВАНИЯ -->
-        <div class="asset-card">
-          <div class="card-top">
-            <span class="format-pill pill-dxf">РАБОЧИЙ ШТАМП</span>
-            <span class="size-label">75×40 ММ</span>
-          </div>
-          <div class="card-thumb">
-            <img src="../assets/fero_corner_stamp_production.png" alt="Угловой штамп в производство работ">
-          </div>
-          <h3 class="card-title">Угловой штамп «В производство работ»</h3>
-          <p class="card-desc">
-            Рабочий штамп согласования с полями подписи инженера ОТО и даты. Форматы DXF (AutoCAD), SVG и PNG.
-          </p>
-          <div class="card-actions">
-            <a href="../assets/fero_corner_stamp_production.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> SVG
-            </a>
-            <a href="../assets/fero_corner_stamp_production.png" target="_blank" download class="dl-btn">
-              <span>📥</span> PNG
-            </a>
-            <a href="../assets/fero_corner_stamp_production.dxf" target="_blank" download class="dl-btn">
-              <span>📥</span> DXF
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 7. КОРПОРАТИВНЫЕ EMAIL-ПОДПИСИ -->
-    <section class="section-block">
-      <div class="section-title-wrap">
-        <span class="section-icon">✉️</span>
-        <h2 class="section-title">7. Корпоративные Email-подписи</h2>
-        <span class="section-badge">ПОЧТОВЫЕ КЛИЕНТЫ</span>
-      </div>
-      <div class="cards-grid">
-
-        <!-- EMAIL С СОЛНЫШКОМ -->
-        <div class="asset-card">
-          <div class="card-top">
-            <span class="format-pill pill-png">EMAIL PNG / SVG</span>
-            <span class="size-label">С СОЛНЫШКОМ</span>
-          </div>
-          <div class="card-thumb">
-            <img src="../assets/fero_email_signature_sun.png" alt="Email-подпись с солнышком">
-          </div>
-          <h3 class="card-title">Подпись e-mail с солнышком 45°</h3>
-          <p class="card-desc">
-            Оптимизированный фирменный бейдж на прозрачном фоне для подписи писем Outlook, Gmail, Яндекс.
-          </p>
-          <div class="card-actions">
-            <a href="../assets/fero_email_signature_sun.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> SVG
-            </a>
-            <a href="../assets/fero_email_signature_sun.png" target="_blank" download class="dl-btn">
-              <span>📥</span> PNG
-            </a>
-          </div>
-        </div>
-
-        <!-- EMAIL БЕЗ СОЛНЫШКА -->
-        <div class="asset-card">
-          <div class="card-top">
-            <span class="format-pill pill-png">EMAIL PNG / SVG</span>
-            <span class="size-label">БЕЗ СОЛНЦА</span>
-          </div>
-          <div class="card-thumb">
-            <img src="../assets/fero_email_signature_no_sun.png" alt="Email-подпись без солнца">
-          </div>
-          <h3 class="card-title">Подпись e-mail без солнца (Лаконичная)</h3>
-          <p class="card-desc">
-            Четкий бейдж «ФЕРО» + дескриптор на прозрачном фоне без солнца для деловой переписки.
-          </p>
-          <div class="card-actions">
-            <a href="../assets/fero_email_signature_no_sun.svg" target="_blank" download class="dl-btn">
-              <span>📥</span> SVG
-            </a>
-            <a href="../assets/fero_email_signature_no_sun.png" target="_blank" download class="dl-btn">
-              <span>📥</span> PNG
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 8. МИНИ-КАТАЛОГ И ПОЛНЫЙ ДИСТРИБУТИВ САЙТА -->
-    <section class="section-block">
-      <div class="section-title-wrap">
-        <span class="section-icon">📦</span>
-        <h2 class="section-title">8. Мини-каталог и дистрибутив сайта</h2>
-        <span class="section-badge">МАТЕРИАЛЫ И РАЗВЕРТЫВАНИЕ</span>
-      </div>
-      <div class="cards-grid">
-
-        <div class="asset-card featured">
-          <div class="card-top">
-            <span class="format-pill pill-pdf">PDF ДОКУМЕНТ</span>
-            <span class="size-label">5.6 MB</span>
-          </div>
-          <h3 class="card-title">Мини-каталог объектов «ФЕРО» (PDF)</h3>
-          <p class="card-desc">
-            Печатная презентация знаковых фасадных объектов компании: высотные комплексы, панорамное остекление, архитектурные оболочки и инженерные решения.
-          </p>
-          <a href="../assets/fero_mini_catalog.pdf" download class="dl-btn btn-featured">
-            <span>📥</span> Скачать мини-каталог (PDF, 5.6 МБ)
+          <a href="../assets/fero_brandbook_complete.zip" class="btn-pkg-dl">
+            Скачать мастер-пакет (.ZIP)
           </a>
         </div>
+      </div>
 
-        <div class="asset-card featured">
-          <div class="card-top">
-            <span class="format-pill pill-zip">ZIP АРХИВ</span>
-            <span class="size-label">ПОЛНЫЙ ДИСТРИБУТИВ</span>
-          </div>
-          <h3 class="card-title">Полный архив сайта ferospb_ru_full_site.zip</h3>
-          <p class="card-desc">
-            Полный дистрибутив сайта: все HTML-страницы объектов, главная страница с чистым подвалом, каталог объектов, стили, скрипты, шрифты и фото высокого разрешения для домена <b>ferospb.ru / ferospb.info</b>.
-          </p>
-          <a href="../ferospb_ru_full_site.zip" download class="dl-btn btn-featured">
-            <span>📥</span> Скачать полный сайт (ZIP)
-          </a>
-        </div>
-
+      <!-- Таблица прямых загрузок -->
+      <h3 style="font-family: var(--font-heading); font-size: 16px; margin-bottom: 16px; color: var(--dark-slate);">
+        Прямой доступ к отдельным исходным файлам
+      </h3>
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Категория</th>
+              <th>Наименование ресурса</th>
+              <th>Форматы</th>
+              <th>Прямые ссылки для скачивания</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Каталог</strong></td>
+              <td>Презентационный мини-каталог бюро (39 стр.)</td>
+              <td>PDF (векторный)</td>
+              <td><a href="../assets/fero_mini_catalog.pdf" target="_blank" class="dl-link">fero_mini_catalog.pdf</a></td>
+            </tr>
+            <tr>
+              <td><strong>Штампы</strong></td>
+              <td>Форма 1 (185 × 55 мм) — Рабочий Ч/Б</td>
+              <td>DXF, SVG, PNG</td>
+              <td>
+                <a href="../assets/fero_stamp_gost_bw_forma1.dxf" class="dl-link">.DXF</a> |
+                <a href="../assets/fero_stamp_gost_bw_forma1.svg" target="_blank" class="dl-link">.SVG</a> |
+                <a href="../assets/fero_stamp_gost_bw_forma1.png" target="_blank" class="dl-link">.PNG</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Штампы</strong></td>
+              <td>Форма 1 (185 × 55 мм) — Презентационная Медь</td>
+              <td>DXF, SVG, PNG</td>
+              <td>
+                <a href="../assets/fero_stamp_gost_copper_forma1.dxf" class="dl-link">.DXF</a> |
+                <a href="../assets/fero_stamp_gost_copper_forma1.svg" target="_blank" class="dl-link">.SVG</a> |
+                <a href="../assets/fero_stamp_gost_copper_forma1.png" target="_blank" class="dl-link">.PNG</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Штампы</strong></td>
+              <td>Форма 3 (185 × 15 мм) — Рабочий Ч/Б</td>
+              <td>DXF, SVG, PNG</td>
+              <td>
+                <a href="../assets/fero_stamp_gost_bw_forma3.dxf" class="dl-link">.DXF</a> |
+                <a href="../assets/fero_stamp_gost_bw_forma3.svg" target="_blank" class="dl-link">.SVG</a> |
+                <a href="../assets/fero_stamp_gost_bw_forma3.png" target="_blank" class="dl-link">.PNG</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Штампы</strong></td>
+              <td>Форма 3 (185 × 15 мм) — Презентационная Медь</td>
+              <td>DXF, SVG, PNG</td>
+              <td>
+                <a href="../assets/fero_stamp_gost_copper_forma3.dxf" class="dl-link">.DXF</a> |
+                <a href="../assets/fero_stamp_gost_copper_forma3.svg" target="_blank" class="dl-link">.SVG</a> |
+                <a href="../assets/fero_stamp_gost_copper_forma3.png" target="_blank" class="dl-link">.PNG</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Блок логотипа</strong></td>
+              <td>Надпись «ФЕРО» строго 42 × 10 мм для CAD-штампов</td>
+              <td>DXF, SVG, PNG</td>
+              <td>
+                <a href="../assets/fero_logo_block_42x10mm_bw.dxf" class="dl-link">Ч/Б .DXF</a> |
+                <a href="../assets/fero_logo_block_42x10mm_copper.dxf" class="dl-link">Медь .DXF</a> |
+                <a href="../assets/fero_logo_block_42x10mm_bw_trans.png" target="_blank" class="dl-link">PNG Transparent</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Бланки</strong></td>
+              <td>Официальный бланк А4 (Презентационный)</td>
+              <td>DOCX, PDF</td>
+              <td>
+                <a href="../assets/fero_letterhead_copper.docx" class="dl-link">.DOCX</a> |
+                <a href="../assets/fero_letterhead_copper.pdf" target="_blank" class="dl-link">.PDF</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Бланки</strong></td>
+              <td>Официальный бланк А4 (Рабочий Ч/Б)</td>
+              <td>DOCX, PDF</td>
+              <td>
+                <a href="../assets/fero_letterhead_bw.docx" class="dl-link">.DOCX</a> |
+                <a href="../assets/fero_letterhead_bw.pdf" target="_blank" class="dl-link">.PDF</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Иконки</strong></td>
+              <td>Фирменный фавикон и монограмма «Ф»</td>
+              <td>ICO, SVG, PNG</td>
+              <td>
+                <a href="../assets/favicon.ico" class="dl-link">favicon.ico</a> |
+                <a href="../assets/fero_icon_copper.svg" target="_blank" class="dl-link">SVG</a> |
+                <a href="../assets/fero_icon_copper_512.png" target="_blank" class="dl-link">PNG 512px</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
   </main>
 
-  <!-- СВЕТЛЫЙ АККУРАТНЫЙ ПОДВАЛ -->
-  <footer class="footer">
-    ООО «ФЕРО» &bull; 2026 &bull; 198035, Россия, г. Санкт-Петербург, ул. Невельская, д. 18, лит. А, пом. 46 &bull; +7 (812) 603-21-11 &bull; <a href="mailto:info@ferospb.ru">info@ferospb.ru</a> &bull; <a href="https://ferospb.info">www.ferospb.info</a> / <a href="https://ferospb.ru">www.ferospb.ru</a>
+  <!-- FOOTER -->
+  <footer class="brandbook-footer">
+    <div class="footer-inner">
+      <div>
+        <div style="font-family: var(--font-heading); font-weight: 800; color: var(--white); font-size: 15px; margin-bottom: 4px;">
+          ИНЖЕНЕРНОЕ БЮРО «ФЕРО»
+        </div>
+        <div>
+          Санкт-Петербург, Московский пр., д. 140, лит. А &bull; Тел.: +7 (812) 385-00-55 &bull; info@ferospb.ru
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Главная страница</a>
+        <a href="https://ferospb.info" target="_blank">ferospb.info</a>
+        <a href="https://ferospb.ru" target="_blank">ferospb.ru</a>
+      </div>
+    </div>
   </footer>
 
 </body>
