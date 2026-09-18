@@ -548,6 +548,7 @@
         <a href="#logo-geometry">Логотип и значок</a>
         <a href="#drawing-stamps">Штампы ГОСТ</a>
         <a href="#letterheads">Бланки А4</a>
+        <a href="#email-signatures">Email-подписи</a>
         <a href="#downloads">Центр загрузок</a>
       </nav>
     </div>
@@ -939,7 +940,7 @@
     </section>
 
     <!-- 6. ЭЛЕКТРОННЫЕ ПОДПИСИ -->
-    <section class="section-card">
+    <section id="email-signatures" class="section-card">
       <div class="section-head">
         <div>
           <span class="sec-num">Раздел 06</span>
@@ -947,33 +948,77 @@
         </div>
       </div>
       <p class="sec-intro">
-        Лаконичный шаблон без надписей под логотипом. Контакты и адреса строго соответствуют официальным реквизитам сайта.
+        Официальные шаблоны корпоративных подписей бюро «ФЕРО» для Outlook, Яндекс.Почты, Mail.ru, Gmail и Thunderbird. 
+        Лаконичная компоновка без визуального шума. Логотип подгружается автоматически по защищенному протоколу HTTPS.
       </p>
 
+      <!-- Быстрое скачивание архива -->
+      <div style="background:#F8FAFC; border:1px solid var(--border); border-radius:var(--radius-sm); padding:16px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:28px;">
+        <div>
+          <div style="font-family:var(--font-heading); font-size:13.5px; font-weight:400; color:var(--dark-slate); margin-bottom:3px;">
+            Готовый комплект подписей со всеми файлами и инструкцией
+          </div>
+          <div style="font-size:12px; color:var(--slate-500);">
+            Включает оба HTML-шаблона, растровые PNG-превью и пошаговую инструкцию по быстрой настройке.
+          </div>
+        </div>
+        <a href="assets/fero_email_signatures.zip" download="fero_email_signatures.zip" class="btn-pkg-dl" style="padding:10px 18px; font-size:12px; text-decoration:none; white-space:nowrap;">
+          📦 Скачать весь пакет (.ZIP, 37 KB)
+        </a>
+      </div>
+
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <!-- Рабочая подпись Ч/Б -->
         <div class="showcase-box">
           <div class="showcase-head">
-            <div class="showcase-title">Рабочая подпись (Ч/Б)</div>
+            <div class="showcase-title">Рабочая подпись (Ч/Б Контур)</div>
+            <div class="showcase-tags">
+              <span class="tag-item">HTML</span>
+              <span class="tag-item">PNG</span>
+            </div>
           </div>
           <div class="preview-canvas" style="padding: 16px;">
             <img src="assets/fero_email_signature_bw.png" alt="Email signature BW">
           </div>
-          <div style="margin-top: 12px;">
-            <a href="assets/fero_email_signature_bw.html" target="_blank" class="dl-link">Открыть HTML-код подписи &rarr;</a>
+          <div style="margin-top: 14px; display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
+            <a href="assets/fero_email_signature_bw.html" download="fero_email_signature_bw.html" class="dl-link" style="background:#F1F5F9; padding:5px 10px; border-radius:3px; border:1px solid #CBD5E1;">⬇ Скачать .HTML</a>
+            <a href="assets/fero_email_signature_bw.png" download="fero_email_signature_bw.png" class="dl-link" style="background:#F1F5F9; padding:5px 10px; border-radius:3px; border:1px solid #CBD5E1;">⬇ Скачать .PNG</a>
+            <button type="button" onclick="copySig('bw', this)" class="dl-link" style="background:#ffffff; padding:5px 10px; border-radius:3px; border:1px solid var(--copper); color:var(--copper); cursor:pointer;">📋 Скопировать</button>
+            <a href="assets/fero_email_signature_bw.html" target="_blank" class="dl-link" style="color:var(--slate-500); font-size:11px; margin-left:auto;">Предпросмотр ↗</a>
           </div>
         </div>
 
+        <!-- Презентационная подпись Медь -->
         <div class="showcase-box">
           <div class="showcase-head">
             <div class="showcase-title">Презентационная подпись (Медь)</div>
+            <div class="showcase-tags">
+              <span class="tag-item">HTML</span>
+              <span class="tag-item">PNG</span>
+            </div>
           </div>
           <div class="preview-canvas" style="padding: 16px;">
             <img src="assets/fero_email_signature_copper.png" alt="Email signature Copper">
           </div>
-          <div style="margin-top: 12px;">
-            <a href="assets/fero_email_signature_copper.html" target="_blank" class="dl-link">Открыть HTML-код подписи &rarr;</a>
+          <div style="margin-top: 14px; display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
+            <a href="assets/fero_email_signature_copper.html" download="fero_email_signature_copper.html" class="dl-link" style="background:#F1F5F9; padding:5px 10px; border-radius:3px; border:1px solid #CBD5E1;">⬇ Скачать .HTML</a>
+            <a href="assets/fero_email_signature_copper.png" download="fero_email_signature_copper.png" class="dl-link" style="background:#F1F5F9; padding:5px 10px; border-radius:3px; border:1px solid #CBD5E1;">⬇ Скачать .PNG</a>
+            <button type="button" onclick="copySig('copper', this)" class="dl-link" style="background:#ffffff; padding:5px 10px; border-radius:3px; border:1px solid var(--copper); color:var(--copper); cursor:pointer;">📋 Скопировать</button>
+            <a href="assets/fero_email_signature_copper.html" target="_blank" class="dl-link" style="color:var(--slate-500); font-size:11px; margin-left:auto;">Предпросмотр ↗</a>
           </div>
         </div>
+      </div>
+
+      <!-- Пошаговая инструкция -->
+      <div style="margin-top:24px; padding:18px 22px; background:#FAFAFB; border:1px solid var(--border); border-radius:var(--radius-sm);">
+        <div style="font-family:var(--font-heading); font-size:12.5px; font-weight:400; text-transform:uppercase; letter-spacing:0.04em; color:var(--dark-slate); margin-bottom:10px;">
+          Инструкция: как установить подпись за 30 секунд
+        </div>
+        <ol style="margin-left:18px; font-size:12.5px; color:var(--slate-600); line-height:1.8;">
+          <li>Нажмите кнопку <strong>«Скопировать»</strong> под нужным вариантом выше (или откройте скачанный .html в браузере, выделите всё через <kbd>Ctrl+A</kbd> и скопируйте через <kbd>Ctrl+C</kbd>).</li>
+          <li>Откройте настройки вашей почтовой программы в разделе <strong>«Подпись»</strong> (Яндекс.Почта, Mail.ru, Outlook, Gmail, Thunderbird).</li>
+          <li>Вставьте подпись в поле редактора через <kbd>Ctrl+V</kbd>. Замените имя («Алексей Иванов») и телефон на свои контактные данные и нажмите <strong>«Сохранить»</strong>. Готово!</li>
+        </ol>
       </div>
     </section>
 
@@ -1188,21 +1233,31 @@
               </td>
             </tr>
             <tr>
-              <td><strong>Email-подпись</strong></td>
-              <td>Шаблон электронной подписи сотрудника (Презентационная Медь)</td>
-              <td>HTML, PNG</td>
+              <td><strong>Email-подписи (Пакет)</strong></td>
+              <td>Полный комплект официальных подписей (HTML + PNG + инструкция)</td>
+              <td>ZIP-архив</td>
               <td>
-                <a href="assets/fero_email_signature_copper.html" target="_blank" class="dl-link">HTML-шаблон</a> |
-                <a href="assets/fero_email_signature_copper.png" target="_blank" class="dl-link">.PNG превью</a>
+                <a href="assets/fero_email_signatures.zip" download="fero_email_signatures.zip" class="dl-link">fero_email_signatures.zip (37 KB)</a>
               </td>
             </tr>
             <tr>
-              <td><strong>Email-подпись</strong></td>
+              <td><strong>Email-подпись (Медь)</strong></td>
+              <td>Шаблон электронной подписи сотрудника (Презентационная Медь)</td>
+              <td>HTML, PNG</td>
+              <td>
+                <a href="assets/fero_email_signature_copper.html" download="fero_email_signature_copper.html" class="dl-link">Скачать .HTML</a> |
+                <a href="assets/fero_email_signature_copper.png" download="fero_email_signature_copper.png" class="dl-link">Скачать .PNG</a> |
+                <a href="assets/fero_email_signature_copper.html" target="_blank" class="dl-link">Открыть ↗</a>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Email-подпись (Ч/Б)</strong></td>
               <td>Шаблон электронной подписи сотрудника (Рабочий Ч/Б Контур)</td>
               <td>HTML, PNG</td>
               <td>
-                <a href="assets/fero_email_signature_bw.html" target="_blank" class="dl-link">HTML-шаблон</a> |
-                <a href="assets/fero_email_signature_bw.png" target="_blank" class="dl-link">.PNG превью</a>
+                <a href="assets/fero_email_signature_bw.html" download="fero_email_signature_bw.html" class="dl-link">Скачать .HTML</a> |
+                <a href="assets/fero_email_signature_bw.png" download="fero_email_signature_bw.png" class="dl-link">Скачать .PNG</a> |
+                <a href="assets/fero_email_signature_bw.html" target="_blank" class="dl-link">Открыть ↗</a>
               </td>
             </tr>
           </tbody>
@@ -1231,5 +1286,49 @@
     </div>
   </footer>
 
+  <script>
+    function copySig(type, btn) {
+      var file = (type === 'copper') ? 'assets/fero_email_signature_copper.html' : 'assets/fero_email_signature_bw.html';
+      fetch(file)
+        .then(function(res) { return res.text(); })
+        .then(function(html) {
+          var m = html.match(/<table[\s\S]*<\/table>/i);
+          var tableHtml = m ? m[0] : html;
+          if (navigator.clipboard && window.ClipboardItem) {
+            var blobHtml = new Blob([tableHtml], { type: 'text/html' });
+            var blobText = new Blob([tableHtml], { type: 'text/plain' });
+            var item = new ClipboardItem({ 'text/html': blobHtml, 'text/plain': blobText });
+            navigator.clipboard.write([item]).then(function() {
+              showCopied(btn);
+            }).catch(function() {
+              copyPlain(tableHtml, btn);
+            });
+          } else {
+            copyPlain(tableHtml, btn);
+          }
+        })
+        .catch(function() {
+          alert('Откройте файл подписи по ссылке «Предпросмотр» и скопируйте его через Ctrl+A и Ctrl+C.');
+        });
+    }
+    function copyPlain(text, btn) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(text).then(function() { showCopied(btn); });
+      } else {
+        showCopied(btn);
+      }
+    }
+    function showCopied(btn) {
+      var orig = btn.innerHTML;
+      btn.innerHTML = '✓ Скопировано!';
+      btn.style.color = '#10b981';
+      btn.style.borderColor = '#10b981';
+      setTimeout(function() {
+        btn.innerHTML = orig;
+        btn.style.color = 'var(--copper)';
+        btn.style.borderColor = 'var(--copper)';
+      }, 2000);
+    }
+  </script>
 </body>
 </html>
