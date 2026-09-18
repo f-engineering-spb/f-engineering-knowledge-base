@@ -16,4 +16,6 @@ renders/
 Thumbs.db
 *.html
 *.htm
-
+!site/*.html
+!site/**/*.html
+site/fero_site_full.zip
